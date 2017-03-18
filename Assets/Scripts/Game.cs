@@ -7,13 +7,15 @@ using UnityEngine.SceneManagement;
 
 class Game : MonoBehaviour
 {
-
+	
 	public static Map map;
 	public static Dictionary<string, Player> players;
 
 	// Use this for initialization
 	void Start()
 	{
+		//GameObject go = Instantiate(Resources.Load("Tcorridor"), new Vector3(0, 0, 0), Quaternion.Euler(0.0f, 0.0f, 0.0f)) as GameObject;
+
 		players = new Dictionary<string, Player>();
 
 		Scene scene = SceneManager.GetActiveScene();
@@ -40,7 +42,7 @@ class Game : MonoBehaviour
 		}*/
 
 		//FIXME dont work with multiplayer
-		players.Add("Player1", new Player("Player1", GameObject.FindWithTag("Player"), map));
+		//players.Add("Player1", new Player("Player1", GameObject.FindWithTag("Player"), map));
 	}
 
 	// Update is called once per frame
