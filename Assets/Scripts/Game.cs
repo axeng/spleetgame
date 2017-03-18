@@ -18,7 +18,7 @@ class Game : MonoBehaviour
 
 		Scene scene = SceneManager.GetActiveScene();
 
-		switch(scene.name)
+		/*switch(scene.name)
 		{
 			case "Level1":
 				map = new Map("Level1", MapType.TEST);
@@ -37,7 +37,7 @@ class Game : MonoBehaviour
 				map.AddElement(new string[] { "button_1" , "button_2" , "button_3" }, "door_1", ExecType.DOOR);
 				map.AddElement(new string[] { "button_4" }, "window_1", ExecType.WINDOW);
 				break;
-		}
+		}*/
 
 		//FIXME dont work with multiplayer
 		players.Add("Player1", new Player("Player1", GameObject.FindWithTag("Player"), map));
@@ -49,7 +49,7 @@ class Game : MonoBehaviour
 		foreach (Player p in players.Values) 
 			p.Move();
 
-
+		/*
 		//some key for s1
 		if (Input.GetKeyDown(KeyCode.T))
 		{
@@ -62,6 +62,6 @@ class Game : MonoBehaviour
 		else if (Input.GetKeyDown(KeyCode.H))
 		{
 			players["Player1"].Tp(new Vector3(19.224444f, 21.89996f, 132.9029f));
-		}
+		}*/
 	}
 }
