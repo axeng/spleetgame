@@ -44,7 +44,7 @@ public class RaycastShoot : MonoBehaviour {
             {
                 laserLine.SetPosition(1, hit.point);
 
-				Game.map.Shoot(hit.transform.gameObject);
+				//Game.map.Shoot(hit.transform.gameObject);
             }
             else
             {
