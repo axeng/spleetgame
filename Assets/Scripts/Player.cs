@@ -33,7 +33,6 @@ namespace Assets.Script
 
         public void ChangeCheck() //Change le checkpoint du joueur si il est dans la zone d'un checkpoint
         {
-			foreach (Checkpoint check in map.GetCheckpoints())
 			{
 				if (check.CheckInZone(body.position))
 				{
