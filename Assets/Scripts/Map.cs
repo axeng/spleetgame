@@ -68,7 +68,7 @@ namespace Assets.Script
 			switch(type)
 			{
 				case ExecType.DOOR:
-					this.AddExec(new Door(null, GameObject.FindWithTag(element + "_left"), GameObject.FindWithTag(element + "_right")), buttonsElement);
+                    this.AddExec(new Door(null, GameObject.FindWithTag(element), GameObject.FindWithTag(element + "_left"), GameObject.FindWithTag(element + "_right")), buttonsElement);
 					break;
 
 				case ExecType.WINDOW:
