@@ -13,6 +13,14 @@ namespace AssemblyCSharp
 		{
 			this.objects = objects;
 		}
+		
+		public MapConstructor(Dictionary<BlockType, Vector4> objects)
+		{
+			foreach(BlockType s in objects.Keys)
+			{
+				this.objects.Add(s.ToString()+"_col", objects[s]);
+			}
+		}
 
 		//Construct the MapConstructor
 		public void Construct()
@@ -23,5 +31,17 @@ namespace AssemblyCSharp
 				Instantiate(Resources.Load(obj), pos, Quaternion.Euler(0.0f, objects[obj].w, 0.0f));
 			}
 		}
+	}
+
+	public enum BlockType
+	{
+		Xcorridor,
+		Tcorridor,
+		Lcorridor,
+		Icorridor,
+		FloorNeonAlea,
+		Door3D,
+		ButtonActif,
+		ButtonNonActif
 	}
 }
