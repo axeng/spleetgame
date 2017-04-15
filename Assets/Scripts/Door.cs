@@ -24,8 +24,10 @@ namespace Assets.Script
 		public override void Exec()
 		{
 			this.anim.SetBool("IsOpen", this.CheckButton());
-			this.leftPane.SetActive(!this.CheckButton());
-			this.rightPane.SetActive(!this.CheckButton());
+			this.leftPane.GetComponent<Collider>().isTrigger = true;
+			this.rightPane.GetComponent<Collider>().isTrigger = true;
+			/*this.leftPane.SetActive(!this.CheckButton());
+			this.rightPane.SetActive(!this.CheckButton());*/
 		}
 	}
 }
