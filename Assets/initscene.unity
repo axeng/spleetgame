@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465934, g: 0.49642956, b: 0.5748249, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -16384,6 +16384,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1908581942400050, guid: b574538331ec5294dad1d8265deee2fb, type: 2}
+      propertyPath: m_TagString
+      value: button_1_true
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b574538331ec5294dad1d8265deee2fb, type: 2}
   m_IsPrefabParent: 0
@@ -18399,6 +18403,30 @@ Prefab:
       propertyPath: m_Name
       value: Door3D_col
       objectReference: {fileID: 0}
+    - target: {fileID: 100150, guid: 9e961d5ca1ef647a985427acc62d3e50, type: 3}
+      propertyPath: m_TagString
+      value: door_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100206, guid: 9e961d5ca1ef647a985427acc62d3e50, type: 3}
+      propertyPath: m_TagString
+      value: door_1_right
+      objectReference: {fileID: 0}
+    - target: {fileID: 100208, guid: 9e961d5ca1ef647a985427acc62d3e50, type: 3}
+      propertyPath: m_TagString
+      value: door_1_left
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 9e961d5ca1ef647a985427acc62d3e50, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 9e961d5ca1ef647a985427acc62d3e50, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e4d70cad8d20341068958ad01282b47e, type: 2}
+    - target: {fileID: 9500000, guid: 9e961d5ca1ef647a985427acc62d3e50, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9e961d5ca1ef647a985427acc62d3e50, type: 3}
   m_IsPrefabParent: 0
@@ -19703,6 +19731,10 @@ Prefab:
     - target: {fileID: 4938825414553974, guid: 61e5036ca7e5f4b4392692694f0eac29, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1101827466989280, guid: 61e5036ca7e5f4b4392692694f0eac29, type: 2}
+      propertyPath: m_TagString
+      value: button_1_false
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 61e5036ca7e5f4b4392692694f0eac29, type: 2}
