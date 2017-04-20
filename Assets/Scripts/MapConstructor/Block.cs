@@ -32,7 +32,7 @@ namespace Assets.Script
 		Icorridor,
 		FloorNeonAlea,
 		Door3D,
-		ButtonActif,
-		ButtonNonActif
+        Button,
+        Enigme1
 	}
 }
