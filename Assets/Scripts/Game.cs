@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using Assets.Script;
-using Assets.Script.MapConstructor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,7 +14,6 @@ class Game : MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
-		//GameObject go = Instantiate(Resources.Load("Tcorridor"), new Vector3(0, 0, 0), Quaternion.Euler(0.0f, 0.0f, 0.0f)) as GameObject;
 
 		players = new Dictionary<string, Player>();
 
@@ -48,15 +46,17 @@ class Game : MonoBehaviour
 
 				break;
 		}
-		
-		
-		//MAPCONSTRUCTOR TESTS
-		/*List<Block> testB = new List<Block>();
+
+
+		/*//MAPCONSTRUCTOR TESTS
+		List<Block> testB = new List<Block>();
 		testB.Add(new Block(BlockType.Icorridor, new Vector3(0,0,0), 0));
 		testB.Add(new Block(BlockType.Icorridor, new Vector3(24,0,0), 0));
 		MapConstructor test = new MapConstructor(testB);
 
-		test.Construct();*/
+		test.Construct();
+		
+		//Map testM = new Map(test, "oklolsalut", MapType.TEST);*/
 
 		//FIXME dont work with multiplayer
 		//players.Add("Player1", new Player("Player1", GameObject.FindWithTag("Player"), map));

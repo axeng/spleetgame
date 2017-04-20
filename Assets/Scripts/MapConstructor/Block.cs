@@ -1,6 +1,6 @@
 ﻿using System;
 using UnityEngine;
-namespace Assets.Script.MapConstructor
+namespace Assets.Script
 {
 	public class Block : MonoBehaviour
 	{

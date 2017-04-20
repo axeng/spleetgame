@@ -2,9 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace Assets.Script.MapConstructor
+namespace Assets.Script
 {
-	public class MapConstructor : MonoBehaviour
+	public class MapConstructor
 	{
 		private List<Block> blocks;
 
