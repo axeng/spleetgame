@@ -11,12 +11,14 @@ class Game : MonoBehaviour
 	public static Map map;
 	public static Dictionary<string, Player> players;
 
+	public bool pause = false;
+
 	// Use this for initialization
 	void Start()
 	{
 
 		players = new Dictionary<string, Player>();
-
+		
 		Scene scene = SceneManager.GetActiveScene();
 
 		switch (scene.name)
@@ -79,5 +81,17 @@ class Game : MonoBehaviour
 			map.GetButtons()[0].Push();
 			map.GetButtons()[0].Exec();
 		}
+
+		if (Input.GetKeyDown((KeyCode.P)))
+			pause = !pause;
+		else
+			pause = GameObject.FindWithTag("PauseGUI").transform.GetChild(0).gameObject.activeSelf;
+
+		if (pause)
+			Time.timeScale = 0.0f;
+		else
+			Time.timeScale = 1.0f;
+		
+		GameObject.FindWithTag("PauseGUI").transform.GetChild(0).gameObject.SetActive(pause);
 	}
 }
