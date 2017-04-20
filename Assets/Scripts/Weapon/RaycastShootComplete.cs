@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
+using UnityEngine.Networking;
 using System.Collections.Generic;
 using System.Collections;
 
-public class RaycastShootComplete : MonoBehaviour
+public class RaycastShootComplete : NetworkBehaviour
 {
 
     public int gunDamage = 1;                                           // Set the number of hitpoints that this gun will take away from shot objects with a health script
@@ -20,6 +21,12 @@ public class RaycastShootComplete : MonoBehaviour
 
     void Start()
     {
+   		//FOR NETWORK :
+		if(!isLocalPlayer)
+		{
+			Destroy(this);
+			return;
+		}
         // Get and store a reference to our LineRenderer component
         laserLine = GetComponent<LineRenderer>();
 

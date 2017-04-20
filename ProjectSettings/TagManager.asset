@@ -9,6 +9,7 @@ TagManager:
   - door_1
   - door_1_left
   - door_1_right
+  - PauseGUI
   layers:
   - Default
   - TransparentFX
