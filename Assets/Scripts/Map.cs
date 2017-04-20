@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Script
 {
@@ -17,23 +19,23 @@ namespace Assets.Script
 
 		private List<Button> buttons;
 
+		public Map(MapConstructor constructor, string name, MapType type) : this(name, type)
+        {
+			constructor.Construct();
+        }
+		
 		public Map(string name, MapType type)
         {
         	this.name = name;
 			this.type = type;
 
 			this.checkpoints = new List<Checkpoint>();
-			//this.checkpoints.Add(new Checkpoint(new Vector2(0,0), new Vector2(1,1), new Vector2(0.5,0.5)));
+
 
 			this.executables = new List<Executable>();
-			/*
-			 * GameObject ex;
-			 * List<Button> butts;
-			 * this.executables.Add(ex, new Window(butts, ex));
-			*/
 
 			this.buttons = new List<Button>();
-        }
+        }       
 
 		public List<Checkpoint> GetCheckpoints()
 		{
