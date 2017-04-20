@@ -110,26 +110,39 @@ namespace Assets.Script
 			}
 		}
 
+        public static Map GetMap(string name)
+        {
+            switch (name)
+            {
+                case "mctest":
+                    List<Block> testB = new List<Block>();
+                    testB.Add(new Block(BlockType.Icorridor, new Vector3(0, 0, 0), 0));
+                    testB.Add(new Block(BlockType.Icorridor, new Vector3(24, 0, 0), 0));
+                    MapConstructor test = new MapConstructor(testB);
+
+                    return new Map(test, "oklolsalut", MapType.TEST);
+                    break;
+
+                case "map1":
+                    List<Block> MapTest = new List<Block>();
+                    //MapTest.Add(new Block(BlockType.Icorridor, new Vector3(0,0,0), 0));
+                    MapTest.Add(new Block(BlockType.Icorridor, new Vector3(24, 0, 0), 0));
+                    MapTest.Add(new Block(BlockType.Icorridor, new Vector3(48, 0, 0), 0));
+                    MapTest.Add(new Block(BlockType.Xcorridor, new Vector3(72, 0, 0), 0));
+                    MapTest.Add(new Block(BlockType.Door3D, new Vector3(6, 2, -6), 90));
+                    MapConstructor test1 = new MapConstructor(MapTest);
+
+                    return new Map(test1, "oklolsalut", MapType.TEST);
+                    break;
+
+                default:
+                    return null;
+                    break;
+            }
+        }
+
     }
     
-    public static Map GetMap(string name)
-    {
-    	switch(name)
-    	{
-    		case "mctest":
-    			List<Block> testB = new List<Block>();
-				testB.Add(new Block(BlockType.Icorridor, new Vector3(0,0,0), 0));
-				testB.Add(new Block(BlockType.Icorridor, new Vector3(24,0,0), 0));
-				MapConstructor test = new MapConstructor(testB);
-				
-				return new Map(test, "oklolsalut", MapType.TEST);
-				break;
-
-			default:
-				return null;
-				break;
-		}
-	}
 
 	enum MapType
 	{

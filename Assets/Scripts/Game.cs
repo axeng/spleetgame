@@ -47,16 +47,7 @@ class Game : MonoBehaviour
 				break;
 		}
 
-
-		/*//MAPCONSTRUCTOR TESTS
-		List<Block> testB = new List<Block>();
-		testB.Add(new Block(BlockType.Icorridor, new Vector3(0,0,0), 0));
-		testB.Add(new Block(BlockType.Icorridor, new Vector3(24,0,0), 0));
-		MapConstructor test = new MapConstructor(testB);
-
-		test.Construct();
-		
-		//Map testM = new Map(test, "oklolsalut", MapType.TEST);*/
+        Map.GetMap("map1");
 
 		//FIXME dont work with multiplayer
 		//players.Add("Player1", new Player("Player1", GameObject.FindWithTag("Player"), map));
