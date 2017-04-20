@@ -127,8 +127,8 @@ namespace Assets.Script
                     List<Block> MapTest = new List<Block>();
                     //MapTest.Add(new Block(BlockType.Icorridor, new Vector3(0,0,0), 0));
                     MapTest.Add(new Block(BlockType.Icorridor, new Vector3(24, 0, 0), 0));
-                    MapTest.Add(new Block(BlockType.Icorridor, new Vector3(48, 0, 0), 0));
-                    MapTest.Add(new Block(BlockType.Xcorridor, new Vector3(72, 0, 0), 0));
+                    MapTest.Add(new Block(BlockType.Lcorridor, new Vector3(24, 0, 0), 0));
+                    MapTest.Add(new Block(BlockType.Icorridor, new Vector3(36, 0, -24), -90));
                     MapTest.Add(new Block(BlockType.Door3D, new Vector3(6, 2, -6), 90));
                     MapConstructor test1 = new MapConstructor(MapTest);
 
