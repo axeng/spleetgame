@@ -4,11 +4,13 @@ namespace Assets.Script
 {
 	public class Block
 	{
-		private BlockType type;
+		private string type;
 		private Vector3 position;
 		private float rotation;
 		
-		public Block(BlockType type, Vector3 position, float rotation)
+		public Block(BlockType type, Vector3 position, float rotation) : this (type + "_col", position, rotation){}
+		
+		public Block(string type, Vector3 position, float rotation)
 		{
 			this.type = type;
 			this.position = position;
