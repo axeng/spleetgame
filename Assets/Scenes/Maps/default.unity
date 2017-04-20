@@ -7897,16 +7897,7 @@ Prefab:
       propertyPath: m_Name
       value: FPSController (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 1830318812906384, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114127610336457788, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-    - {fileID: 114005742340967660, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-    - {fileID: 114043404075877148, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-    - {fileID: 114273968610222654, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-    - {fileID: 114606232357804054, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &780987076
