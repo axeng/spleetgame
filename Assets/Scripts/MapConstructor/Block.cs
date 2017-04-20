@@ -2,7 +2,7 @@
 using UnityEngine;
 namespace Assets.Script
 {
-	public class Block : MonoBehaviour
+	public class Block
 	{
 		private BlockType type;
 		private Vector3 position;
@@ -17,7 +17,7 @@ namespace Assets.Script
 		
 		public void Place()
 		{
-			Instantiate(
+			UnityEngine.Object.Instantiate(
 				Resources.Load(this.type+"_col"),
 				this.position, 
 				Quaternion.Euler(0.0f, rotation, 0.0f));
