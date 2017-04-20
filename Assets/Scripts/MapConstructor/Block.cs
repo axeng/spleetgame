@@ -20,7 +20,7 @@ namespace Assets.Script
 		public void Place()
 		{
 			UnityEngine.Object.Instantiate(
-				Resources.Load(this.type+"_col"),
+				Resources.Load(this.type),
 				this.position, 
 				Quaternion.Euler(0.0f, rotation, 0.0f));
 		}
