@@ -4168,7 +4168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be83264168484cc43aa17abfb398cf86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponRange: 50
+  weaponRange: 500
 --- !u!114 &395290318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4182,7 +4182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gunDamage: 1
   fireRate: 0.25
-  weaponRange: 50
+  weaponRange: 500
   hitForce: 100
   gunEnd: {fileID: 1228011462}
 --- !u!120 &395290319
@@ -4221,7 +4221,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 0.1
+    widthMultiplier: 0.08
     widthCurve:
       serializedVersion: 2
       m_Curve:

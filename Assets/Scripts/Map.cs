@@ -130,7 +130,7 @@ namespace Assets.Script
                     MapTest.Add(new Block(BlockType.Lcorridor, new Vector3(24, 0, 0), 0));
                     MapTest.Add(new Block(BlockType.Icorridor, new Vector3(36, 0, -24), -90));
                     MapTest.Add(new Block(BlockType.Door3D, new Vector3(6, 2, -6), 90));
-                    MapTest.Add(new Block(BlockType.Lcorridor, new Vector3(36, 20, -48), 180));
+                    MapTest.Add(new Block(BlockType.Lcorridor, new Vector3(60, 0, -72+12), 180));
                     MapConstructor test1 = new MapConstructor(MapTest);
 
                     return new Map(test1, "oklolsalut", MapType.TEST);
