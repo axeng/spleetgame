@@ -48,11 +48,16 @@ namespace Assets.Script
         {
             ChangeCheck();
 
-			if (body.position.y <= 3)
-				this.Tp(currentCheckpoint);
+			if (body.position.y <= -1)
+				Die();
 
         }
 
+		public void Die()
+		{
+			this.Tp(currentCheckpoint);
+		}
+		
 		public void Tp(Vector3 loc)
 		{
 			obj.transform.position = loc;

@@ -15,6 +15,7 @@ TagManager:
   - left
   - right
   - button_1
+  - die
   layers:
   - Default
   - TransparentFX
