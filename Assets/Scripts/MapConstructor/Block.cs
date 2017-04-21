@@ -5,7 +5,7 @@ namespace Assets.Script
 	public class Block
 	{
 		private string type;
-		private Vector3 position;
+		public Vector3 position { get; set; }
 		private float rotation;
 
 		private string tag;

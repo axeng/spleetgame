@@ -18,10 +18,14 @@ namespace Assets.Script
 
 		private List<Button> buttons;
 
-		public Map(MapConstructor constructor, string name, MapType type) : this(name, type)
+		public Map(List<MapConstructor> constructors, string name, MapType type) : this(name, type)
         {
-			constructor.Construct();
+			foreach(MapConstructor constructor in constructors)
+				constructor.Construct();
         }
+        
+		public Map(MapConstructor constructor, string name, MapType type) 
+			: this(new List<MapConstructor>(new MapConstructor[] {constructor}), name, type){}
 		
 		public Map(string name, MapType type)
         {
