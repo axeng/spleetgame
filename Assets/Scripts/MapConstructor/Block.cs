@@ -8,16 +8,16 @@ namespace Assets.Script
 		public Vector3 position { get; set; }
 		private float rotation;
 
-		private string tag;
+		private string name;
 		
-		public Block(BlockType type, Vector3 position, float rotation, string tag = "") : this (type + "_col", position, rotation, tag){}
+		public Block(BlockType type, Vector3 position, float rotation, string name = "") : this (type + "_col", position, rotation, name){}
 		
-		public Block(string type, Vector3 position, float rotation, string tag = "")
+		public Block(string type, Vector3 position, float rotation, string name = "")
 		{
 			this.type = type;
 			this.position = position;
 			this.rotation = rotation;
-			this.tag = tag;
+			this.name = name;
 		}
 		
 		public void Place()
@@ -27,35 +27,29 @@ namespace Assets.Script
 				this.position, 
 				Quaternion.Euler(0.0f, rotation, 0.0f)) as GameObject;
 
-			if (tag != "")
+			if (name != "")
 			{
-				try
-				{
-					obj.gameObject.tag = this.tag;
-				}catch(Exception e)
-				{
-					Debug.LogWarning("the tag "+tag+"is not defined");
-				}
-				if (tag.StartsWith("door_"))
+				obj.gameObject.name = this.name;
+				if (name.StartsWith("door_"))
 				{
 					for (int i = 0; i < obj.transform.childCount; i++)
 					{
 						GameObject child = obj.transform.GetChild(i).gameObject;
 						if (child.tag == "left")
-							child.tag = tag + "_left";
+							child.name = name + "_left";
 						else if (child.tag == "right")
-							child.tag = tag + "_right";
+							child.name = name + "_right";
 					}
 				}
-				else if (tag.StartsWith("button_"))
+				else if (name.StartsWith("button_"))
 				{
 					for (int i = 0; i < obj.transform.childCount; i++)
 					{
 						GameObject child = obj.transform.GetChild(i).gameObject;
 						if (child.tag == "true")
-							child.tag = tag + "_true";
+							child.name = name + "_true";
 						else if (child.tag == "false")
-							child.tag = tag + "_false";
+							child.name = name + "_false";
 					}
 				}
 			}

@@ -61,27 +61,28 @@ namespace Assets.Script
 
 		//add an element
 		//AddElement(new string[] { "button_1" }, "door_1", ExecType.DOOR);
-		public void AddElement(string[] buts, string element, ExecType type)
+		public void AddElement(string[] buts, string element, ExecType type, bool tag = true)
 		{
 			List<Button> buttonsElement = new List<Button>();
 
 			foreach(string but in buts)
 			{
-				buttonsElement.Add(new Button(null, GameObject.FindWithTag(but + "_true"), GameObject.FindWithTag(but + "_false")));
+				if (tag)
+					buttonsElement.Add(new Button(null, GameObject.FindWithTag(but + "_true"), GameObject.FindWithTag(but + "_false")));
+				else
+					buttonsElement.Add(new Button(null, GameObject.Find(but + "_true"), GameObject.Find(but + "_false")));
 			}
 
 			switch(type)
 			{
 				case ExecType.DOOR:
-                    this.AddExec(new Door(null, GameObject.FindWithTag(element), GameObject.FindWithTag(element + "_left"), GameObject.FindWithTag(element + "_right")), buttonsElement);
+                    this.AddExec(new Door(null, GameObject.Find(element), GameObject.Find(element + "_left"), GameObject.Find(element + "_right")), buttonsElement);
 					break;
 
 				case ExecType.WINDOW:
-					this.AddExec(new Window(null, GameObject.FindWithTag(element)), buttonsElement);
+					this.AddExec(new Window(null, GameObject.Find(element)), buttonsElement);
 					break;
 			}
-
-
 		}
 
 		//add an executable in the map
@@ -163,7 +164,7 @@ namespace Assets.Script
                     MapConstructor test2 = new MapConstructor(Map);
 					
                     Map plat1 = new Map(test2, "oklolsalut", MapType.TEST);
-					plat1.AddElement(new string[] { "button_1" }, "door_1", ExecType.DOOR);
+					plat1.AddElement(new string[] { "button_1" }, "door_1", ExecType.DOOR, false);
 					return plat1;
                     break;
 

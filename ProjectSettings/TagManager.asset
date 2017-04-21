@@ -4,17 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - button_1_true
-  - button_1_false
-  - door_1
-  - door_1_left
-  - door_1_right
   - PauseGUI
   - true
   - false
   - left
   - right
-  - button_1
   - die
   layers:
   - Default
