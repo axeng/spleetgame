@@ -124,7 +124,7 @@ namespace Assets.Script
 
                 case "map1":
                     List<Block> MapTest = new List<Block>();
-                    //MapTest.Add(new Block(BlockType.Icorridor, new Vector3(0,0,0), 0));
+                    MapTest.Add(new Block(BlockType.Icorridor, new Vector3(0,0,0), 0));
                     MapTest.Add(new Block(BlockType.Icorridor, new Vector3(24, 0, 0), 0));
                     MapTest.Add(new Block(BlockType.Lcorridor, new Vector3(24, 0, 0), 0));
                     MapTest.Add(new Block(BlockType.Icorridor, new Vector3(36, 0, -24), -90));
