@@ -153,8 +153,8 @@ namespace Assets.Script
                     Map.Add(new Block("plat/Icorridor_plat_col", new Vector3(0, 0, 0), 0));
                     Map.Add(new Block("plat/Icorridor_plat_col", new Vector3(-117, 0, 0), 0));
                     Map.Add(new Block("plat/Tcorridor_plat_col", new Vector3(-48, 0, 0), 0));
-                    Map.Add(new Block("plat/Door3D_plat_col", new Vector3(4, 2, -6), 90, "door_1"));
-                    Map.Add(new Block("plat/Door3D_plat_col", new Vector3(-31, 2, -41), 0));
+                    Map.Add(new Block("plat/Door3D_plat_col", new Vector3(4, 2, -6), 90));
+                    Map.Add(new Block("plat/Door3D_plat_col", new Vector3(-31, 2, -41), 0, "door_1"));
                     Map.Add(new Block("plat/corridoirscile", new Vector3(-74, -84, -8), 0));
                     MapConstructor test2 = new MapConstructor(Map);
 					
