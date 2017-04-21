@@ -60,7 +60,12 @@ namespace Assets.Script
 				}
 			}
 		}
-	}
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
+    }
 	
 	public enum BlockType
 	{

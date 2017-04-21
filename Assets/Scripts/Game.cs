@@ -49,7 +49,7 @@ class Game : MonoBehaviour
 				break;
 		}
 
-        map = Map.GetMap("plat1");
+        map = Map.GetMap("map1");
 
 		//FIXME dont work with multiplayer
 		//players.Add("Player1", new Player("Player1", GameObject.FindWithTag("Player"), map));
