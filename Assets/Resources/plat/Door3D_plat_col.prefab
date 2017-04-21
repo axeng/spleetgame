@@ -1152,7 +1152,7 @@ GameObject:
   - component: {fileID: 65931716867709486}
   m_Layer: 0
   m_Name: ouverture_gauche
-  m_TagString: Untagged
+  m_TagString: left
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3361,7 +3361,7 @@ GameObject:
   - component: {fileID: 65884018732589148}
   m_Layer: 0
   m_Name: ouverture_droite
-  m_TagString: Untagged
+  m_TagString: right
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12190,7 +12190,7 @@ Animator:
   m_GameObject: {fileID: 1178842179905842}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 86c5912032e3d4785842853055af46dc, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e4d70cad8d20341068958ad01282b47e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

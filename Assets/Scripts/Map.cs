@@ -138,7 +138,7 @@ namespace Assets.Script
 
                 case "plat1":
                     List<Block> Map = new List<Block>();
-                    Map.Add(new Block("Button", new Vector3(-146, 15, -7), 90));
+                    Map.Add(new Block("Button", new Vector3(-146, 15, -7), 90, "button_1"));
                     Map.Add(new Block("plat/Mur_col", new Vector3(-134, 6, -6), 90));
                     Map.Add(new Block("plat/Mur_col", new Vector3(-127, 18, -12), 0));
                     Map.Add(new Block("plat/Mur_col", new Vector3(-129, 19, 0), 180));
@@ -153,12 +153,14 @@ namespace Assets.Script
                     Map.Add(new Block("plat/Icorridor_plat_col", new Vector3(0, 0, 0), 0));
                     Map.Add(new Block("plat/Icorridor_plat_col", new Vector3(-117, 0, 0), 0));
                     Map.Add(new Block("plat/Tcorridor_plat_col", new Vector3(-48, 0, 0), 0));
-                    Map.Add(new Block("plat/Door3D_plat_col", new Vector3(4, 2, -6), 90));
+                    Map.Add(new Block("plat/Door3D_plat_col", new Vector3(4, 2, -6), 90, "door_1"));
                     Map.Add(new Block("plat/Door3D_plat_col", new Vector3(-31, 2, -41), 0));
                     Map.Add(new Block("plat/corridoirscile", new Vector3(-74, -84, -8), 0));
                     MapConstructor test2 = new MapConstructor(Map);
-
-                    return new Map(test2, "oklolsalut", MapType.TEST);
+					
+                    Map plat1 = new Map(test2, "oklolsalut", MapType.TEST);
+					plat1.AddElement(new string[] { "button_1" }, "door_1", ExecType.DOOR);
+					return plat1;
                     break;
 
                 default:

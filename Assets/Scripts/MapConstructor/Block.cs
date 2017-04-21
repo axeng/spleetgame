@@ -28,7 +28,37 @@ namespace Assets.Script
 				Quaternion.Euler(0.0f, rotation, 0.0f)) as GameObject;
 
 			if (tag != "")
-				obj.tag = tag;
+			{
+				try
+				{
+					obj.gameObject.tag = this.tag;
+				}catch(Exception e)
+				{
+					Debug.LogWarning("the tag "+tag+"is not defined");
+				}
+				if (tag.StartsWith("door_"))
+				{
+					for (int i = 0; i < obj.transform.childCount; i++)
+					{
+						GameObject child = obj.transform.GetChild(i).gameObject;
+						if (child.tag == "left")
+							child.tag = tag + "_left";
+						else if (child.tag == "right")
+							child.tag = tag + "_right";
+					}
+				}
+				else if (tag.StartsWith("button_"))
+				{
+					for (int i = 0; i < obj.transform.childCount; i++)
+					{
+						GameObject child = obj.transform.GetChild(i).gameObject;
+						if (child.tag == "true")
+							child.tag = tag + "_true";
+						else if (child.tag == "false")
+							child.tag = tag + "_false";
+					}
+				}
+			}
 		}
 	}
 	
