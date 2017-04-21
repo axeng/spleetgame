@@ -136,6 +136,31 @@ namespace Assets.Script
                     return new Map(test1, "oklolsalut", MapType.TEST);
                     break;
 
+                case "plat1":
+                    List<Block> Map = new List<Block>();
+                    Map.Add(new Block("Button", new Vector3(-146, 15, -7), 90));
+                    Map.Add(new Block("plat/Mur_col", new Vector3(-134, 6, -6), 90));
+                    Map.Add(new Block("plat/Mur_col", new Vector3(-127, 18, -12), 0));
+                    Map.Add(new Block("plat/Mur_col", new Vector3(-129, 19, 0), 180));
+                    Map.Add(new Block("plat/Mur_col", new Vector3(-147, 18, -6), 90));
+                    Map.Add(new Block("plat/Plateforme_col", new Vector3(-130, 6, -7), 0));
+                    Map.Add(new Block("plat/trap_pilier_col", new Vector3(-98, -2, -7), 0));
+                    Map.Add(new Block("plat/trap_pilier_col", new Vector3(-107, 0, -4), 0));
+                    Map.Add(new Block("plat/trap_pilier_col", new Vector3(-121, 3, -4), 0));
+                    Map.Add(new Block("plat/Icorridor_plat_col", new Vector3(-94, 0, 0), 0));
+                    Map.Add(new Block("plat/Icorridor_plat_col", new Vector3(-25, 0, -36), 90));
+                    Map.Add(new Block("plat/Icorridor_plat_col", new Vector3(-139, 12, 0), 0));
+                    Map.Add(new Block("plat/Icorridor_plat_col", new Vector3(0, 0, 0), 0));
+                    Map.Add(new Block("plat/Icorridor_plat_col", new Vector3(-117, 0, 0), 0));
+                    Map.Add(new Block("plat/Tcorridor_plat_col", new Vector3(-48, 0, 0), 0));
+                    Map.Add(new Block("plat/Door3D_plat_col", new Vector3(4, 2, -6), 90));
+                    Map.Add(new Block("plat/Door3D_plat_col", new Vector3(-31, 2, -41), 0));
+                    Map.Add(new Block("plat/corridoirscile", new Vector3(-74, -84, -8), 0));
+                    MapConstructor test2 = new MapConstructor(Map);
+
+                    return new Map(test2, "oklolsalut", MapType.TEST);
+                    break;
+
                 default:
                     return null;
                     break;
