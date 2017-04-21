@@ -56,7 +56,8 @@ public class RaycastShootComplete : MonoBehaviour
             {
                 // Set the end position for our laser line 
                 laserLine.SetPosition(1, hit.point);
-
+				
+				Game.map.Shoot(hit.transform.gameObject);
 
                 //// Check if the object we hit has a rigidbody attached
                 //if (hit.rigidbody != null)
