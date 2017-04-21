@@ -2506,7 +2506,7 @@ GameObject:
   - component: {fileID: 65333695088632564}
   m_Layer: 0
   m_Name: ouverture_droite
-  m_TagString: Untagged
+  m_TagString: right
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3329,7 +3329,7 @@ GameObject:
   - component: {fileID: 65020897984561258}
   m_Layer: 0
   m_Name: ouverture_gauche
-  m_TagString: Untagged
+  m_TagString: left
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

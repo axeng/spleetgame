@@ -10,6 +10,10 @@ TagManager:
   - door_1_left
   - door_1_right
   - PauseGUI
+  - true
+  - false
+  - left
+  - right
   layers:
   - Default
   - TransparentFX
