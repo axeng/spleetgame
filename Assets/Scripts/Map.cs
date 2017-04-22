@@ -18,9 +18,10 @@ namespace Assets.Script
 
 		private List<Button> buttons;
 
-		private Vector3 spawnPoint;
+		private List<Vector3> spawnPoint;
 
-		public Map(List<MapConstructor> constructors, string name, MapType type, Vector3 spawnPoint) : this(name, type, spawnPoint)
+		public Map(List<MapConstructor> constructors, string name, MapType type, Vector3 spawnPoint) : this(constructors, name, type, new List<Vector3>(new Vector3[] {spawnPoint})){}
+        public Map(List<MapConstructor> constructors, string name, MapType type, List<Vector3> spawnPoint) : this(name, type, spawnPoint)
         {
 			int i = 0;
 			foreach (MapConstructor constructor in constructors)
@@ -28,7 +29,18 @@ namespace Assets.Script
 
 				if (i == 0)	
 				{
-					constructor.blocks.Add(new Block("FPSController", spawnPoint, 0));
+					if (Game.multi)
+					{
+						constructor.AddObject("Network/Network Manager");
+						foreach(Vector3 loc in spawnPoint)
+						{
+							constructor.blocks.Add(new Block("Network/SpawnPoint", loc, 0));
+						}
+					}
+					else
+					{
+						constructor.blocks.Add(new Block("FPSController", spawnPoint[0], 0));
+					}
 				}
 	
 				constructor.Construct();
@@ -36,10 +48,12 @@ namespace Assets.Script
 			}
         }
         
-		public Map(MapConstructor constructor, string name, MapType type, Vector3 spawnPoint) 
-			: this(new List<MapConstructor>(new MapConstructor[] {constructor}), name, type, spawnPoint){}
+        
+		public Map(MapConstructor constructor, string name, MapType type, Vector3 spawnPoint) : this(constructor, name, type, new List<Vector3>(new Vector3[] {spawnPoint})) {}
+		public Map(MapConstructor constructor, string name, MapType type, List<Vector3> spawnPoint) : this(new List<MapConstructor>(new MapConstructor[] {constructor}), name, type, spawnPoint){}
 		
-		public Map(string name, MapType type, Vector3 spawnPoint)
+		public Map(string name, MapType type, Vector3 spawnPoint) : this(name, type, new List<Vector3>(new Vector3[] {spawnPoint})) {}
+		public Map(string name, MapType type, List<Vector3> spawnPoint)
         {
         	this.name = name;
 			this.type = type;
@@ -52,7 +66,7 @@ namespace Assets.Script
 			this.buttons = new List<Button>();
 
 			this.spawnPoint = spawnPoint;
-        }       
+        }     
 
 		public List<Checkpoint> GetCheckpoints()
 		{
@@ -341,13 +355,13 @@ namespace Assets.Script
 					bl_Mapmulti.Add(new Block("plat/Lcorridor_plat_col", new Vector3(38f,0f,106f), new Vector3(0f, 0f, 0)));
 					bl_Mapmulti.Add(new Block("plat/Lcorridor_plat_col", new Vector3(28.7f,0f,82.5f), new Vector3(0f, 270f, 0)));
 					bl_Mapmulti.Add(new Block("plat/Icorridor_plat_col", new Vector3(62.2f,0f,70.9f), new Vector3(0f, 90f, 0)));
-					bl_Mapmulti.Add(new Block("plat/Door3D_plat_col", new Vector3(56.11f,2.26f,84.84608f), new Vector3(0f, 0f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Door3D_plat_col", new Vector3(56.11f,2.26f,84.84608f), new Vector3(0f, 0f, 0), "door_1"));
 					bl_Mapmulti.Add(new Block("plat/Icorridor_and_pik-plateforme", new Vector3(40.1f,0f,71.7f), new Vector3(0f, 90f, 0)));
-					bl_Mapmulti.Add(new Block("plat/Door3D_plat_col", new Vector3(3.420918f,2.4f,53.94f), new Vector3(0f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Door3D_plat_col", new Vector3(3.420918f,2.4f,53.94f), new Vector3(0f, 90f, 0), "door_2"));
 					bl_Mapmulti.Add(new Block("plat/Icorridor_and_pik-plateforme", new Vector3(83.7f,0f,71.7f), new Vector3(0f, 90f, 0)));
 					bl_Mapmulti.Add(new Block("plat/Icorridor_plat_col", new Vector3(83.4f,0f,47.7f), new Vector3(0f, 90f, 0)));
 					bl_Mapmulti.Add(new Block("plat/Lcorridor_plat_col", new Vector3(83.7f,0f,47.9f), new Vector3(0f, 90f, 0)));
-					bl_Mapmulti.Add(new Block("plat/Door3D_plat_col", new Vector3(65.62286f,2.3f,30.46f), new Vector3(0f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Door3D_plat_col", new Vector3(65.62286f,2.3f,30.46f), new Vector3(0f, 90f, 0), "door_3"));
 					bl_Mapmulti.Add(new Block("plat/Icorridor_plat_col", new Vector3(40.9f,10f,166.6f), new Vector3(0f, 90f, 0)));
 					bl_Mapmulti.Add(new Block("plat/Lcorridor_plat_col", new Vector3(73.9f,0f,24.5f), new Vector3(0f, 180f, 0)));
 					bl_Mapmulti.Add(new Block("plat/Icorridor_plat_col", new Vector3(83.11f,0f,144.4f), new Vector3(0f, 90f, 0)));

@@ -11,14 +11,17 @@ class Game : MonoBehaviour
 	
 	public static Map map;
 	public static Dictionary<string, Player> players;
+	public static bool multi;
 
 	public bool pause = false;
+	public bool multiplayer = false;
 
 	// Use this for initialization
 	void Start()
 	{
-
+		
 		players = new Dictionary<string, Player>();
+		multi = multiplayer;
 		
 		Scene scene = SceneManager.GetActiveScene();
 
@@ -43,10 +46,10 @@ class Game : MonoBehaviour
 				break;
 		}
 
-        map = Map.GetMap("Mapmulti");
+        map = Map.GetMap("mult");
 
 		//FIXME dont work with multiplayer
-		players.Add("Player1", new Player("Player1", GameObject.FindWithTag("Player"), map));
+		//players.Add("Player1", new Player("Player1", GameObject.FindWithTag("Player"), map));
 	}
 
 	// Update is called once per frame
