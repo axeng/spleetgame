@@ -57,7 +57,7 @@ namespace Assets.Script
 		//return true if obj is active or nonActive
 		public bool IsThisGameObject(GameObject obj)
 		{
-			return obj.tag == active.tag || obj.tag == nonActive.tag;
+			return obj.tag == active.tag || obj.tag == nonActive.tag || obj.name == active.name || obj.name == nonActive.name;
 		}
 
 		public void SetExecutable(Executable executable)
