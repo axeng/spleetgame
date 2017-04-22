@@ -15,13 +15,16 @@ namespace Assets.Script
         private Executable executable;// Contient une liste d'objet pouvant être activé avec les boutons
         private bool activate;
 
-		public Button(Executable e, GameObject active, GameObject nonActive)
+		private bool tag;
+
+		public Button(Executable e, GameObject active, GameObject nonActive, bool tag = true)
         {
 			this.active = active;
 			this.nonActive = nonActive;
 
             this.executable = e;
             this.activate = true;
+			this.tag = tag;
 			this.Push();
         }
 
@@ -57,7 +60,10 @@ namespace Assets.Script
 		//return true if obj is active or nonActive
 		public bool IsThisGameObject(GameObject obj)
 		{
-			return obj.tag == active.tag || obj.tag == nonActive.tag || obj.name == active.name || obj.name == nonActive.name;
+			if (tag)
+				return obj.tag == active.tag || obj.tag == nonActive.tag;
+			else
+				return obj.name == active.name || obj.name == nonActive.name;
 		}
 
 		public void SetExecutable(Executable executable)

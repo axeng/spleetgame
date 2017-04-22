@@ -9,17 +9,19 @@ namespace Assets.Script
     class Window : Executable
     {
 
+		private Animator anim;
 		private GameObject obj;
 
 		public Window(List<Button> listB, GameObject obj) : base(listB)
         {
 			this.obj = obj;
+			this.anim = this.obj.GetComponent<Animator>();
         }
 
 
         public override void Exec()
         {
-			this.obj.SetActive(!this.CheckButton());
+        	this.anim.SetBool("IsOpen", this.CheckButton());
         }
     }
 }
