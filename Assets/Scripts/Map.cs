@@ -67,11 +67,10 @@ namespace Assets.Script
 
 			foreach(string but in buts)
 			{
-				Debug.Log(but);
 				if (tag)
-					buttonsElement.Add(new Button(null, GameObject.FindWithTag(but + "_true"), GameObject.FindWithTag(but + "_false")));
+					buttonsElement.Add(new Button(null, GameObject.FindWithTag(but + "_true"), GameObject.FindWithTag(but + "_false"), tag));
 				else
-					buttonsElement.Add(new Button(null, GameObject.Find(but + "_true"), GameObject.Find(but + "_false")));
+					buttonsElement.Add(new Button(null, GameObject.Find(but + "_true"), GameObject.Find(but + "_false"), tag));
 			}
 
 			switch(type)
@@ -107,11 +106,9 @@ namespace Assets.Script
 		//call each time a laser hit an object
 		public void Shoot(GameObject gameObject)
 		{
-			Debug.Log("Shoot : "+gameObject.name+" - nb : "+buttons.Count);
 			Button b = null;
 			for (int i = 0; b == null && i < buttons.Count; i++)
 			{
-				Debug.Log(buttons[i].GetActive().name+" | "+buttons[i].GetNonActive().name);
 				if (buttons[i].IsThisGameObject(gameObject))
 					b = buttons[i];
 			}
