@@ -314,7 +314,51 @@ namespace Assets.Script
                     level2players.AddElement(new string[] { "button_2" }, "door_1", ExecType.DOOR, false);
                     level2players.AddElement(new string[] { "button_3", "button_4" }, "door_2", ExecType.DOOR, false);
                     return level2players;
+				
+				case "Mapmulti":
+					List<Block> bl_Mapmulti = new List<Block>();
+					bl_Mapmulti.Add(new Block("plat/Icorridor_plat_col", new Vector3(83.15989f,-0.161499f,95.89633f), new Vector3(0f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Scile_col", new Vector3(72.85621f,-3.202118f,108.5214f), new Vector3(0f, 270f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Icorridor_plat_col", new Vector3(83.15989f,-0.161499f,119.9214f), new Vector3(0f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Scile_col", new Vector3(70.25622f,1.157883f,113.2214f), new Vector3(90f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Scile_col", new Vector3(81.52622f,-3.252121f,113.2214f), new Vector3(0f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Lcorridor_plat_col", new Vector3(28.14f,0f,23.98f), new Vector3(0f, 180f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Icorridor_plat_col", new Vector3(-7.5f,0f,0f), new Vector3(0f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Icorridor_plat_col", new Vector3(-7.5f,0f,24f), new Vector3(0f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Tcorridor_plat_col", new Vector3(-19f,0f,36f), new Vector3(0f, 270f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Icorridor_plat_col", new Vector3(-7f,0f,96f), new Vector3(0f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Icorridor_plat_col", new Vector3(-7f,0f,72f), new Vector3(0f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Lcorridor_plat_col", new Vector3(40.1f,0f,47.9f), new Vector3(0f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Lcorridor_plat_col", new Vector3(-7f,0f,59.6f), new Vector3(0f, 0f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Lcorridor_plat_col", new Vector3(-18.9f,0f,107.8f), new Vector3(0f, 270f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Icorridor_plat_col", new Vector3(62.2f,0f,47.7f), new Vector3(0f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Icorridor_plat_col", new Vector3(39.8f,0f,47.7f), new Vector3(0f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Lcorridor_plat_col", new Vector3(40.9f,0f,143f), new Vector3(0f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Icorridor_and_pik-plateforme", new Vector3(17.1f,0f,131.3f), new Vector3(0f, 0f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Icorridor_plat_col", new Vector3(40.8f,0f,142.9f), new Vector3(0f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Mur_col", new Vector3(34.43f,4.34f,160.62f), new Vector3(0f, 180f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Mur_col", new Vector3(35.05f,16.4368f,182.4f), new Vector3(0f, 180f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Lcorridor_plat_col", new Vector3(38f,0f,106f), new Vector3(0f, 0f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Lcorridor_plat_col", new Vector3(28.7f,0f,82.5f), new Vector3(0f, 270f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Icorridor_plat_col", new Vector3(62.2f,0f,70.9f), new Vector3(0f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Door3D_plat_col", new Vector3(56.11f,2.26f,84.84608f), new Vector3(0f, 0f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Icorridor_and_pik-plateforme", new Vector3(40.1f,0f,71.7f), new Vector3(0f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Door3D_plat_col", new Vector3(3.420918f,2.4f,53.94f), new Vector3(0f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Icorridor_and_pik-plateforme", new Vector3(83.7f,0f,71.7f), new Vector3(0f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Icorridor_plat_col", new Vector3(83.4f,0f,47.7f), new Vector3(0f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Lcorridor_plat_col", new Vector3(83.7f,0f,47.9f), new Vector3(0f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Door3D_plat_col", new Vector3(65.62286f,2.3f,30.46f), new Vector3(0f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Icorridor_plat_col", new Vector3(40.9f,10f,166.6f), new Vector3(0f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Lcorridor_plat_col", new Vector3(73.9f,0f,24.5f), new Vector3(0f, 180f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Icorridor_plat_col", new Vector3(83.11f,0f,144.4f), new Vector3(0f, 90f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Mur_col", new Vector3(76.41833f,6.39f,161.016f), new Vector3(0f, 180f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Mur_col", new Vector3(-13.86f,5.68f,-15.3f), new Vector3(0f, 0f, 0)));
+					bl_Mapmulti.Add(new Block("plat/Icorridor_plat_col", new Vector3(-7.5f,0f,-12f), new Vector3(0f, 90f, 0)));
+					MapConstructor mc_Mapmulti = new MapConstructor(bl_Mapmulti);
+					Map Mapmulti = new Map(mc_Mapmulti, name, MapType.OTHER, new Vector3(-13,2,-9));
 
+					return Mapmulti;
+					break;
 
                 default:	
                     return null;
