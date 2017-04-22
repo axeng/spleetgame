@@ -22,7 +22,10 @@ public class GetMapCode : MonoBehaviour {
 						+ go.transform.position.x
 						+ "f," + go.transform.position.y
 						+ "f," + go.transform.position.z
-					+ "f)," + go.transform.rotation.eulerAngles.y+"f));\n";
+					+ "f), new Vector3(" 
+						+ go.transform.rotation.eulerAngles.x
+						+"f, "+go.transform.rotation.eulerAngles.y
+						+"f, "+go.transform.rotation.eulerAngles.z+")));\n";
 		}
 		
 		result += "MapConstructor mc_" + nameT + " = new MapConstructor(bl_" + nameT + ");\n";

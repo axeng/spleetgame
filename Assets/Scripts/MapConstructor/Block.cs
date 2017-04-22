@@ -6,13 +6,15 @@ namespace Assets.Script
 	{
 		private string type;
 		public Vector3 position { get; set; }
-		private float rotation;
+		private Vector3 rotation;
 
 		private string name;
 		
 		public Block(BlockType type, Vector3 position, float rotation, string name = "") : this (type + "_col", position, rotation, name){}
 		
-		public Block(string type, Vector3 position, float rotation, string name = "")
+		public Block(string type, Vector3 position, float rotation, string name = "") : this(type, position, new Vector3(0,rotation,0), name) {}
+		
+		public Block(string type, Vector3 position, Vector3 rotation, string name = "")
 		{
 			this.type = type;
 			this.position = position;
@@ -25,7 +27,7 @@ namespace Assets.Script
 			GameObject obj = UnityEngine.Object.Instantiate(
 				Resources.Load(this.type),
 				this.position, 
-				Quaternion.Euler(0.0f, rotation, 0.0f)) as GameObject;
+				Quaternion.Euler(rotation)) as GameObject;
 
 			if (name != "")
 			{
