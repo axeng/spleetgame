@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+#if (UNITY_EDITOR)
 using UnityEditor;
+#endif
 using UnityEngine;
 
 public class GetMapCode : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+	#if (UNITY_EDITOR)
 		GameObject obj = gameObject;
 		string nameT = obj.name.Replace(" ", "");
 		string result = "";
@@ -33,6 +36,7 @@ public class GetMapCode : MonoBehaviour {
 		result += "return " + nameT + ";\n";
 		
 		Debug.Log(result);
+	#endif
 	}
 	
 	// Update is called once per frame
