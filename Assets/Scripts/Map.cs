@@ -135,7 +135,41 @@ namespace Assets.Script
                     MapTest.Add(new Block(BlockType.Icorridor, new Vector3(36, 0, -24), -90));
                     MapTest.Add(new Block(BlockType.Door3D, new Vector3(6, 2, -6), 90));
                     MapTest.Add(new Block(BlockType.Lcorridor, new Vector3(60, 0, -60), 180));
-                    MapTest.Add(new Block(BlockType.Enigme1, new Vector3(91, 23, -71), 180));
+                    //MapTest.Add(new Block(BlockType.Enigme1, new Vector3(91, 23, -71), 180));	
+					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(117.05f,0.1300011f,-59.97f), new Vector3(0f, 88.00001f, 0)));
+					MapTest.Add(new Block("FloorNeonAlea_col", new Vector3(107f,0.1244316f,-60.02477f), new Vector3(0f, 180f, 0)));
+					MapTest.Add(new Block("Lcorridor2_col", new Vector3(106.1292f,0.1244316f,-84.1f), new Vector3(0f, 180f, 0)));
+					MapTest.Add(new Block("FloorNeonAlea_col", new Vector3(106.1292f,0.1244316f,-84.02477f), new Vector3(0f, 180f, 0)));
+					MapTest.Add(new Block("Lcorridor2_col", new Vector3(83.1f,0.1244316f,-48.1f), new Vector3(0f, 270f, 0)));
+					MapTest.Add(new Block("Lcorridor2_col", new Vector3(118f,0.1244316f,-24.2f), new Vector3(0f, 0f, 0)));
+					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(105.5f,0.6415367f,-74f), new Vector3(0f, 88.00001f, 0)));
+					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(98.84f,0.1400013f,-60.18f), new Vector3(0f, 88.00001f, 0)));
+					MapTest.Add(new Block("Icorridor2_col", new Vector3(107.0792f,0.1244316f,-48.01477f), new Vector3(0f, 270f, 0)));
+					MapTest.Add(new Block("Icorridor_col", new Vector3(106.2292f,0.1244316f,-96.12477f), new Vector3(0f, 270f, 0)));
+					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(111f,0.6415367f,-73.8f), new Vector3(0f, 88.00001f, 0)));
+					MapTest.Add(new Block("windows3D_col", new Vector3(111.9092f,8.923815f,-89.37477f), new Vector3(0f, 180f, 0)));
+					MapTest.Add(new Block("FloorNeonAlea_col", new Vector3(83.1f,0.1244316f,-60.02477f), new Vector3(0f, 180f, 0)));
+					MapTest.Add(new Block("FloorNeonAlea_col", new Vector3(130.9f,0.1244316f,-60.02477f), new Vector3(0f, 180f, 0)));
+					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(106.5992f,0.2138081f,-60.05003f), new Vector3(0f, 180f, 0)));
+					MapTest.Add(new Block("Icorridor_col", new Vector3(59.72915f,0.1244316f,-59.92477f), new Vector3(0f, 180f, 0)));
+					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(117.8292f,0.3138084f,-48.24477f), new Vector3(0f, 0f, 0)));
+					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(117.8292f,0.3138084f,-65.76f), new Vector3(0f, 0f, 0)));
+					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(107.0792f,0.04380798f,-42.04477f), new Vector3(0f, 180f, 0)));
+					MapTest.Add(new Block("windows3D_col", new Vector3(147.4f,8.923815f,-77.5f), new Vector3(0f, 270f, 0)));
+					MapTest.Add(new Block("Icorridor_col", new Vector3(153.9f,0.1244316f,-83.2f), new Vector3(0f, 180f, 0)));
+					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(117.8292f,0.3138084f,-71.9f), new Vector3(0f, 0f, 0)));
+					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(117.8292f,0.3138084f,-89.74f), new Vector3(0f, 0f, 0)));
+					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(123.3f,0.3138084f,-83.4f), new Vector3(0f, 0f, 0)));
+					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(123.3f,0.3138084f,-77.3f), new Vector3(0f, 0f, 0)));
+					MapTest.Add(new Block("Button", new Vector3(113.0092f,10.11381f,-101.2148f), new Vector3(0f, 180f, 0)));
+					MapTest.Add(new Block("Button", new Vector3(146.5f,5.550602f,-37.2305f), new Vector3(0f, 270f, 0)));
+					MapTest.Add(new Block("Button", new Vector3(79.53915f,9.683808f,-43.08684f), new Vector3(0f, 270f, 0)));
+					MapTest.Add(new Block("Button", new Vector3(151.2691f,10.02381f,-76.16476f), new Vector3(0f, 270f, 0)));
+					MapTest.Add(new Block("Button", new Vector3(109.9093f,3.955154f,-19.51477f), new Vector3(0f, 180f, 0)));
+					MapTest.Add(new Block("Icorridor2_col", new Vector3(142.1392f,0.1244316f,-60.02477f), new Vector3(0f, 90f, 0)));
+					MapTest.Add(new Block("Door3D_col", new Vector3(146.7791f,2.87381f,-53.90477f), new Vector3(0f, 270f, 0)));
+					MapTest.Add(new Block("Icorridor_col", new Vector3(154.6692f,0.1244316f,-59.79901f), new Vector3(0f, 180f, 0)));
+					
                     MapConstructor test1 = new MapConstructor(MapTest);
 
                     return new Map(test1, "oklolsalut", MapType.TEST);
@@ -168,7 +202,7 @@ namespace Assets.Script
 					return plat1;
                     break;
 
-                default:
+                default:	
                     return null;
                     break;
             }
