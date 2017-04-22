@@ -9,6 +9,8 @@ namespace Assets.Script
 		public List<Block> blocks { get; set; }
 		private List<string> objects;
 
+		private List<GameObject> all;
+
 		private int xDec;
 		private int yDec;
 		private int zDec;
@@ -22,6 +24,8 @@ namespace Assets.Script
 			this.zDec = zDec;
 
 			objects = new List<string>();
+
+			all = new List<GameObject>();
 		}
 
 		public void AddObject(string obj)
@@ -35,11 +39,17 @@ namespace Assets.Script
 			foreach(Block b in blocks)
 			{
 				b.position.Set(b.position.x + xDec, b.position.y + yDec, b.position.z + zDec);
-				b.Place();
+				all.Add(b.Place());
 			}
 
 			foreach (string obj in objects)
-				UnityEngine.Object.Instantiate(Resources.Load(obj));
+				all.Add(UnityEngine.Object.Instantiate(Resources.Load(obj)) as GameObject);
+		}
+		
+		public void DeConstruct()
+		{
+			foreach (GameObject obj in all)
+				UnityEngine.Object.DestroyImmediate(obj);
 		}
 	}
 }

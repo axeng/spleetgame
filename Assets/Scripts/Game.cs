@@ -115,4 +115,10 @@ class Game : MonoBehaviour
 			Debug.LogWarning("Error when trying to save : "+e.GetType());
 		}
 	}
+	
+	public void LoadMap(string name)
+	{
+		map.DestroyObjects();
+		map = Map.GetMap(name);
+	}
 }

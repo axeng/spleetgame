@@ -20,6 +20,8 @@ namespace Assets.Script
 
 		private List<Vector3> spawnPoint;
 
+		private List<MapConstructor> constructors;
+
 		public Map(List<MapConstructor> constructors, string name, MapType type, Vector3 spawnPoint) : this(constructors, name, type, new List<Vector3>(new Vector3[] {spawnPoint})){}
         public Map(List<MapConstructor> constructors, string name, MapType type, List<Vector3> spawnPoint) : this(name, type, spawnPoint)
         {
@@ -46,6 +48,8 @@ namespace Assets.Script
 				constructor.Construct();
 				i++;
 			}
+
+			this.constructors = constructors;
         }
         
         
@@ -66,6 +70,8 @@ namespace Assets.Script
 			this.buttons = new List<Button>();
 
 			this.spawnPoint = spawnPoint;
+
+			this.constructors = new List<MapConstructor>();
         }     
 
 		public List<Checkpoint> GetCheckpoints()
@@ -151,6 +157,18 @@ namespace Assets.Script
 				b.Push();
 				b.Exec();
 			}
+		}
+		
+		public void DestroyObjects()
+		{
+			foreach (MapConstructor constructor in constructors)
+				constructor.DeConstruct();
+				
+			this.checkpoints.Clear();
+			this.executables.Clear();
+			this.buttons.Clear();
+			this.spawnPoint.Clear();
+			this.constructors.Clear();
 		}
 
         public static Map GetMap(string name)
@@ -323,7 +341,7 @@ namespace Assets.Script
 
 
                     MapConstructor mc_level2players = new MapConstructor(mult);
-                    Map level2players = new Map(mc_level2players, name, MapType.OTHER, new Vector3(0,0,0));
+                    Map level2players = new Map(mc_level2players, name, MapType.OTHER, new List<Vector3>(new Vector3[]{new Vector3(2.2f, 2.33f, -6.705f), new Vector3(2.2f, 2.33f, 18.5f)}));
                     level2players.AddElement(new string[] { "button_1"}, "window_1", ExecType.WINDOW, false);
                     level2players.AddElement(new string[] { "button_2" }, "door_1", ExecType.DOOR, false);
                     level2players.AddElement(new string[] { "button_3", "button_4" }, "door_2", ExecType.DOOR, false);

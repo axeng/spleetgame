@@ -22,7 +22,7 @@ namespace Assets.Script
 			this.name = name;
 		}
 		
-		public void Place()
+		public GameObject Place()
 		{
 			GameObject obj = UnityEngine.Object.Instantiate(
 				Resources.Load(this.type),
@@ -55,6 +55,8 @@ namespace Assets.Script
 					}
 				}
 			}
+
+			return obj;
 		}
 
         public override string ToString()
