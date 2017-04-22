@@ -173,8 +173,7 @@ namespace Assets.Script
 					MapTest.Add(new Block("Icorridor2_col", new Vector3(107.0792f,0.1244316f,-48.01477f), new Vector3(0f, 270f, 0)));
 					MapTest.Add(new Block("Icorridor_col", new Vector3(106.2292f,0.1244316f,-96.12477f), new Vector3(0f, 270f, 0)));
 					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(147.16f,6.5f,-89.54f), new Vector3(0f, 0f, 0)));
-					MapTest.Add(new Block("windows3D_col", new Vector3(111.9092f,8.923815f,-89.37477f), new Vector3(0f, 180f, 0), "window_1"));
-					MapTest.Add(new Block("FloorNeonAlea_col", new Vector3(83.1f,0.1244316f,-60.02477f), new Vector3(0f, 180f, 0)));
+                    MapTest.Add(new Block("windows3D_col", new Vector3(111.9092f, 8.5f, -89.37477f), new Vector3(0f, 180f, 0), "window_1")); MapTest.Add(new Block("FloorNeonAlea_col", new Vector3(83.1f,0.1244316f,-60.02477f), new Vector3(0f, 180f, 0)));
 					MapTest.Add(new Block("FloorNeonAlea_col", new Vector3(130.9f,0.1244316f,-60.02477f), new Vector3(0f, 180f, 0)));
 					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(111.81f,6.5f,-103f), new Vector3(0f, 90f, 0)));
 					MapTest.Add(new Block("Icorridor_col", new Vector3(59.72915f,0.1244316f,-59.92477f), new Vector3(0f, 180f, 0)));
