@@ -6,7 +6,7 @@ namespace Assets.Script
 {
 	public class MapConstructor
 	{
-		private List<Block> blocks;
+		public List<Block> blocks { get; set; }
 		private List<string> objects;
 
 		private int xDec;

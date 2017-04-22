@@ -22,8 +22,18 @@ namespace Assets.Script
 
 		public Map(List<MapConstructor> constructors, string name, MapType type, Vector3 spawnPoint) : this(name, type, spawnPoint)
         {
-			foreach(MapConstructor constructor in constructors)
+			int i = 0;
+			foreach (MapConstructor constructor in constructors)
+			{
+
+				if (i == 0)	
+				{
+					constructor.blocks.Add(new Block("FPSController", spawnPoint, 0));
+				}
+	
 				constructor.Construct();
+				i++;
+			}
         }
         
 		public Map(MapConstructor constructor, string name, MapType type, Vector3 spawnPoint) 
