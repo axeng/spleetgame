@@ -71,7 +71,7 @@ namespace Assets.Script
 				if (tag)
 					buttonsElement.Add(new Button(null, GameObject.FindWithTag(but + "_true"), GameObject.FindWithTag(but + "_false")));
 				else
-					buttonsElement.Add(new Button(null, GameObject.Find(but + "_true"), GameObject.Find(but).transform.Find(but + "_false")));
+					buttonsElement.Add(new Button(null, GameObject.Find(but + "_true"), GameObject.Find(but + "_false")));
 			}
 
 			switch(type)
