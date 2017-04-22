@@ -7,6 +7,7 @@ namespace Assets.Script
 	public class MapConstructor
 	{
 		private List<Block> blocks;
+		private List<string> objects;
 
 		private int xDec;
 		private int yDec;
@@ -19,6 +20,13 @@ namespace Assets.Script
 			this.xDec = xDec;
 			this.yDec = yDec;
 			this.zDec = zDec;
+
+			objects = new List<string>();
+		}
+
+		public void AddObject(string obj)
+		{
+			objects.Add(obj);
 		}
 
 		//Construct the MapConstructor
@@ -26,8 +34,12 @@ namespace Assets.Script
 		{
 			foreach(Block b in blocks)
 			{
+				b.position.Set(b.position.x + xDec, b.position.y + yDec, b.position.z + zDec);
 				b.Place();
 			}
+
+			foreach (string obj in objects)
+				UnityEngine.Object.Instantiate(Resources.Load(obj));
 		}
 	}
 }
