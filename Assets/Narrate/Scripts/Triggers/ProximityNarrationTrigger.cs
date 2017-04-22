@@ -29,9 +29,10 @@ namespace Narrate {
                                  /// </summary>
         void Awake() {
             if (triggeredBy == null) {
-                Debug.LogWarning("ProximityNarrationTrigger Warning: " + this.gameObject.name +
-                    " has no TriggeredBy object and will never fire unless one is assigned. Disabling script.");
-                this.enabled = false;
+				//Debug.LogWarning("ProximityNarrationTrigger Warning: " + this.gameObject.name +
+                //    " has no TriggeredBy object and will never fire unless one is assigned. Disabling script.");
+                //this.enabled = false;
+				triggeredBy = GameObject.FindWithTag("Player").transform;
             }
         }
         void OnEnable() {

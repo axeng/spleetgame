@@ -227,6 +227,10 @@ namespace Assets.Script
                     Map.Add(new Block("plat/Door3D_plat_col", new Vector3(-31, 2, -41), 0, "door_1"));
                     Map.Add(new Block("plat/corridoirscile", new Vector3(-74, -84, -8), 0));
                     MapConstructor test2 = new MapConstructor(Map);
+					test2.AddObject("Subtitles/NarrationSystem");
+					test2.AddObject("Subtitles/Subtitle_gun");
+					test2.AddObject("Subtitles/Subtitle_introduction");
+					test2.AddObject("Subtitles/NarrationSystem");
 					
                     Map plat1 = new Map(test2, name, MapType.TEST, new Vector3(0, 2.33f, -6.2f));
 					plat1.AddElement(new string[] { "button_1" }, "door_1", ExecType.DOOR, false);
