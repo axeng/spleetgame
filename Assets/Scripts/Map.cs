@@ -188,10 +188,10 @@ namespace Assets.Script
 					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(152.91f,6.5f,-83.02f), new Vector3(0f, 0f, 0)));
 					MapTest.Add(new Block("Button", new Vector3(113.0092f,10.11381f,-101.2148f), new Vector3(0f, 180f, 0), "button_1"));
 					MapTest.Add(new Block("Button", new Vector3(146.5f,5.550602f,-37.2305f), new Vector3(0f, 270f, 0), "button_2"));
-					MapTest.Add(new Block("Button", new Vector3(79.53915f,9.683808f,-43.08684f), new Vector3(0f, 270f, 0), "button_3"));
+					MapTest.Add(new Block("Button", new Vector3(79.2f,9.683808f,-43.08684f), new Vector3(0f, 270f, 0), "button_3"));
 					MapTest.Add(new Block("Button", new Vector3(151.2691f,10.02381f,-76.16476f), new Vector3(0f, 270f, 0), "button_4"));
 					MapTest.Add(new Block("Button", new Vector3(109.9093f,3.955154f,-19.51477f), new Vector3(0f, 180f, 0), "button_5"));
-                    MapTest.Add(new Block("Button", new Vector3(109.9093f, 3.955154f, -19.51477f), new Vector3(0f, 180f, 0), "button_6"));
+                    MapTest.Add(new Block("Button", new Vector3(76.53f, 2.91f, -57.12f), new Vector3(0f, 90f, 0), "button_6"));
                     MapTest.Add(new Block("Icorridor2_col", new Vector3(142.1392f,0.1244316f,-60.02477f), new Vector3(0f, 90f, 0)));
 					MapTest.Add(new Block("Door3D_col", new Vector3(146.7791f,2.87381f,-53.90477f), new Vector3(0f, 270f, 0), "door_2"));
 					MapTest.Add(new Block("Icorridor_col", new Vector3(154.6692f,0.1244316f,-59.79901f), new Vector3(0f, 180f, 0)));
@@ -225,7 +225,7 @@ namespace Assets.Script
                     Map.Add(new Block("plat/Tcorridor_plat_col", new Vector3(-48, 0, 0), 0));
                     Map.Add(new Block("plat/Door3D_plat_col", new Vector3(4, 2, -6), 90));
                     Map.Add(new Block("plat/Door3D_plat_col", new Vector3(-31, 2, -41), 0, "door_1"));
-                    Map.Add(new Block("plat/corridoirscile", new Vector3(-74, -84, -8), 0));
+                    Map.Add(new Block("plat/corridoirscile", new Vector3(-74, -84.3f, -8), 0));
                     MapConstructor test2 = new MapConstructor(Map);
 					test2.AddObject("Subtitles/NarrationSystem");
 					test2.AddObject("Subtitles/Subtitle_gun");
