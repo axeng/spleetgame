@@ -146,7 +146,8 @@ namespace Assets.Script
                     MapTest.Add(new Block(BlockType.Icorridor, new Vector3(24, 0, 0), 0));
                     MapTest.Add(new Block(BlockType.Lcorridor, new Vector3(24, 0, 0), 0));
                     MapTest.Add(new Block(BlockType.Icorridor, new Vector3(36, 0, -24), -90));
-                    MapTest.Add(new Block(BlockType.Door3D, new Vector3(6, 2, -6), 90, "door_1"));
+                    MapTest.Add(new Block(BlockType.Door3D, new Vector3(-17, 2, -6), 90, "door_1"));
+                    MapTest.Add(new Block(BlockType.Door3D, new Vector3(77, 2, -54), 90, "door_3"));
                     MapTest.Add(new Block(BlockType.Lcorridor, new Vector3(60, 0, -60), 180));
                     //MapTest.Add(new Block(BlockType.Enigme1, new Vector3(91, 23, -71), 180));			
 					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(147.16f,6.5f,-48.244f), new Vector3(0f, 0f, 0)));
@@ -179,7 +180,8 @@ namespace Assets.Script
 					MapTest.Add(new Block("Button", new Vector3(79.53915f,9.683808f,-43.08684f), new Vector3(0f, 270f, 0), "button_3"));
 					MapTest.Add(new Block("Button", new Vector3(151.2691f,10.02381f,-76.16476f), new Vector3(0f, 270f, 0), "button_4"));
 					MapTest.Add(new Block("Button", new Vector3(109.9093f,3.955154f,-19.51477f), new Vector3(0f, 180f, 0), "button_5"));
-					MapTest.Add(new Block("Icorridor2_col", new Vector3(142.1392f,0.1244316f,-60.02477f), new Vector3(0f, 90f, 0)));
+                    MapTest.Add(new Block("Button", new Vector3(109.9093f, 3.955154f, -19.51477f), new Vector3(0f, 180f, 0), "button_6"));
+                    MapTest.Add(new Block("Icorridor2_col", new Vector3(142.1392f,0.1244316f,-60.02477f), new Vector3(0f, 90f, 0)));
 					MapTest.Add(new Block("Door3D_col", new Vector3(146.7791f,2.87381f,-53.90477f), new Vector3(0f, 270f, 0), "door_2"));
 					MapTest.Add(new Block("Icorridor_col", new Vector3(154.6692f,0.1244316f,-59.79901f), new Vector3(0f, 180f, 0)));
 					
@@ -189,7 +191,8 @@ namespace Assets.Script
                     map1.AddElement(new string[] { "button_3", "button_5", "button_2" }, "window_1", ExecType.WINDOW, false);
 					map1.AddElement(new string[] { "button_1" }, "window_2", ExecType.WINDOW, false);
 					map1.AddElement(new string[] { "button_4" }, "door_2", ExecType.DOOR, false);
-					return map1;
+                    map1.AddElement(new string[] { "button_6" }, "door_3", ExecType.DOOR, false);
+                    return map1;
                     break;
 
                 case "plat1":
