@@ -24,7 +24,7 @@ class Game : MonoBehaviour
 		switch (scene.name)
 		{
 			case "Level1":
-				map = new Map("Level1", MapType.TEST);
+				map = new Map("Level1", MapType.TEST, new Vector3(0,0,0));
 
 				map.AddElement(new string[] { "button_1" }, "door_1", ExecType.DOOR);
 				map.AddElement(new string[] { "button_2", "button_3" }, "window_1", ExecType.WINDOW);
@@ -35,14 +35,14 @@ class Game : MonoBehaviour
 				break;
 
 			case "DemoScene":
-				map = new Map("DemoScene", MapType.TEST);
+				map = new Map("DemoScene", MapType.TEST, new Vector3(0,0,0));
 
 				map.AddElement(new string[] { "button_1", "button_2", "button_3" }, "door_1", ExecType.DOOR);
 				map.AddElement(new string[] { "button_4" }, "window_1", ExecType.WINDOW);
 				break;
 
 			case "initscene":
-				map = new Map("initscene", MapType.TEST);
+				map = new Map("initscene", MapType.TEST, new Vector3(0,0,0));
 
 				map.AddElement(new string[] { "button_1" }, "door_1", ExecType.DOOR);
 

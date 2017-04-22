@@ -18,16 +18,18 @@ namespace Assets.Script
 
 		private List<Button> buttons;
 
-		public Map(List<MapConstructor> constructors, string name, MapType type) : this(name, type)
+		private Vector3 spawnPoint;
+
+		public Map(List<MapConstructor> constructors, string name, MapType type, Vector3 spawnPoint) : this(name, type, spawnPoint)
         {
 			foreach(MapConstructor constructor in constructors)
 				constructor.Construct();
         }
         
-		public Map(MapConstructor constructor, string name, MapType type) 
-			: this(new List<MapConstructor>(new MapConstructor[] {constructor}), name, type){}
+		public Map(MapConstructor constructor, string name, MapType type, Vector3 spawnPoint) 
+			: this(new List<MapConstructor>(new MapConstructor[] {constructor}), name, type, spawnPoint){}
 		
-		public Map(string name, MapType type)
+		public Map(string name, MapType type, Vector3 spawnPoint)
         {
         	this.name = name;
 			this.type = type;
@@ -38,6 +40,11 @@ namespace Assets.Script
 			this.executables = new List<Executable>();
 
 			this.buttons = new List<Button>();
+
+			if (spawnPoint == null)
+				this.spawnPoint = new Vector3(0, 0, 0);
+			else
+				this.spawnPoint = spawnPoint;
         }       
 
 		public List<Checkpoint> GetCheckpoints()
@@ -130,7 +137,7 @@ namespace Assets.Script
                     testB.Add(new Block(BlockType.Icorridor, new Vector3(24, 0, 0), 0));
                     MapConstructor test = new MapConstructor(testB);
 
-                    return new Map(test, "oklolsalut", MapType.TEST);
+                    return new Map(test, "oklolsalut", MapType.TEST, new Vector3(0,0,0));
                     break;
 
                 case "map1":
@@ -178,7 +185,7 @@ namespace Assets.Script
 					
                     MapConstructor test1 = new MapConstructor(MapTest);
 
-                    Map map1 = new Map(test1, "oklolsalut", MapType.TEST);
+                    Map map1 = new Map(test1, "oklolsalut", MapType.TEST, new Vector3(0,0,0));
                     map1.AddElement(new string[] { "button_3", "button_5", "button_2" }, "window_1", ExecType.WINDOW, false);
 					map1.AddElement(new string[] { "button_1" }, "window_2", ExecType.WINDOW, false);
 					map1.AddElement(new string[] { "button_4" }, "door_2", ExecType.DOOR, false);
@@ -207,7 +214,7 @@ namespace Assets.Script
                     Map.Add(new Block("plat/corridoirscile", new Vector3(-74, -84, -8), 0));
                     MapConstructor test2 = new MapConstructor(Map);
 					
-                    Map plat1 = new Map(test2, "oklolsalut", MapType.TEST);
+                    Map plat1 = new Map(test2, "oklolsalut", MapType.TEST, new Vector3(0,0,0));
 					plat1.AddElement(new string[] { "button_1" }, "door_1", ExecType.DOOR, false);
 					return plat1;
                     break;
