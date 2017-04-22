@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using Assets.Script;
@@ -86,5 +87,29 @@ class Game : MonoBehaviour
 			Time.timeScale = 1.0f;
 		
 		GameObject.FindWithTag("PauseGUI").transform.GetChild(0).gameObject.SetActive(pause);
+	}
+	
+	public void Save()
+	{
+		/*if (!Directory.Exists("saves"))
+		{
+			Directory.CreateDirectory("saves");
+		}*/
+		string toSave = "";
+
+		toSave += "MAP:" + map.GetName() + "\n";
+
+		//FIXME multiplayer
+		Vector3 check = players["Player1"].GetCurrentCheckpoint();
+		toSave += "LASTCHECK:" + check.x + "," + check.y + "," + check.z + "\n";
+
+		try
+		{
+			File.WriteAllText("save.txt", toSave);
+		}
+		catch(Exception e)
+		{
+			Debug.LogWarning("Error when trying to save : "+e.GetType());
+		}
 	}
 }

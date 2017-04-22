@@ -68,6 +68,11 @@ namespace Assets.Script
             this.map = m;
         }
 
+		public Vector3 GetCurrentCheckpoint()
+		{
+			return this.currentCheckpoint;
+		}
+
 		public void SetCurrentCheckpoint(Vector3 vector)
 		{
 			this.currentCheckpoint = vector;

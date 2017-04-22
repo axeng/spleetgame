@@ -72,6 +72,11 @@ namespace Assets.Script
 		{
 			return this.buttons;
 		}
+		
+		public string GetName()
+		{
+			return this.name;
+		}
 
 		//add an element
 		//AddElement(new string[] { "button_1" }, "door_1", ExecType.DOOR);
@@ -144,7 +149,7 @@ namespace Assets.Script
                     testB.Add(new Block(BlockType.Icorridor, new Vector3(24, 0, 0), 0));
                     MapConstructor test = new MapConstructor(testB);
 
-                    return new Map(test, "oklolsalut", MapType.TEST, new Vector3(0,0,0));
+                    return new Map(test, name, MapType.TEST, new Vector3(0,0,0));
                     break;
 
                 case "map1":
@@ -194,7 +199,7 @@ namespace Assets.Script
 					
                     MapConstructor test1 = new MapConstructor(MapTest);
 
-                    Map map1 = new Map(test1, "oklolsalut", MapType.TEST, new Vector3(0,0,0));
+                    Map map1 = new Map(test1, name, MapType.TEST, new Vector3(2,2,-6));
                     map1.AddElement(new string[] { "button_3", "button_5", "button_2" }, "window_1", ExecType.WINDOW, false);
 					map1.AddElement(new string[] { "button_1" }, "window_2", ExecType.WINDOW, false);
 					map1.AddElement(new string[] { "button_4" }, "door_2", ExecType.DOOR, false);
@@ -224,7 +229,7 @@ namespace Assets.Script
                     Map.Add(new Block("plat/corridoirscile", new Vector3(-74, -84, -8), 0));
                     MapConstructor test2 = new MapConstructor(Map);
 					
-                    Map plat1 = new Map(test2, "oklolsalut", MapType.TEST, new Vector3(0,0,0));
+                    Map plat1 = new Map(test2, name, MapType.TEST, new Vector3(0,0,0));
 					plat1.AddElement(new string[] { "button_1" }, "door_1", ExecType.DOOR, false);
 					return plat1;
                     break;
@@ -301,7 +306,7 @@ namespace Assets.Script
 
 
                     MapConstructor mc_level2players = new MapConstructor(mult);
-                    Map level2players = new Map(mc_level2players, "level2players", MapType.OTHER, new Vector3(0,0,0));
+                    Map level2players = new Map(mc_level2players, name, MapType.OTHER, new Vector3(0,0,0));
                     level2players.AddElement(new string[] { "button_1"}, "window_1", ExecType.WINDOW, false);
                     level2players.AddElement(new string[] { "button_2" }, "door_1", ExecType.DOOR, false);
                     level2players.AddElement(new string[] { "button_3", "button_4" }, "door_2", ExecType.DOOR, false);
