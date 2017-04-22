@@ -219,6 +219,85 @@ namespace Assets.Script
 					return plat1;
                     break;
 
+
+                case "mult":
+                    List<Block> mult = new List<Block>();
+                    mult.Add(new Block("Button", new Vector3(-30.97742f, 9.839996f, 63.16f), new Vector3(0f, 0f, 0), "button_2"));
+                    mult.Add(new Block("Button", new Vector3(-49.308f, 16.88f, 7.010864f), new Vector3(90f, 0f, 0), "button_4"));
+                    mult.Add(new Block("Button", new Vector3(-63.28f, 21.37077f, -33.07411f), new Vector3(0f, 270f, 0), "button_3"));
+                    mult.Add(new Block("Button", new Vector3(-24.53563f, 12.91f, -35.85709f), new Vector3(90f, 0f, 0), "button_1"));
+                    mult.Add(new Block("Plateforme_col", new Vector3(-24.38943f, -3.800003f, 27.94241f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Mur", new Vector3(5.152161f, 17.9935f, 18f), new Vector3(0f, 270f, 0)));
+                    mult.Add(new Block("Mur", new Vector3(-6f, 18.51711f, 24.1f), new Vector3(0f, 180f, 0)));
+                    mult.Add(new Block("Mur", new Vector3(-6.186554f, 18.51711f, 11.55272f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Mur", new Vector3(-17.8f, 18.51711f, 40.6f), new Vector3(0f, 270f, 0)));
+                    mult.Add(new Block("Mur", new Vector3(-53.10001f, 18.51711f, 52.61f), new Vector3(0f, 180f, 0)));
+                    mult.Add(new Block("Mur", new Vector3(-65.3f, 18.35001f, -5.979996f), new Vector3(0f, 90f, 0)));
+                    mult.Add(new Block("Icorridor2_col", new Vector3(-36.10001f, 0f, 11.10001f), new Vector3(0f, 180f, 0)));
+                    mult.Add(new Block("Lcorridor2_col", new Vector3(-60f, 0f, 23f), new Vector3(0f, 270f, 0)));
+                    mult.Add(new Block("Icorridor3x6_col", new Vector3(-23.98f, 7.309998f, 64.56f), new Vector3(0f, 270f, 0)));
+                    mult.Add(new Block("Icorridor3x6_col", new Vector3(-30f, 7.139999f, 65.11f), new Vector3(0f, 270f, 0)));
+                    mult.Add(new Block("Icorridor_col", new Vector3(-24.8f, 0.5f, 59.5f), new Vector3(0f, 90f, 0)));
+                    mult.Add(new Block("Icorridor3x6_col", new Vector3(-18.75999f, 6.490005f, 52.65f), new Vector3(0f, 270f, 0)));
+                    mult.Add(new Block("windows3D_col", new Vector3(-30.59f, 8.529999f, 52.93f), new Vector3(0f, 0f, 0),"window_1"));
+                    mult.Add(new Block("Mur", new Vector3(-19.00999f, 18.55f, -30.72f), new Vector3(0f, 270f, 0)));
+                    mult.Add(new Block("Door3D_col", new Vector3(-41f, 14.21001f, -30.11f), new Vector3(0f, 90f, 0), "door_1"));
+                    mult.Add(new Block("Icorridor3x6_col", new Vector3(-42.45999f, 18.24001f, -41.5f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Icorridor3x6_col", new Vector3(-42.60001f, 18.22f, -24.63f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Mur", new Vector3(-53.49001f, 18.19f, -20.8f), new Vector3(0f, 180f, 0)));
+                    mult.Add(new Block("Lcorridor2_col", new Vector3(-23.92f, 0f, -12f), new Vector3(0f, 90f, 0)));
+                    mult.Add(new Block("Plateforme_col", new Vector3(-27.63103f, -4.300003f, -19.16389f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Icorridor2_col", new Vector3(-48f, 0f, 47.9f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("FloorNeonAlea_col", new Vector3(-24.03f, 0f, 0.08171082f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Icorridor3x6_col", new Vector3(-18.02f, 6.399994f, 5.869995f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Door3D_col", new Vector3(5.059998f, 2.410004f, -6.039993f), new Vector3(0f, 90f, 0)));
+                    mult.Add(new Block("Icorridor_col", new Vector3(0f, 0f, 23.91555f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Icorridor_col", new Vector3(0f, 0f, 0f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Door3D_col", new Vector3(5.059998f, 2.410004f, 18.2f), new Vector3(0f, 90f, 0)));
+                    mult.Add(new Block("Icorridor3x6_col", new Vector3(-18.02f, 6.399994f, -0.07000732f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Icorridor3x6_col", new Vector3(-18.02f, 6.399994f, -18.31f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Icorridor3x6_col", new Vector3(-18.02f, 6.399994f, 24f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("FloorNeonAlea_col", new Vector3(-24.03f, 0f, 23.9f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Plateforme_col", new Vector3(-34.2f, 0.7700043f, -29.10001f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Plateforme_col", new Vector3(-24.60001f, 4.5f, -34.2f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Lcorridor2_col", new Vector3(-35f, 12f, -35.89999f), new Vector3(0f, 180f, 0)));
+                    mult.Add(new Block("Icorridor3x6_col", new Vector3(-40.7f, 18.22f, -18.47f), new Vector3(0f, 180f, 0)));
+                    mult.Add(new Block("Icorridor3x6_col", new Vector3(-40.54001f, 18.24001f, -35.84f), new Vector3(0f, 180f, 0)));
+                    mult.Add(new Block("Mur", new Vector3(-53.49001f, 18.19f, -18.7f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Icorridor3x6_col", new Vector3(-18.02f, 18.39999f, -18.31f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Mur", new Vector3(-30.50999f, 18.55f, -42.11f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Icorridor3x6_col", new Vector3(-36.31f, 6.490005f, 52.65f), new Vector3(0f, 270f, 0)));
+                    mult.Add(new Block("Icorridor2_col", new Vector3(-36.10001f, 0f, -12.2f), new Vector3(0f, 180f, 0)));
+                    mult.Add(new Block("Mur", new Vector3(-65.3f, 18.35001f, 18.02f), new Vector3(0f, 90f, 0)));
+                    mult.Add(new Block("Mur", new Vector3(-65.3f, 18.35001f, 42.02f), new Vector3(0f, 90f, 0)));
+                    mult.Add(new Block("Mur", new Vector3(-29f, 18.51711f, 52.61f), new Vector3(0f, 180f, 0)));
+                    mult.Add(new Block("Icorridor3x6_col", new Vector3(-18.02f, 18.39999f, 24f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Icorridor3x6_col", new Vector3(-18.02f, 18.39999f, -0.07000732f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Icorridor3x6_col", new Vector3(-18.02f, 18.39999f, 5.869995f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Mur", new Vector3(-6f, 18.51711f, 0.3000031f), new Vector3(0f, 180f, 0)));
+                    mult.Add(new Block("Mur", new Vector3(-6.186554f, 18.51711f, -12.2f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Mur", new Vector3(5.152161f, 17.9935f, -6.039993f), new Vector3(0f, 270f, 0)));
+                    mult.Add(new Block("Plateforme_col", new Vector3(-39.39999f, 0.6000061f, 36.3f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Plateforme_col", new Vector3(-54.5f, 8f, 27.2f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Plateforme_col", new Vector3(-52.89999f, 5.5f, 45.1f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Plateforme_col", new Vector3(-49.3f, 8.600006f, 8.600006f), new Vector3(0f, 0f, 0)));
+                    mult.Add(new Block("Icorridor2_col", new Vector3(-35.75999f, 0f, -35.69f), new Vector3(0f, 180f, 0)));
+                    mult.Add(new Block("Icorridor3x6_col", new Vector3(-53.5f, 6.589996f, -64.01001f), new Vector3(0f, 90f, 0)));
+                    mult.Add(new Block("Icorridor_col", new Vector3(-46.89999f, 0f, -60f), new Vector3(0f, 90f, 0)));
+                    mult.Add(new Block("Icorridor3x6_col", new Vector3(-65.14f, 5.630005f, -41.2f), new Vector3(0f, 90f, 0)));
+                    mult.Add(new Block("Door3D_col", new Vector3(-52.83856f, 2.5f, -41.38f), new Vector3(0f, 0f, 0), "door_2"));
+                    mult.Add(new Block("Icorridor3x6_col", new Vector3(-47.39f, 5.630005f, -41.14999f), new Vector3(0f, 90f, 0)));
+                    mult.Add(new Block("Icorridor3x6_col", new Vector3(-59.28f, 6.589996f, -64.01001f), new Vector3(0f, 90f, 0)));
+
+
+                    MapConstructor mc_level2players = new MapConstructor(mult);
+                    Map level2players = new Map(mc_level2players, "level2players", MapType.OTHER, new Vector3(0,0,0));
+                    level2players.AddElement(new string[] { "button_1"}, "window_1", ExecType.WINDOW, false);
+                    level2players.AddElement(new string[] { "button_2" }, "door_1", ExecType.DOOR, false);
+                    level2players.AddElement(new string[] { "button_3", "button_4" }, "door_2", ExecType.DOOR, false);
+                    return level2players;
+
+
                 default:	
                     return null;
                     break;
