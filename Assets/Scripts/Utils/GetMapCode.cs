@@ -29,7 +29,7 @@ public class GetMapCode : MonoBehaviour {
 		}
 		
 		result += "MapConstructor mc_" + nameT + " = new MapConstructor(bl_" + nameT + ");\n";
-		result += "Map " + nameT + " = new Map(mc_" + nameT + ", \"" + nameT + "\", MapType.OTHER);\n";
+		result += "Map " + nameT + " = new Map(mc_" + nameT + ", \"" + nameT + "\", MapType.OTHER, new Vector3(0,0,0));\n";
 		result += "return " + nameT + ";\n";
 		
 		Debug.Log(result);
