@@ -51,10 +51,7 @@ namespace Assets.Script
 
 			this.buttons = new List<Button>();
 
-			if (spawnPoint == null)
-				this.spawnPoint = new Vector3(0, 0, 0);
-			else
-				this.spawnPoint = spawnPoint;
+			this.spawnPoint = spawnPoint;
         }       
 
 		public List<Checkpoint> GetCheckpoints()
