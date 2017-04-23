@@ -9,43 +9,43 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1762460326000984}
+  m_RootGameObject: {fileID: 1193109549623388}
   m_IsPrefabParent: 1
---- !u!1 &1762460326000984
+--- !u!1 &1193109549623388
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4583669789669608}
-  - component: {fileID: 114703319390913594}
+  - component: {fileID: 4443107995261000}
+  - component: {fileID: 114201207590500374}
   m_Layer: 0
-  m_Name: Subtitle_gun
+  m_Name: Subtitle_button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4583669789669608
+--- !u!4 &4443107995261000
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1762460326000984}
+  m_GameObject: {fileID: 1193109549623388}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -38, y: 2, z: -7}
+  m_LocalPosition: {x: -140.3002, y: 14.33, z: -6.707915}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114703319390913594
+--- !u!114 &114201207590500374
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1762460326000984}
+  m_GameObject: {fileID: 1193109549623388}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b64140504f9afa49890af388446118e, type: 3}
@@ -59,29 +59,14 @@ MonoBehaviour:
     mainAudio: {fileID: 0}
     phrases:
     - audio: {fileID: 0}
-      text: "Je t\u2019ai \xE9quip\xE9 d\u2019une arme laser, tu en auras besoin pour
-        r\xE9soudre certaines \xE9nigmes. Tire sur les interrupteurs avec ton laser
-        afin de les activer."
-      duration: 5
-      drawAudio: 1
-      lastCalculatedHeight: 90
-      move: 0
-    - audio: {fileID: 0}
-      text: "Les interrupteurs passent de la couleur rouge \xE0 la couleur verte quand
-        ils sont activ\xE9s. "
-      duration: 5
-      drawAudio: 1
-      lastCalculatedHeight: 90
-      move: 0
-    - audio: {fileID: 0}
-      text: "Il a de nombreux pi\xE8ges! Reste vigilant!"
-      duration: 5
+      text: Tu dois activer ce bouton pour ouvir la porte.
+      duration: 10
       drawAudio: 1
       lastCalculatedHeight: 90
       move: 0
     LoopAudioForDuration: 0
     expanded: 1
-    lastCalculatedHeight: 358
+    lastCalculatedHeight: 178
     useSmartSubs: 0
   OnFailure: 1
   OnSuccess: 1
