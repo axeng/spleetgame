@@ -5,11 +5,18 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
+	private int id;
+
+	void Start()
+	{
+		id = Game.AddPlayer(gameObject);
+	}
+	
 	void OnControllerColliderHit(ControllerColliderHit hit)
 	{
 		if (hit.gameObject.tag == "die")
 		{
-			Game.players[0].Die();
+			Game.players[id].Die();
 		}
 	}
 }

@@ -13,6 +13,7 @@ class Game : MonoBehaviour
 	public static List<Player> players;
 	public static bool multi;
 
+	private bool pauseGui = false;
 	public bool pause = false;
 	public bool multiplayer = false;
 
@@ -48,8 +49,8 @@ class Game : MonoBehaviour
 
         map = Map.GetMap("Mapmulti");
 
-		foreach (GameObject p in GameObject.FindGameObjectsWithTag("Player"))
-			players.Add(new Player(players.Count, p, map));
+		/*foreach (GameObject p in GameObject.FindGameObjectsWithTag("Player"))
+			players.Add(new Player(players.Count, p, map));*/
 	}
 
 	// Update is called once per frame
@@ -79,17 +80,30 @@ class Game : MonoBehaviour
 			map.GetButtons()[0].Exec();
 		}
 
-		if (Input.GetKeyDown((KeyCode.P)))
+		if (Input.GetKeyDown(KeyCode.M))
+		{
+			GameObject.FindWithTag("MapGUI").transform.GetChild(0).gameObject.SetActive(true);
+		}
+
+
+		if (Input.GetKeyDown(KeyCode.P))
+		{
 			pause = !pause;
+			pauseGui = true;
+		}
 		else
-			pause = GameObject.FindWithTag("PauseGUI").transform.GetChild(0).gameObject.activeSelf;
+		{
+			pause = GameObject.FindWithTag("PauseGUI").transform.GetChild(0).gameObject.activeSelf || GameObject.FindWithTag("MapGUI").transform.GetChild(0).gameObject.activeSelf;
+			pauseGui = GameObject.FindWithTag("PauseGUI").transform.GetChild(0).gameObject.activeSelf;
+		}
 
 		if (pause)
 			Time.timeScale = 0.0f;
 		else
 			Time.timeScale = 1.0f;
-		
-		GameObject.FindWithTag("PauseGUI").transform.GetChild(0).gameObject.SetActive(pause);
+
+		if (pauseGui)
+			GameObject.FindWithTag("PauseGUI").transform.GetChild(0).gameObject.SetActive(pause);
 	}
 	
 	public void Save()
@@ -118,6 +132,8 @@ class Game : MonoBehaviour
 	
 	public void LoadMap(string name)
 	{
+		GameObject.FindWithTag("MapGUI").transform.GetChild(0).gameObject.SetActive(false);
+		players.Clear();
 		map.DestroyObjects();
 		map = Map.GetMap(name);
 	}
