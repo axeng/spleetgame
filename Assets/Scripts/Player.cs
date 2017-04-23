@@ -9,7 +9,7 @@ namespace Assets.Script
     class Player
     {
 		//pseudo
-		private string name;
+		private int id;
 
 		private GameObject obj;
 		private Rigidbody body;
@@ -17,9 +17,9 @@ namespace Assets.Script
        	
         private Map map;
 
-		public Player(string name, GameObject obj, Map map)
+		public Player(int id, GameObject obj, Map map)
         {
-			this.name = name;
+			this.id = id;
 			
 			this.obj = obj;
 			this.body = obj.GetComponent<Rigidbody>();

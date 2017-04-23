@@ -9,8 +9,7 @@ public class PlayerScript : MonoBehaviour
 	{
 		if (hit.gameObject.tag == "die")
 		{
-			//FIXME multiplayer
-			Game.players["Player1"].Die();
+			Game.players[0].Die();
 		}
 	}
 }

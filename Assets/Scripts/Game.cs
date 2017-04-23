@@ -10,7 +10,7 @@ class Game : MonoBehaviour
 {
 	
 	public static Map map;
-	public static Dictionary<string, Player> players;
+	public static List<Player> players;
 	public static bool multi;
 
 	public bool pause = false;
@@ -19,8 +19,8 @@ class Game : MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
-		
-		players = new Dictionary<string, Player>();
+
+		players = new List<Player>();
 		multi = multiplayer;
 		
 		Scene scene = SceneManager.GetActiveScene();
@@ -46,16 +46,16 @@ class Game : MonoBehaviour
 				break;
 		}
 
-        map = Map.GetMap("mult");
+        map = Map.GetMap("Mapmulti");
 
-		//FIXME dont work with multiplayer
-		//players.Add("Player1", new Player("Player1", GameObject.FindWithTag("Player"), map));
+		foreach (GameObject p in GameObject.FindGameObjectsWithTag("Player"))
+			players.Add(new Player(players.Count, p, map));
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
-		foreach (Player p in players.Values) 
+		foreach (Player p in players) 
 			p.Move();
 
 		/*
@@ -103,7 +103,7 @@ class Game : MonoBehaviour
 		toSave += "MAP:" + map.GetName() + "\n";
 
 		//FIXME multiplayer
-		Vector3 check = players["Player1"].GetCurrentCheckpoint();
+		Vector3 check = players[0].GetCurrentCheckpoint();
 		toSave += "LASTCHECK:" + check.x + "," + check.y + "," + check.z + "\n";
 
 		try
@@ -120,5 +120,12 @@ class Game : MonoBehaviour
 	{
 		map.DestroyObjects();
 		map = Map.GetMap(name);
+	}
+	
+	public static int AddPlayer(GameObject obj)
+	{
+		int i = players.Count;
+		players.Add(new Player(i, obj, map));
+		return i;
 	}
 }
