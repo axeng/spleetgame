@@ -73,9 +73,15 @@ public class RayCast_net : NetworkBehaviour
             // Set the end position for our laser line 
             laserLine.SetPosition(1, hit.point);
 
-			if (!isServer)
+			if (!isServer) 
+			{
 				Game.map.Shoot(hit.transform.gameObject);
-			CmdHit(hit.transform.gameObject.name);
+				CmdHit(hit.transform.gameObject.name);
+			}
+			else
+			{
+				RpcHit(hit.transform.gameObject.name);
+			}
 
             //// Check if the object we hit has a rigidbody attached
             //if (hit.rigidbody != null)
@@ -94,6 +100,12 @@ public class RayCast_net : NetworkBehaviour
     
     [Command]
     public void CmdHit(string name)
+    {
+		Game.map.Shoot(GameObject.Find(name));
+	}
+	
+	[ClientRpc]
+    public void RpcHit(string name)
     {
 		Game.map.Shoot(GameObject.Find(name));
 	}
