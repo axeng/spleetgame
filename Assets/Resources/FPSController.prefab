@@ -31,7 +31,6 @@ GameObject:
   - component: {fileID: 2000000}
   - component: {fileID: 8100000}
   - component: {fileID: 12474086}
-  - component: {fileID: 114311604960885472}
   m_Layer: 0
   m_Name: FirstPersonCharacter
   m_TagString: MainCamera
@@ -7307,17 +7306,6 @@ MonoBehaviour:
   weaponRange: 500
   hitForce: 100
   gunEnd: {fileID: 4469339609188410}
---- !u!114 &114311604960885472
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d51ff3bf65ed4405920f19963ef5dcc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114575223095701118
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -261,6 +261,7 @@ namespace Assets.Script
                     MapConstructor test2 = new MapConstructor(Map);
 					test2.AddObject("Subtitles/NarrationSystem");
 					test2.AddObject("Subtitles/Subtitle_gun");
+					test2.AddObject("Subtitles/Subtitle_button");
 					test2.AddObject("Subtitles/Subtitle_introduction");
 					test2.AddObject("Subtitles/NarrationSystem");
 					
