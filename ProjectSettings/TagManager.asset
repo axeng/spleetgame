@@ -12,6 +12,8 @@ TagManager:
   - die
   - MapGUI
   - player
+  - Undefined
+  - LASERNET
   layers:
   - Default
   - TransparentFX

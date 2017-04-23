@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
+using System.Collections.Generic;
 
 public class RayCast_net : NetworkBehaviour
 {
@@ -35,34 +36,46 @@ public class RayCast_net : NetworkBehaviour
          // Check if the player has pressed the fire button and if enough time has elapsed since they last fired
         if (Input.GetButtonDown("Fire1") && Time.time > nextFire)
         {
-            Shoot();
+        	// Update the time when our player can fire next
+    		nextFire = Time.time + fireRate;
+			PresShoot(fpsCam.transform.forward, fpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0.0f)), gunEnd.position);
+			
         }
     }
-    
-    void Shoot()
+	
+	void PresShoot(Vector3 camForward, Vector3 rayOrigin, Vector3 end)
+	{
+		if (!isLocalPlayer)
+		{
+			return;
+		}
+		Shoot(camForward, rayOrigin, end);
+	}
+	
+	[Client]
+	void Shoot(Vector3 camForward, Vector3 rayOrigin, Vector3 end)
     {
-    	// Update the time when our player can fire next
-    	nextFire = Time.time + fireRate;
-    
     	// Start our ShotEffect coroutine to turn our laser line on and off
         StartCoroutine(ShotEffect());
 
         // Create a vector at the center of our camera's viewport
-        Vector3 rayOrigin = fpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0.0f));
+        //Vector3 rayOrigin = cam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0.0f));
 
         // Declare a raycast hit to store information about what our raycast has hit
         RaycastHit hit;
-
+        
         // Set the start position for our visual effect for our laser to the position of gunEnd
-        laserLine.SetPosition(0, gunEnd.position);
+        laserLine.SetPosition(0, end);
 
         // Check if our raycast has hit anything
-        if (Physics.Raycast(rayOrigin, fpsCam.transform.forward, out hit, weaponRange))
+        if (Physics.Raycast(rayOrigin, camForward, out hit, weaponRange))
         {
             // Set the end position for our laser line 
             laserLine.SetPosition(1, hit.point);
-			
-			Game.map.Shoot(hit.transform.gameObject);
+
+			if (!isServer)
+				Game.map.Shoot(hit.transform.gameObject);
+			CmdHit(hit.transform.gameObject.name);
 
             //// Check if the object we hit has a rigidbody attached
             //if (hit.rigidbody != null)
@@ -70,12 +83,19 @@ public class RayCast_net : NetworkBehaviour
             //    // Add force to the rigidbody we hit, in the direction from which it was hit
             //    hit.rigidbody.AddForce(-hit.normal * hitForce);
             //}
+            
         }
         else
         {
             // If we did not hit anything, set the end of the line to a position directly in front of the camera at the distance of weaponRange
-            laserLine.SetPosition(1, rayOrigin + (fpsCam.transform.forward * weaponRange));
+            laserLine.SetPosition(1, rayOrigin + (camForward * weaponRange));
         }
+	}
+    
+    [Command]
+    public void CmdHit(string name)
+    {
+		Game.map.Shoot(GameObject.Find(name));
 	}
     
     private IEnumerator ShotEffect()
