@@ -11,8 +11,8 @@ namespace Assets.Script
 		//pseudo
 		private int id;
 
-		private GameObject obj;
-		private Rigidbody body;
+		public GameObject obj { get; set; }
+		public Rigidbody body { get; set; }
         private Vector3 currentCheckpoint;
        	
         private Map map;
@@ -47,7 +47,7 @@ namespace Assets.Script
         public void Move() //Sera appelé après chaque déplacement du joueur
         {
             ChangeCheck();
-
+			
 			if (body.position.y <= -1)
 				Die();
 

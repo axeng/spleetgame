@@ -30,12 +30,14 @@ namespace Narrate {
         void Awake() {
             if (triggeredBy == null) {
 				//Debug.LogWarning("ProximityNarrationTrigger Warning: " + this.gameObject.name +
-                //    " has no TriggeredBy object and will never fire unless one is assigned. Disabling script.");
-                //this.enabled = false;
-				triggeredBy = GameObject.FindWithTag("Player").transform;
+				//    " has no TriggeredBy object and will never fire unless one is assigned. Disabling script.");
+				//this.enabled = false;
+				triggeredBy = GameObject.FindWithTag("Player").GetComponent<Rigidbody>().transform;
+				//triggeredBy = Game.players[0].obj.transform;
             }
         }
         void OnEnable() {
+        	//triggeredBy = GameObject.FindWithTag("player").transform;
             StartCoroutine(DistanceWatch());
         }
 
@@ -44,12 +46,24 @@ namespace Narrate {
             if (timeToTrig <= 0)
                 timeToTrig = 0.01f;
 
+			triggeredBy = GameObject.FindWithTag("Player").GetComponent<Rigidbody>().transform;
+
             delayTimer = 0;
+            
             while (delayTimer < timeToTrig) {
                 if (triggeredBy == null) yield break; //can't be triggered, so don't even try
+                
                 Vector3 distance = triggeredBy.position - this.transform.position;
                 if (is2D)
                     distance.z = 0;
+
+				/*if (this.name == "Subtitle_gun(Clone)")
+				{
+					Debug.Log("" + triggeredBy.position + " vs " + this.transform.position);
+					Debug.Log(distance.magnitude);
+				}*/
+					
+                    
                 if (distance.magnitude <= proximity)
                     delayTimer += 0.33f;
                 else if (timeMustBeConsecutive)
