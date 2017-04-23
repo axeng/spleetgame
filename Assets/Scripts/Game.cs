@@ -17,6 +17,8 @@ class Game : MonoBehaviour
 	public bool pause = false;
 	public bool multiplayer = false;
 
+	public string startMap = "plat1";
+
 	// Use this for initialization
 	void Start()
 	{
@@ -47,7 +49,7 @@ class Game : MonoBehaviour
 				break;
 		}
 
-        map = Map.GetMap("Mapmulti");
+        map = Map.GetMap(startMap);
 
 		/*foreach (GameObject p in GameObject.FindGameObjectsWithTag("Player"))
 			players.Add(new Player(players.Count, p, map));*/
