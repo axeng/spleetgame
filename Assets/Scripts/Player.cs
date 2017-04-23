@@ -48,7 +48,7 @@ namespace Assets.Script
         {
             ChangeCheck();
 			
-			if (body.position.y <= -1)
+			if (body.position.y <= -4)
 				Die();
 
         }
