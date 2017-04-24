@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using Assets.Script;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Networking;
 
 class Game : MonoBehaviour
 {
@@ -134,6 +135,10 @@ class Game : MonoBehaviour
 	
 	public void DestroyMap()
 	{
+		if (multi)
+		{
+			NetworkManager.Shutdown();
+		}
 		GameObject.FindWithTag("MapGUI").transform.GetChild(0).gameObject.SetActive(false);
 		players.Clear();
 		map.DestroyObjects();
