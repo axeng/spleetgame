@@ -132,11 +132,16 @@ class Game : MonoBehaviour
 		}
 	}
 	
-	public void LoadMap(string name)
+	public void DestroyMap()
 	{
 		GameObject.FindWithTag("MapGUI").transform.GetChild(0).gameObject.SetActive(false);
 		players.Clear();
 		map.DestroyObjects();
+	}
+	
+	public void LoadMap(string name)
+	{
+		DestroyMap();
 		map = Map.GetMap(name);
 	}
 	
