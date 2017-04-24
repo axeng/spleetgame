@@ -209,7 +209,8 @@ namespace Assets.Script
 					MapTest.Add(new Block("FloorNeonAlea_col", new Vector3(130.9f,0.1244316f,-60.02477f), new Vector3(0f, 180f, 0)));
 					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(111.81f,6.5f,-103f), new Vector3(0f, 90f, 0)));
 					MapTest.Add(new Block("Icorridor_col", new Vector3(59.72915f,0.1244316f,-59.92477f), new Vector3(0f, 180f, 0)));
-					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(105.71f,6.5f,-103.8f), new Vector3(0f, 90f, 0)));
+                    MapTest.Add(new Block("Mur", new Vector3(171.63f, 6.1f, -53.8f), new Vector3(0f, 90f, 0)));
+                    MapTest.Add(new Block("Icorridor3x6_col", new Vector3(105.71f,6.5f,-103.8f), new Vector3(0f, 90f, 0)));
 					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(99.5f,6.5f,-90f), new Vector3(0f, 90f, 0)));
 					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(76.8f,6.5f,-60f), new Vector3(0f, 180f, 0)));
 					MapTest.Add(new Block("windows3D_col", new Vector3(147.4f,8.923815f,-77.5f), new Vector3(0f, 270f, 0), "window_2"));
@@ -245,6 +246,7 @@ namespace Assets.Script
                     Map.Add(new Block("plat/Mur_col", new Vector3(-127, 18, -12), 0));
                     Map.Add(new Block("plat/Mur_col", new Vector3(-129, 19, 0), 180));
                     Map.Add(new Block("plat/Mur_col", new Vector3(-147, 18, -6), 90));
+                    Map.Add(new Block("plat/Mur_col", new Vector3(-31.04f, 6.24f, -50f),0));
                     Map.Add(new Block("plat/Plateforme_col", new Vector3(-130, 6, -7), 0));
                     Map.Add(new Block("plat/trap_pilier_col", new Vector3(-98, -2, -7), 0));
                     Map.Add(new Block("plat/trap_pilier_col", new Vector3(-107, 0, -4), 0));
@@ -254,6 +256,7 @@ namespace Assets.Script
                     Map.Add(new Block("plat/Icorridor_plat_col", new Vector3(-139, 12, 0), 0));
                     Map.Add(new Block("plat/Icorridor_plat_col", new Vector3(0, 0, 0), 0));
                     Map.Add(new Block("plat/Icorridor_plat_col", new Vector3(-117, 0, 0), 0));
+                    Map.Add(new Block("plat/Icorridor_plat_col", new Vector3(-24.09f, 0f, -49.6f), 90));
                     Map.Add(new Block("plat/Tcorridor_plat_col", new Vector3(-48, 0, 0), 0));
                     Map.Add(new Block("plat/Door3D_plat_col", new Vector3(4, 2, -6), 90));
                     Map.Add(new Block("plat/Door3D_plat_col", new Vector3(-31, 2, -41), 0, "door_1"));
