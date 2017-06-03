@@ -23,6 +23,7 @@ class Game : MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
+		Cursor.lockState = CursorLockMode.Locked;
 
 		players = new List<Player>();
 		multi = multiplayer;

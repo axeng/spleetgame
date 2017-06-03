@@ -27,18 +27,18 @@ public class PlayerScript : MonoBehaviour
 		this.settings = new Settings();
 		this.camera = Camera.main;
 
-		this.rotX = camera.transform.rotation.eulerAngles.x;
-		this.rotY = camera.transform.rotation.eulerAngles.y;
+		//this.rotX = camera.transform.rotation.eulerAngles.x;
+		//this.rotY = camera.transform.rotation.eulerAngles.y;
+		this.rotX = 0;
+		this.rotY = 0;
 
 		this.jumpCount = 0;
 	}
 	
-	void OnControllerColliderHit(ControllerColliderHit hit)
+	void OnCollisionEnter(Collision hit)
 	{
 		if (hit.gameObject.tag == "die")
-		{
 			this.player.Die();
-		}
 	}
 	
 	void FixedUpdate()
@@ -78,6 +78,10 @@ public class PlayerScript : MonoBehaviour
 
 		rotX += Input.GetAxis("Mouse X") * speedCam;
 		rotY -= Input.GetAxis("Mouse Y") * speedCam;
+		if (rotY > 90)
+			rotY = 90;
+		else if (rotY < -90)
+			rotY = -90;
 
 		transform.rotation = Quaternion.Euler(0, rotX, 0);
 		transform.Translate(move);
