@@ -41,7 +41,7 @@ namespace Assets.Script
 					}
 					else
 					{
-						constructor.blocks.Add(new Block("FPSController", spawnPoint[0], 0));
+						constructor.blocks.Add(new Block("Player", spawnPoint[0], 0));
 					}
 				}
 	
