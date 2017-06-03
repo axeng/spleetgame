@@ -43,6 +43,9 @@ public class PlayerScript : MonoBehaviour
 	
 	void FixedUpdate()
 	{
+		if (Game.game.pause)
+			return;
+			
 		Vector3 move = new Vector3(0.0f, 0.0f, 0.0f);
 		Vector3 force = new Vector3(0.0f, 0.0f, 0.0f);
 		

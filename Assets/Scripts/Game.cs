@@ -9,6 +9,7 @@ using UnityEngine.Networking;
 
 class Game : MonoBehaviour
 {
+	public static Game game;
 	
 	public static Map map;
 	public static List<Player> players;
@@ -58,6 +59,8 @@ class Game : MonoBehaviour
 
 		/*foreach (GameObject p in GameObject.FindGameObjectsWithTag("Player"))
 			players.Add(new Player(players.Count, p, map));*/
+
+		game = this;
 	}
 
 	// Update is called once per frame
@@ -105,9 +108,15 @@ class Game : MonoBehaviour
 		}
 
 		if (pause)
+		{
 			Time.timeScale = 0.0f;
+			Cursor.lockState = CursorLockMode.Confined;
+		}
 		else
+		{
 			Time.timeScale = 1.0f;
+			Cursor.lockState = CursorLockMode.Locked;
+		}
 
 		if (pauseGui)
 			GameObject.FindWithTag("PauseGUI").transform.GetChild(0).gameObject.SetActive(pause);
@@ -162,4 +171,5 @@ class Game : MonoBehaviour
 		players.Add(new Player(i, obj, map));
 		return i;
 	}
+	
 }

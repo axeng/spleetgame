@@ -301,9 +301,7 @@ MonoBehaviour:
     BobDuration: 0.2
     BobAmount: 0.1
   m_StepInterval: 15
-  m_FootstepSounds:
-  - {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
-  - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
+  m_FootstepSounds: []
   m_JumpSound: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
 --- !u!124 &12474086
@@ -7290,6 +7288,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d51ff3bf65ed4405920f19963ef5dcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedMov: 2
+  speedCam: 2
+  jumpForce: 2
 --- !u!114 &114311267392534696
 MonoBehaviour:
   m_ObjectHideFlags: 1
