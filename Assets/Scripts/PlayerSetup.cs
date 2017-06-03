@@ -6,7 +6,7 @@ using UnityEngine.Networking;
 public class PlayerSetup : NetworkBehaviour {
 
 	public Behaviour[] componentsToDisable;
-	private int id;
+	//private int id;
 
 	// Use this for initialization
 	void Start () {
@@ -14,10 +14,10 @@ public class PlayerSetup : NetworkBehaviour {
 		{
 			DisableComponents();
 		}
-		else
+		/*else
 		{
 			id = Game.AddPlayer(gameObject);
-		}
+		}*/
 		
 	}
 	
@@ -34,11 +34,11 @@ public class PlayerSetup : NetworkBehaviour {
 		}
 	}
 	
-	void OnControllerColliderHit(ControllerColliderHit hit)
+	/*void OnControllerColliderHit(ControllerColliderHit hit)
 	{
 		if (hit.gameObject.tag == "die")
 		{
 			Game.players[id].Die();
 		}
-	}
+	}*/
 }

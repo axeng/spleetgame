@@ -128,6 +128,7 @@ GameObject:
   - component: {fileID: 114338574870476460}
   - component: {fileID: 114556325302777700}
   - component: {fileID: 120006035624473638}
+  - component: {fileID: 114527659616306524}
   m_Layer: 0
   m_Name: FPSController_net
   m_TagString: Player
@@ -7283,6 +7284,17 @@ MonoBehaviour:
   weaponRange: 50
   hitForce: 100
   gunEnd: {fileID: 4650355958815142}
+--- !u!114 &114527659616306524
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1037934147432706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d51ff3bf65ed4405920f19963ef5dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114556325302777700
 MonoBehaviour:
   m_ObjectHideFlags: 1

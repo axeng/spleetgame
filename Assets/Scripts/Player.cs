@@ -13,9 +13,15 @@ namespace Assets.Script
 
 		public GameObject obj { get; set; }
 		public Rigidbody body { get; set; }
+		public CharacterController controller { get; set; }
         private Vector3 currentCheckpoint;
        	
+       	private Settings settings;
+       	
         private Map map;
+
+		private float distToGround;
+		public bool doubleJump;
 
 		public Player(int id, GameObject obj, Map map)
         {
@@ -23,11 +29,18 @@ namespace Assets.Script
 			
 			this.obj = obj;
 			this.body = obj.GetComponent<Rigidbody>();
+			this.controller = obj.GetComponent<CharacterController>();
 
 			this.map = map;
 
+			settings = new Settings();
+
 			//set the spawn point as the current checkpoint
 			this.currentCheckpoint = new Vector3(body.position.x, body.position.y, body.position.z);
+
+			this.distToGround = this.obj.GetComponent<Collider>().bounds.extents.y;
+
+			this.doubleJump = false;
         }
 
 
@@ -67,6 +80,11 @@ namespace Assets.Script
         {
             this.map = m;
         }
+        
+        public Settings GetSettings()
+        {
+			return this.settings;
+		}
 
 		public Vector3 GetCurrentCheckpoint()
 		{
@@ -76,6 +94,11 @@ namespace Assets.Script
 		public void SetCurrentCheckpoint(Vector3 vector)
 		{
 			this.currentCheckpoint = vector;
+		}
+		
+		public bool IsGrounded()
+		{
+			return Physics.Raycast(this.obj.transform.position, -Vector3.up, distToGround + 0.1f);
 		}
     }
 }

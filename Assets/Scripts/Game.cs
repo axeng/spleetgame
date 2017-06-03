@@ -50,7 +50,10 @@ class Game : MonoBehaviour
 				break;
 		}
 
-        map = Map.GetMap(startMap);
+		if (startMap != "None")
+			map = Map.GetMap(startMap);
+		else
+			map = new Map("None", MapType.TEST, new Vector3(-13, 5, -8));
 
 		/*foreach (GameObject p in GameObject.FindGameObjectsWithTag("Player"))
 			players.Add(new Player(players.Count, p, map));*/
@@ -152,6 +155,8 @@ class Game : MonoBehaviour
 	
 	public static int AddPlayer(GameObject obj)
 	{
+		if (players == null)
+			players = new List<Player>();
 		int i = players.Count;
 		players.Add(new Player(i, obj, map));
 		return i;
