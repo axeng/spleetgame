@@ -29,7 +29,7 @@ namespace Assets.Script
 		public int nbHints;
 
 		public List<GameObject> toActivate;
-
+		
 		public Player(int id, GameObject obj, Map map)
         {
 			this.id = id;
@@ -128,14 +128,5 @@ namespace Assets.Script
 		{
 			return Physics.Raycast(this.obj.transform.position, -Vector3.up, distToGround + 0.1f);
 		}
-		
-		/*public IEnumerator ShowMessage(string message, float delay)
-		{
-			GUIText guiText = this.obj.GetComponent<GUIText>();
-			guiText.text = message;
-			guiText.enabled = true;
-			yield return new WaitForSeconds(delay);
-			guiText.enabled = false;
-		}*/
     }
 }

@@ -53,7 +53,6 @@ public class PlayerScript : MonoBehaviour
 				hit.gameObject.SetActive(false);
 				this.player.toActivate.Add(hit.gameObject);
 				this.player.ActiveAdrenaline(adrenalineDuration);
-				//StartCoroutine(this.player.ShowMessage("Adrenaline effect is active for " + adrenalineDuration + " s", 2));
 				break;
 				
 			case "dop":
@@ -104,16 +103,15 @@ public class PlayerScript : MonoBehaviour
 		if (this.player.IsGrounded())
 		{
 			jumpCount = 0;
+			if (Input.GetKeyDown(settings.jump) && (jumpCount == 0 || this.player.doubleJump && jumpCount <= 2))
+			{
+				force.y += 5.0f * jumpForce;
+				jumpCount++;
+				
+				player.body.velocity = force;
+			}
 		}
-
-		if (Input.GetKeyDown(settings.jump) && (jumpCount == 0 || this.player.doubleJump && jumpCount <= 2))
-		{
-			force.y += 5.0f * jumpForce;
-			jumpCount++;
-			
-			player.body.velocity = force;
-		}
-
+		
 		rotX += Input.GetAxis("Mouse X") * speedCam;
 		rotY -= Input.GetAxis("Mouse Y") * speedCam;
 		if (rotY > maxDegreeView)
@@ -128,6 +126,5 @@ public class PlayerScript : MonoBehaviour
 		//transform.rotation.Set(0, camera.transform.rotation.y, 0, 0);
 		camera.transform.rotation = Quaternion.Euler(rotY, rotX, 0);
 	}
-	
 	
 }
