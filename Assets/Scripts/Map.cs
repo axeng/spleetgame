@@ -17,6 +17,7 @@ namespace Assets.Script
 		private List<Executable> executables;
 
 		private List<Executor> buttons;
+		private List<Executor> pressionPlates;
 
 		private List<Vector3> spawnPoint;
 
@@ -68,6 +69,7 @@ namespace Assets.Script
 			this.executables = new List<Executable>();
 
 			this.buttons = new List<Executor>();
+			this.pressionPlates = new List<Executor>();
 
 			this.spawnPoint = spawnPoint;
 
@@ -114,11 +116,15 @@ namespace Assets.Script
 				{
 					if (executorType == ExecutorType.BUTTON)
 						executorsElement.Add(new Button(null, GameObject.FindWithTag(but + "_true"), GameObject.FindWithTag(but + "_false"), tag));
+					else if (executorType == ExecutorType.PRESSIONPLATE)
+						executorsElement.Add(new PressionPlate(null, GameObject.FindWithTag(but + "_true"), GameObject.FindWithTag(but + "_false"), tag));
 				}
 				else
 				{
 					if (executorType == ExecutorType.BUTTON)
 						executorsElement.Add(new Button(null, GameObject.Find(but + "_true"), GameObject.Find(but + "_false"), tag));
+					else if (executorType == ExecutorType.PRESSIONPLATE)
+						executorsElement.Add(new PressionPlate(null, GameObject.Find(but + "_true"), GameObject.Find(but + "_false"), tag));
 				}
 			}
 
@@ -152,6 +158,7 @@ namespace Assets.Script
 
 			this.executables.Add(exec);
 			this.buttons.AddRange(executors.FindAll(p => p.type == ExecutorType.BUTTON));
+			this.pressionPlates.AddRange(executors.FindAll(p => p.type == ExecutorType.PRESSIONPLATE));
 		}
 
 		//call each time a laser hit an object
@@ -162,6 +169,22 @@ namespace Assets.Script
 			{
 				if (buttons[i].IsThisGameObject(gameObject))
 					b = buttons[i];
+			}
+
+			if (b != null)
+			{
+				b.Push();
+				b.Exec();
+			}
+		}
+		
+		public void WalkOn(GameObject gameObject)
+		{
+			Executor b = null;
+			for (int i = 0; b == null && i < pressionPlates.Count; i++)
+			{
+				if (pressionPlates[i].IsThisGameObject(gameObject))
+					b = pressionPlates[i];
 			}
 
 			if (b != null)
