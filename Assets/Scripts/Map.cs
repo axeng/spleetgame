@@ -360,7 +360,7 @@ namespace Assets.Script
                     bl_poulet.Add(new Block("plat/Icorridor_plat_col", new Vector3(286.47f, 13.5f, -0.0999999f), new Vector3(0f, 0f, 0)));
                     MapConstructor mc_poulet = new MapConstructor(bl_poulet);
                     Map poulet = new Map(mc_poulet, name, MapType.OTHER, new Vector3(-12.685F, 26.5F, -5.74F));
-                    poulet.GetCheckpoints().Add(new Checkpoint(new Vector2(293, 0), new Vector2(268, -12), new Vector3(274.5F, 15, -6)));
+                    poulet.GetCheckpoints().Add(new Checkpoint( new Vector2(268, -12), new Vector2(293, 0), new Vector3(274.5F, 15, -6)));
                     return poulet;
 
 
