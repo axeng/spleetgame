@@ -14,6 +14,9 @@ TagManager:
   - player
   - Undefined
   - LASERNET
+  - adr
+  - dop
+  - gel douche
   layers:
   - Default
   - TransparentFX

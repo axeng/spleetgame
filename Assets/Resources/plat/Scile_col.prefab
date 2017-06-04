@@ -217,6 +217,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4216982709501172}
   - component: {fileID: 136448848728566372}
+  - component: {fileID: 65965235101589286}
+  - component: {fileID: 136978392563686914}
   m_Layer: 0
   m_Name: Scile
   m_TagString: die
@@ -608,7 +610,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1334757808739386}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 7.8999996, y: 3.2877786, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -618,7 +620,7 @@ Transform:
   - {fileID: 4651525079632328}
   m_Father: {fileID: 4255152299484440}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!4 &4219466533806466
 Transform:
   m_ObjectHideFlags: 1
@@ -652,7 +654,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1405754880059186}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -54.855743, y: 0.5, z: 55.816895}
+  m_LocalPosition: {x: 246.6, y: 1.7, z: -10.5}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4065647490080622}
@@ -1685,6 +1687,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 15, y: 1.5, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65965235101589286
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1334757808739386}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0553875, y: 1.7301415, z: 0.57524216}
+  m_Center: {x: -0.04826927, y: -0.037847526, z: 0.025601149}
 --- !u!82 &82806999723135076
 AudioSource:
   m_ObjectHideFlags: 1
@@ -1815,7 +1829,20 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.0881548
-  m_Height: 1
+  m_Radius: 0.2
+  m_Height: 3
   m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &136978392563686914
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1334757808739386}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.2
+  m_Height: 3
+  m_Direction: 0
   m_Center: {x: 0, y: 0, z: 0}
