@@ -55,6 +55,7 @@ public class PlayerScript : MonoBehaviour
 				break;
 				
 			case "dop":
+				hit.gameObject.SetActive(false);
 				this.player.nbHints++;
 				break;
 		}
