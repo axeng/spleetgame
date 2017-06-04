@@ -1,31 +1,32 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using UnityEngine;
 
 namespace Assets.Script
 {
-    class Button
-    {
+	public class Executor
+	{
 		//two game object to switch
-		private GameObject active;
-		private GameObject nonActive;
+		protected GameObject active;
+		protected GameObject nonActive;
 
-        private Executable executable;// Contient une liste d'objet pouvant être activé avec les boutons
-        private bool activate;
+        protected Executable executable;// Contient une liste d'objet pouvant être activé avec les boutons
+        protected bool activate;
 
-		private bool tag;
+		protected bool tag;
 
-		public Button(Executable e, GameObject active, GameObject nonActive, bool tag = true)
+		public ExecutorType type { get; private set; }
+
+		public Executor(Executable e, GameObject active, GameObject nonActive, ExecutorType type, bool tag = true)
         {
 			this.active = active;
 			this.nonActive = nonActive;
 
             this.executable = e;
             this.activate = true;
+			this.type = type;
 			this.tag = tag;
 			this.Push();
+			
         }
 
         //check if the button is on or off
@@ -33,7 +34,7 @@ namespace Assets.Script
         {
             return activate;
         }
-
+        
         // Active le bouton ou le desactive
         public void Push()           
         {
@@ -70,7 +71,11 @@ namespace Assets.Script
 		{
 			this.executable = executable;
 		}
-
-        
-    }
+	}
+	
+	public enum ExecutorType
+	{
+		BUTTON,
+		PRESSIONPLATE
+	}
 }
