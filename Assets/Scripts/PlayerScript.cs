@@ -103,14 +103,15 @@ public class PlayerScript : MonoBehaviour
 		if (this.player.IsGrounded())
 		{
 			jumpCount = 0;
-			if (Input.GetKeyDown(settings.jump) && (jumpCount == 0 || this.player.doubleJump && jumpCount <= 2))
+		}
+		
+		if ((this.player.IsGrounded() || this.player.doubleJump) && Input.GetKeyDown(settings.jump) && (jumpCount == 0 || this.player.doubleJump && jumpCount <= 2))
 			{
 				force.y += 5.0f * jumpForce;
 				jumpCount++;
 				
 				player.body.velocity = force;
 			}
-		}
 		
 		rotX += Input.GetAxis("Mouse X") * speedCam;
 		rotY -= Input.GetAxis("Mouse Y") * speedCam;
