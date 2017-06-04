@@ -13,7 +13,7 @@ namespace Assets.Script
 		private GameObject rightPane;
 
 		//the obj is for the middle element
-		public Door(List<Button> listB, GameObject door, GameObject leftPane, GameObject rightPane) : base(listB)
+		public Door(List<Executor> listE, GameObject door, GameObject leftPane, GameObject rightPane) : base(listE)
 		{
 			this.door = door;
 			this.anim = this.door.GetComponent<Animator>();
@@ -23,7 +23,7 @@ namespace Assets.Script
 
 		public override void Exec()
 		{
-			this.anim.SetBool("IsOpen", this.CheckButton());
+			this.anim.SetBool("IsOpen", this.CheckExecutors());
 		}
 	}
 }

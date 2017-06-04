@@ -16,7 +16,7 @@ namespace Assets.Script
 		private List<Checkpoint> checkpoints;
 		private List<Executable> executables;
 
-		private List<Button> buttons;
+		private List<Executor> buttons;
 
 		private List<Vector3> spawnPoint;
 
@@ -67,7 +67,7 @@ namespace Assets.Script
 
 			this.executables = new List<Executable>();
 
-			this.buttons = new List<Button>();
+			this.buttons = new List<Executor>();
 
 			this.spawnPoint = spawnPoint;
 
@@ -88,7 +88,7 @@ namespace Assets.Script
 			return this.executables;
 		}
 
-		public List<Button> GetButtons()
+		public List<Executor> GetButtons()
 		{
 			return this.buttons;
 		}
@@ -102,50 +102,62 @@ namespace Assets.Script
 		//AddElement(new string[] { "button_1" }, "door_1", ExecType.DOOR);
 		public void AddElement(string[] buts, string element, ExecType type, bool tag = true)
 		{
-			List<Button> buttonsElement = new List<Button>();
+			AddElement(buts, element, type, ExecutorType.BUTTON, tag);
+		}
+		public void AddElement(string[] buts, string element, ExecType type, ExecutorType executorType, bool tag = true)
+		{
+			List<Executor> executorsElement = new List<Executor>();
 
 			foreach(string but in buts)
 			{
 				if (tag)
-					buttonsElement.Add(new Button(null, GameObject.FindWithTag(but + "_true"), GameObject.FindWithTag(but + "_false"), tag));
+				{
+					if (executorType == ExecutorType.BUTTON)
+						executorsElement.Add(new Button(null, GameObject.FindWithTag(but + "_true"), GameObject.FindWithTag(but + "_false"), tag));
+				}
 				else
-					buttonsElement.Add(new Button(null, GameObject.Find(but + "_true"), GameObject.Find(but + "_false"), tag));
+				{
+					if (executorType == ExecutorType.BUTTON)
+						executorsElement.Add(new Button(null, GameObject.Find(but + "_true"), GameObject.Find(but + "_false"), tag));
+				}
 			}
 
 			switch(type)
 			{
 				case ExecType.DOOR:
 					if (tag)
-						this.AddExec(new Door(null, GameObject.FindWithTag(element), GameObject.FindWithTag(element + "_left"), GameObject.FindWithTag(element + "_right")), buttonsElement);
+						this.AddExec(new Door(null, GameObject.FindWithTag(element), GameObject.FindWithTag(element + "_left"), GameObject.FindWithTag(element + "_right")), executorsElement);
 					else
-                    	this.AddExec(new Door(null, GameObject.Find(element), GameObject.Find(element + "_left"), GameObject.Find(element + "_right")), buttonsElement);
+                    	this.AddExec(new Door(null, GameObject.Find(element), GameObject.Find(element + "_left"), GameObject.Find(element + "_right")), executorsElement);
 					break;
 
 				case ExecType.WINDOW:
 					if (tag)
-						this.AddExec(new Window(null, GameObject.FindWithTag(element)), buttonsElement);
+						this.AddExec(new Window(null, GameObject.FindWithTag(element)), executorsElement);
 					else
-						this.AddExec(new Window(null, GameObject.Find(element)), buttonsElement);
+						this.AddExec(new Window(null, GameObject.Find(element)), executorsElement);
 					break;
 			}
 		}
 
 		//add an executable in the map
-		public void AddExec(Executable exec, List<Button> buttons)
+		public void AddExec(Executable exec, List<Executor> executors)
 		{
-			foreach(Button b in buttons)
+			foreach (Executor b in executors)
+			{
 				b.SetExecutable(exec);
+			}
 			
-			exec.SetButtons(buttons);
+			exec.SetExecutors(executors);
 
 			this.executables.Add(exec);
-			this.buttons.AddRange(buttons);
+			this.buttons.AddRange(executors.FindAll(p => p.type == ExecutorType.BUTTON));
 		}
 
 		//call each time a laser hit an object
 		public void Shoot(GameObject gameObject)
 		{
-			Button b = null;
+			Executor b = null;
 			for (int i = 0; b == null && i < buttons.Count; i++)
 			{
 				if (buttons[i].IsThisGameObject(gameObject))

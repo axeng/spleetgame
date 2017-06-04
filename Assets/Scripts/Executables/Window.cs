@@ -12,7 +12,7 @@ namespace Assets.Script
 		private Animator anim;
 		private GameObject obj;
 
-		public Window(List<Button> listB, GameObject obj) : base(listB)
+		public Window(List<Executor> listE, GameObject obj) : base(listE)
         {
 			this.obj = obj;
 			this.anim = this.obj.GetComponent<Animator>();
@@ -21,7 +21,7 @@ namespace Assets.Script
 
         public override void Exec()
         {
-        	this.anim.SetBool("IsOpen", this.CheckButton());
+        	this.anim.SetBool("IsOpen", this.CheckExecutors());
         }
     }
 }

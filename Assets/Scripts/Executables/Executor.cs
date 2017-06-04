@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Assets.Script
 {
-	public class Executor
+	public abstract class Executor
 	{
 		//two game object to switch
 		protected GameObject active;
