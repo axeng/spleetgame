@@ -1,0 +1,184 @@
+fileFormatVersion: 2
+guid: 8f6a129b67d6b4b88be0538c0c0820d6
+timeCreated: 1496577862
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: "Bool\xE9en"
+    100002: Ciel
+    100004: Ciel_Physique
+    100006: Editeur_Cinema_4D
+    100008: "Lumi\xE8re_lunaire"
+    100010: "Lumi\xE8re_solaire"
+    100012: Lune
+    100014: Neutre
+    100016: Objet_Neutre_Ciel
+    100018: Objet_Soleil
+    100020: Plan_des_ombres
+    100022: //RootNode
+    100024: Sky_Dome
+    100026: Source_de_l_effet_de_lentille
+    100028: "Sph\xE8re"
+    100030: "Sph\xE8re_1"
+    100032: Tube
+    100034: Tube_1
+    100036: Tube_10
+    100038: Tube_11
+    100040: Tube_12
+    100042: Tube_2
+    100044: Tube_2_2
+    100046: Tube_3
+    100048: Tube_4
+    100050: Tube_5
+    100052: Tube_6
+    100054: Tube_7
+    100056: Tube_8
+    100058: Tube_9
+    400000: "Bool\xE9en"
+    400002: Ciel
+    400004: Ciel_Physique
+    400006: Editeur_Cinema_4D
+    400008: "Lumi\xE8re_lunaire"
+    400010: "Lumi\xE8re_solaire"
+    400012: Lune
+    400014: Neutre
+    400016: Objet_Neutre_Ciel
+    400018: Objet_Soleil
+    400020: Plan_des_ombres
+    400022: //RootNode
+    400024: Sky_Dome
+    400026: Source_de_l_effet_de_lentille
+    400028: "Sph\xE8re"
+    400030: "Sph\xE8re_1"
+    400032: Tube
+    400034: Tube_1
+    400036: Tube_10
+    400038: Tube_11
+    400040: Tube_12
+    400042: Tube_2
+    400044: Tube_2_2
+    400046: Tube_3
+    400048: Tube_4
+    400050: Tube_5
+    400052: Tube_6
+    400054: Tube_7
+    400056: Tube_8
+    400058: Tube_9
+    2300000: "Sph\xE8re"
+    2300002: "Sph\xE8re_1"
+    2300004: Tube
+    2300006: Tube_1
+    2300008: Tube_10
+    2300010: Tube_11
+    2300012: Tube_12
+    2300014: Tube_2
+    2300016: Tube_2_2
+    2300018: Tube_3
+    2300020: Tube_4
+    2300022: Tube_5
+    2300024: Tube_6
+    2300026: Tube_7
+    2300028: Tube_8
+    2300030: Tube_9
+    3300000: "Sph\xE8re"
+    3300002: "Sph\xE8re_1"
+    3300004: Tube
+    3300006: Tube_1
+    3300008: Tube_10
+    3300010: Tube_11
+    3300012: Tube_12
+    3300014: Tube_2
+    3300016: Tube_2_2
+    3300018: Tube_3
+    3300020: Tube_4
+    3300022: Tube_5
+    3300024: Tube_6
+    3300026: Tube_7
+    3300028: Tube_8
+    3300030: Tube_9
+    4300000: Tube
+    4300002: "Sph\xE8re_1"
+    4300004: "Sph\xE8re"
+    4300006: Tube_12
+    4300008: Tube_11
+    4300010: Tube_10
+    4300012: Tube_9
+    4300014: Tube_8
+    4300016: Tube_7
+    4300018: Tube_6
+    4300020: Tube_5
+    4300022: Tube_4
+    4300024: Tube_3
+    4300026: Tube_1
+    4300028: Tube_2
+    4300030: Tube_2_2
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
