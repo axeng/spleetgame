@@ -11,6 +11,8 @@ namespace Assets.Script
 		public KeyCode backward { get; set; }
 		public KeyCode right { get; set; }
 		
+		public KeyCode sprint { get; set; }
+		
 		public KeyCode jump { get; set; }
 		
 		public Settings()
@@ -19,6 +21,8 @@ namespace Assets.Script
 			left = KeyCode.Q;
 			backward = KeyCode.S;
 			right = KeyCode.D;
+
+			sprint = KeyCode.LeftShift;
 
 			jump = KeyCode.Space;
 		}

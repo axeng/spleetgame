@@ -9,6 +9,7 @@ public class PlayerScript : MonoBehaviour
 	public float speedMov = 2.0f;
 	public float speedCam = 2.0f;
 	public float jumpForce = 2.0f;
+	public float sprintMultiplier = 1.5f;
 
 	private int id;
 	private Player player;
@@ -66,6 +67,11 @@ public class PlayerScript : MonoBehaviour
 			move.x += 0.1f * speedMov;
 		}
 
+		if (Input.GetKey(settings.sprint))
+		{
+			move = move * sprintMultiplier;
+		}
+
 		if (this.player.IsGrounded())
 		{
 			jumpCount = 0;
@@ -81,10 +87,10 @@ public class PlayerScript : MonoBehaviour
 
 		rotX += Input.GetAxis("Mouse X") * speedCam;
 		rotY -= Input.GetAxis("Mouse Y") * speedCam;
-		if (rotY > 90)
-			rotY = 90;
-		else if (rotY < -90)
-			rotY = -90;
+		if (rotY > 80)
+			rotY = 80;
+		else if (rotY < -80)
+			rotY = -80;
 
 		transform.rotation = Quaternion.Euler(0, rotX, 0);
 		transform.Translate(move);
