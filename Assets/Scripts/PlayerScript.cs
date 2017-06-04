@@ -10,6 +10,11 @@ public class PlayerScript : MonoBehaviour
 	public float speedCam = 2.0f;
 	public float jumpForce = 2.0f;
 	public float sprintMultiplier = 1.5f;
+	public float adrenalineMultiplier = 2.0f;
+	public int adrenalineDuration = 10;
+	public float minDegreeView = -80.0f;
+	public float maxDegreeView = 80.0f;
+	
 
 	private int id;
 	private Player player;
@@ -46,7 +51,11 @@ public class PlayerScript : MonoBehaviour
 				
 			case "adr":
 				hit.gameObject.SetActive(false);
-				this.player.ActiveAdrenaline(10);
+				this.player.ActiveAdrenaline(adrenalineDuration);
+				break;
+				
+			case "dop":
+				this.player.nbHints++;
 				break;
 		}
 	}
@@ -56,15 +65,12 @@ public class PlayerScript : MonoBehaviour
 		if (Game.game.pause)
 			return;
 
-		bool boostspeed = false;
-
-		if ((DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalMilliseconds >= this.player.stopAdr)
+		if (this.player.adr && (DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalMilliseconds >= this.player.stopAdr)
+		{
 			this.player.doubleJump = false;
-		else
-			boostspeed = true;
+			this.player.adr = false;
+		}
 			
-
-
 		Vector3 move = new Vector3(0.0f, 0.0f, 0.0f);
 		Vector3 force = new Vector3(0.0f, 0.0f, 0.0f);
 		
@@ -88,8 +94,8 @@ public class PlayerScript : MonoBehaviour
 		if (Input.GetKey(settings.sprint))
 			move = move * sprintMultiplier;
 
-		if (boostspeed)
-			move = move * 2;
+		if (this.player.adr)
+			move = move * adrenalineMultiplier;
 
 		if (this.player.IsGrounded())
 		{
@@ -106,10 +112,10 @@ public class PlayerScript : MonoBehaviour
 
 		rotX += Input.GetAxis("Mouse X") * speedCam;
 		rotY -= Input.GetAxis("Mouse Y") * speedCam;
-		if (rotY > 80)
-			rotY = 80;
-		else if (rotY < -80)
-			rotY = -80;
+		if (rotY > maxDegreeView)
+			rotY = maxDegreeView;
+		else if (rotY < minDegreeView)
+			rotY = minDegreeView;
 
 		transform.rotation = Quaternion.Euler(0, rotX, 0);
 		transform.Translate(move);
