@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465934, g: 0.49642956, b: 0.5748249, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -133,7 +133,7 @@ Prefab:
     - target: {fileID: 114791642887518226, guid: b78f01be72c5c43ce89b7b501a3e5655,
         type: 2}
       propertyPath: startMap
-      value: plat1
+      value: poulet
       objectReference: {fileID: 0}
     - target: {fileID: 114791642887518226, guid: b78f01be72c5c43ce89b7b501a3e5655,
         type: 2}
