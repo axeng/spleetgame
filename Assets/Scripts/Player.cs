@@ -24,6 +24,8 @@ namespace Assets.Script
 		public bool doubleJump;
 		public double stopAdr;
 
+		public int nbHints;
+
 		public Player(int id, GameObject obj, Map map)
         {
 			this.id = id;
@@ -43,6 +45,8 @@ namespace Assets.Script
 
 			this.doubleJump = false;
 			this.stopAdr = 0;
+
+			this.nbHints = 0;
         }
 
 
