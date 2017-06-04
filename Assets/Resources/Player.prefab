@@ -7149,6 +7149,10 @@ MonoBehaviour:
   speedCam: 2
   jumpForce: 2
   sprintMultiplier: 1.5
+  adrenalineMultiplier: 2
+  adrenalineDuration: 10
+  minDegreeView: -80
+  maxDegreeView: 80
 --- !u!114 &114789491730496072
 MonoBehaviour:
   m_ObjectHideFlags: 1

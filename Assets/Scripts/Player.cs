@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,6 +28,8 @@ namespace Assets.Script
 
 		public int nbHints;
 
+		public List<GameObject> toActivate;
+
 		public Player(int id, GameObject obj, Map map)
         {
 			this.id = id;
@@ -49,6 +52,8 @@ namespace Assets.Script
 			this.adr = false;
 
 			this.nbHints = 0;
+
+			this.toActivate = new List<GameObject>();
         }
 
 
@@ -77,6 +82,13 @@ namespace Assets.Script
 		public void Die()
 		{
 			this.Tp(currentCheckpoint);
+			
+			foreach (GameObject gameObject in toActivate)
+				gameObject.SetActive(true);
+
+			adr = false;
+			nbHints = 0;
+			doubleJump = false;
 		}
 		
 		public void ActiveAdrenaline(int seconds)
@@ -116,5 +128,14 @@ namespace Assets.Script
 		{
 			return Physics.Raycast(this.obj.transform.position, -Vector3.up, distToGround + 0.1f);
 		}
+		
+		/*public IEnumerator ShowMessage(string message, float delay)
+		{
+			GUIText guiText = this.obj.GetComponent<GUIText>();
+			guiText.text = message;
+			guiText.enabled = true;
+			yield return new WaitForSeconds(delay);
+			guiText.enabled = false;
+		}*/
     }
 }

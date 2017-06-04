@@ -51,11 +51,14 @@ public class PlayerScript : MonoBehaviour
 				
 			case "adr":
 				hit.gameObject.SetActive(false);
+				this.player.toActivate.Add(hit.gameObject);
 				this.player.ActiveAdrenaline(adrenalineDuration);
+				//StartCoroutine(this.player.ShowMessage("Adrenaline effect is active for " + adrenalineDuration + " s", 2));
 				break;
 				
 			case "dop":
 				hit.gameObject.SetActive(false);
+				this.player.toActivate.Add(hit.gameObject);
 				this.player.nbHints++;
 				break;
 		}
@@ -125,5 +128,6 @@ public class PlayerScript : MonoBehaviour
 		//transform.rotation.Set(0, camera.transform.rotation.y, 0, 0);
 		camera.transform.rotation = Quaternion.Euler(rotY, rotX, 0);
 	}
+	
 	
 }
