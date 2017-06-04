@@ -38,15 +38,33 @@ public class PlayerScript : MonoBehaviour
 	
 	void OnCollisionEnter(Collision hit)
 	{
-		if (hit.gameObject.tag == "die")
-			this.player.Die();
+		switch(hit.gameObject.tag)
+		{
+			case "die":
+				this.player.Die();
+				break;
+				
+			case "adr":
+				hit.gameObject.SetActive(false);
+				this.player.ActiveAdrenaline(10);
+				break;
+		}
 	}
 	
 	void FixedUpdate()
 	{
 		if (Game.game.pause)
 			return;
+
+		bool boostspeed = false;
+
+		if ((DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalMilliseconds >= this.player.stopAdr)
+			this.player.doubleJump = false;
+		else
+			boostspeed = true;
 			
+
+
 		Vector3 move = new Vector3(0.0f, 0.0f, 0.0f);
 		Vector3 force = new Vector3(0.0f, 0.0f, 0.0f);
 		
@@ -68,9 +86,10 @@ public class PlayerScript : MonoBehaviour
 		}
 
 		if (Input.GetKey(settings.sprint))
-		{
 			move = move * sprintMultiplier;
-		}
+
+		if (boostspeed)
+			move = move * 2;
 
 		if (this.player.IsGrounded())
 		{

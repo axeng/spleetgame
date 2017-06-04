@@ -61,6 +61,8 @@ class Game : MonoBehaviour
 			players.Add(new Player(players.Count, p, map));*/
 
 		game = this;
+		
+		
 	}
 
 	// Update is called once per frame
@@ -94,7 +96,6 @@ class Game : MonoBehaviour
 		{
 			GameObject.FindWithTag("MapGUI").transform.GetChild(0).gameObject.SetActive(true);
 		}
-
 
 		if (Input.GetKeyDown(KeyCode.P))
 		{
