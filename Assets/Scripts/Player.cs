@@ -23,6 +23,7 @@ namespace Assets.Script
 		private float distToGround;
 		public bool doubleJump;
 		public double stopAdr;
+		public bool adr;
 
 		public int nbHints;
 
@@ -45,6 +46,7 @@ namespace Assets.Script
 
 			this.doubleJump = false;
 			this.stopAdr = 0;
+			this.adr = false;
 
 			this.nbHints = 0;
         }
@@ -82,6 +84,7 @@ namespace Assets.Script
 			double mili = seconds * 1000;
 			this.stopAdr = (DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalMilliseconds + seconds * 1000d;
 			doubleJump = true;
+			adr = true;
 		}
 		
 		public void Tp(Vector3 loc)
