@@ -89,6 +89,8 @@ namespace Assets.Script
 			adr = false;
 			nbHints = 0;
 			doubleJump = false;
+
+			//GameObject.FindWithTag("GameOverGUI").transform.GetChild(0).gameObject.SetActive(true);
 		}
 		
 		public void ActiveAdrenaline(int seconds)
@@ -127,6 +129,23 @@ namespace Assets.Script
 		public bool IsGrounded()
 		{
 			return Physics.Raycast(this.obj.transform.position, -Vector3.up, distToGround + 0.1f);
+		}
+		
+		public IEnumerator FadeGameOver(float delay)
+		{
+			GameObject canvas = GameObject.FindWithTag("GameOverGUI").transform.GetChild(0).gameObject;
+
+			float step = 1.0f / (delay * 100.0f);
+		
+			canvas.SetActive(true);
+			while (delay > 0)
+			{
+				yield return new WaitForSeconds(0.01f);
+				canvas.transform.GetChild(0).GetComponent<CanvasRenderer>().SetAlpha(delay * 100.0f * step);
+				delay -= 0.01f;
+			}
+			canvas.SetActive(false);
+			canvas.transform.GetChild(0).GetComponent<CanvasRenderer>().SetAlpha(1.0f);
 		}
     }
 }

@@ -47,6 +47,7 @@ public class PlayerScript : MonoBehaviour
 		{
 			case "die":
 				this.player.Die();
+				StartCoroutine(this.player.FadeGameOver(0.5f));
 				break;
 				
 			case "adr":

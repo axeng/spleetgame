@@ -16,7 +16,7 @@ TagManager:
   - LASERNET
   - adr
   - dop
-  - gel douche
+  - GameOverGUI
   layers:
   - Default
   - TransparentFX
