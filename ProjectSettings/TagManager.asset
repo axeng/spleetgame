@@ -17,6 +17,7 @@ TagManager:
   - adr
   - dop
   - GameOverGUI
+  - tp
   layers:
   - Default
   - TransparentFX
