@@ -262,7 +262,7 @@ namespace Assets.Script
                     MapTest.Add(new Block("Icorridor2_col", new Vector3(142.1392f,0.1244316f,-60.02477f), new Vector3(0f, 90f, 0)));
 					MapTest.Add(new Block("Door3D_col", new Vector3(146.7791f,2.87381f,-53.90477f), new Vector3(0f, 270f, 0), "door_2"));
 					MapTest.Add(new Block("Icorridor_col", new Vector3(154.6692f,0.1244316f,-59.79901f), new Vector3(0f, 180f, 0)));
-                    MapTest.Add(new Block("Teleportation portal", new Vector3(162.54f, 1f, -54.18f), new Vector3(0f, 0f, 0)));
+                    MapTest.Add(new Block("Teleportation portal", new Vector3(162.54f, 1f, -54.18f), new Vector3(0f, 0f, 0), "tp_Stp1"));
                     MapConstructor test1 = new MapConstructor(MapTest);
 
                     Map map1 = new Map(test1, name, MapType.TEST, new Vector3(2,2,-6));
@@ -393,7 +393,7 @@ namespace Assets.Script
                     bl_poulet.Add(new Block("plat/trap_pilier_col", new Vector3(318.8f, 16.2f, -5.34f), new Vector3(90f, 0f, 0)));
                     bl_poulet.Add(new Block("ADR", new Vector3(290.1726f, 16.44f, -5.957782f), new Vector3(0f, 0f, 0)));
                     bl_poulet.Add(new Block("plat/Icorridor_plat_col", new Vector3(286.47f, 13.5f, -0.0999999f), new Vector3(0f, 0f, 0)));
-                    bl_poulet.Add(new Block("Teleportation portal", new Vector3(516.8f, 14.844f, -54.07f), new Vector3(0f, 0f, 0)));
+                    bl_poulet.Add(new Block("Teleportation portal", new Vector3(516.8f, 14.844f, -54.07f), new Vector3(0f, 0f, 0), "tp_Stp0"));
                     MapConstructor mc_poulet = new MapConstructor(bl_poulet);
                     Map poulet = new Map(mc_poulet, name, MapType.OTHER, new Vector3(-12.685F, 26.5F, -5.74F));
                     poulet.GetCheckpoints().Add(new Checkpoint( new Vector2(268, -12), new Vector2(293, 0), new Vector3(274.5F, 15, -6)));
@@ -550,6 +550,56 @@ namespace Assets.Script
 					TestPressionPlate.AddElement(new string[] { "pressionplate_1" }, "door_1", ExecType.DOOR, ExecutorType.PRESSIONPLATE, false);
 					return TestPressionPlate;
 					break;
+
+                case "Stp3":
+                    List<Block> bl_Stp3 = new List<Block>();
+                    bl_Stp3.Add(new Block("Teleportation_portal_inactif", new Vector3(11.05383f, 4.386359f, 0f), new Vector3(0f, 0f, 0f)));
+                    bl_Stp3.Add(new Block("Teleportation_portal_inactif", new Vector3(-11.05383f, 4.386359f, 0f), new Vector3(0f, 0f, 0f)));
+                    bl_Stp3.Add(new Block("Teleportation portal", new Vector3(0f, 4.386359f, 11.05383f), new Vector3(0f, 0f, 0f), "tp_plat1"));
+                    bl_Stp3.Add(new Block("Teleportation_portal_inactif", new Vector3(0f, 4.386359f, -11.05383f), new Vector3(0f, 0f, 0f)));
+                    bl_Stp3.Add(new Block("Salle_de_tp_sans_tp_3_rouge_col", new Vector3(0f, 4.126359f, 0f), new Vector3(0f, 0f, 0f)));
+                    bl_Stp3.Add(new Block("TerrainCOOL", new Vector3(-242.2479f, -0.8736415f, -261.6377f), new Vector3(0f, 0f, 0f)));
+                    MapConstructor mc_Stp3 = new MapConstructor(bl_Stp3);
+                    Map Stp3 = new Map(mc_Stp3, name, MapType.OTHER, new Vector3(0, 10, 0));
+                    return Stp3;
+
+                case "Stp2":
+                    List<Block> bl_Stp2 = new List<Block>();
+                    bl_Stp2.Add(new Block("Teleportation portal", new Vector3(0f, 4.386359f, -11.05383f), new Vector3(0f, 0f, 0f), "tp_map1"));
+                    bl_Stp2.Add(new Block("Teleportation portal", new Vector3(0f, 4.386359f, 11.05383f), new Vector3(0f, 0f, 0f), "tp_plat1"));
+                    bl_Stp2.Add(new Block("Teleportation_portal_inactif", new Vector3(-11.05383f, 4.386359f, 0f), new Vector3(0f, 0f, 0f)));
+                    bl_Stp2.Add(new Block("Teleportation_portal_inactif", new Vector3(11.05383f, 4.386359f, 0f), new Vector3(0f, 0f, 0f)));
+                    bl_Stp2.Add(new Block("Salle_de_tp_sans_tp_2_rouge_col", new Vector3(0f, 4.126359f, 0f), new Vector3(0f, 0f, 0f)));
+                    bl_Stp2.Add(new Block("TerrainCOOL", new Vector3(-242.2479f, -0.8736415f, -261.6377f), new Vector3(0f, 0f, 0f)));
+                    MapConstructor mc_Stp2 = new MapConstructor(bl_Stp2);
+                    Map Stp2 = new Map(mc_Stp2, name, MapType.OTHER, new Vector3(0, 10, 0));
+                    return Stp2;
+
+                case "Stp1":
+                    List<Block> bl_Stp1 = new List<Block>();
+                    bl_Stp1.Add(new Block("TerrainCOOL", new Vector3(-242.2479f, -0.8736415f, -261.6377f), new Vector3(0f, 0f, 0f)));
+                    bl_Stp1.Add(new Block("Teleportation portal", new Vector3(0f, 4.386359f, -11.05383f), new Vector3(0f, 0f, 0f), "tp_map1"));
+                    bl_Stp1.Add(new Block("Teleportation portal", new Vector3(11.05383f, 4.386359f, 0f), new Vector3(0f, 0f, 0f), "tp_poulet"));
+                    bl_Stp1.Add(new Block("Teleportation portal", new Vector3(0f, 4.386359f, 11.05383f), new Vector3(0f, 0f, 0f), "tp_plat1"));
+                    bl_Stp1.Add(new Block("Teleportation_portal_inactif", new Vector3(-11.05383f, 4.386359f, 0f), new Vector3(0f, 0f, 0f)));
+                    bl_Stp1.Add(new Block("Salle_de_tp_sans_tp_1_rouge_col", new Vector3(0f, 4.126359f, 0f), new Vector3(0f, 0f, 0f)));
+                    MapConstructor mc_Stp1 = new MapConstructor(bl_Stp1);
+                    Map Stp1 = new Map(mc_Stp1, name, MapType.OTHER, new Vector3(0, 10, 0));
+                    return Stp1;
+
+
+                case "Stp0":
+                    List<Block> bl_Stp0 = new List<Block>();
+                    bl_Stp0.Add(new Block("Teleportation portal", new Vector3(0f, 4.386359f, -11.05383f), new Vector3(0f, 0f, 0f),"tp_map1"));
+                    bl_Stp0.Add(new Block("Teleportation portal", new Vector3(-11.05383f, 4.386359f, 0f), new Vector3(0f, 0f, 0f), ""));
+                    bl_Stp0.Add(new Block("Teleportation portal", new Vector3(11.05383f, 4.386359f, 0f), new Vector3(0f, 0f, 0f), "tp_poulet"));
+                    bl_Stp0.Add(new Block("Teleportation portal", new Vector3(0f, 4.386359f, 11.05383f), new Vector3(0f, 0f, 0f), "tp_plat1"));
+                    bl_Stp0.Add(new Block("Salle_de_tp_sans_tp_col", new Vector3(0f, 4.126359f, 0f), new Vector3(0f, 0f, 0f)));
+                    bl_Stp0.Add(new Block("TerrainCOOL", new Vector3(-242.2479f, -0.8736415f, -261.6377f), new Vector3(0f, 0f, 0f)));
+                    MapConstructor mc_Stp0 = new MapConstructor(bl_Stp0);
+                    Map Stp0 = new Map(mc_Stp0, name, MapType.OTHER, new Vector3(0, 10, 0));
+                    return Stp0;
+
 
                 default:	
                     return null;
