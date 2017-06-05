@@ -6,7 +6,7 @@ namespace Assets.Script
 {
 	public class PressionPlate : Executor
 	{
-		private int activeDuration = 10;
+		private int activeDuration = 5;
 	
 		public PressionPlate(Executable e, GameObject active, GameObject nonActive, bool tag = true)
 		: base(e, active, nonActive, ExecutorType.PRESSIONPLATE, tag)
@@ -17,14 +17,17 @@ namespace Assets.Script
 		{
 			this.activate = true;
 			
-			active.SetActive(this.activate);
-			nonActive.SetActive(!this.activate);	
+			UpdateColors();
+			
+			Game.game.StartCoroutine(Coroutine(activeDuration));
 		}
 		
 		public IEnumerator Coroutine(float delay)
 		{
 			yield return new WaitForSeconds(delay);
 			this.activate = false;
+			UpdateColors();
+			this.Exec();
 		}
 	}
 }

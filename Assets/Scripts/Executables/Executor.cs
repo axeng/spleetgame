@@ -22,11 +22,11 @@ namespace Assets.Script
 			this.nonActive = nonActive;
 
             this.executable = e;
-            this.activate = true;
+			this.activate = false;
 			this.type = type;
 			this.tag = tag;
-			this.Push();
-			
+			//this.Push();
+			UpdateColors();
         }
 
         //check if the button is on or off
@@ -40,12 +40,15 @@ namespace Assets.Script
         {
             this.activate = !this.activate;
 
+			UpdateColors();
+        }
+
+		public void UpdateColors()
+		{
 			//change buttons colors
 			active.SetActive(this.activate);
 			nonActive.SetActive(!this.activate);
-        }
-
-		//public void 
+		}
 
         public void Exec()
         {
