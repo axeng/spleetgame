@@ -173,4 +173,10 @@ class Game : MonoBehaviour
 		return i;
 	}
 	
+	public IEnumerator LoadMapTime(string name)
+	{
+		yield return new WaitForSeconds(0.1f);
+		LoadMap(name);
+	}
+	
 }

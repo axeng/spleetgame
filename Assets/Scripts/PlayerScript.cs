@@ -63,7 +63,8 @@ public class PlayerScript : MonoBehaviour
 				break;
 				
 			case "tp":
-				Game.game.LoadMap(hit.gameObject.name.Replace("tp_", ""));
+				hit.gameObject.SetActive(false);
+				Game.game.StartCoroutine(Game.game.LoadMapTime(hit.gameObject.name.Replace("tp_", "")));
 				break;
 
 			default:
