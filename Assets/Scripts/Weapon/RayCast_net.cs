@@ -113,7 +113,7 @@ public class RayCast_net : NetworkBehaviour
     private IEnumerator ShotEffect()
     {
         // Play the shooting sound effect
-        //gunAudio.Play();
+        gunAudio.Play();
 
         // Turn on our line renderer
         laserLine.enabled = true;
