@@ -36,7 +36,7 @@ namespace Assets.Script
         }
         
         // Active le bouton ou le desactive
-        public void Push()           
+        public virtual void Push()           
         {
             this.activate = !this.activate;
 
@@ -44,6 +44,8 @@ namespace Assets.Script
 			active.SetActive(this.activate);
 			nonActive.SetActive(!this.activate);
         }
+
+		//public void 
 
         public void Exec()
         {

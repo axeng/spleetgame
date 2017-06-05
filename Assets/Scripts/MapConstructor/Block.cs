@@ -43,7 +43,7 @@ namespace Assets.Script
 							child.name = name + "_right";
 					}
 				}
-				else if (name.StartsWith("button_"))
+				else if (name.StartsWith("button_") || name.StartsWith("pressionplate_"))
 				{
 					for (int i = 0; i < obj.transform.childCount; i++)
 					{
