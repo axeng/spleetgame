@@ -28,7 +28,7 @@ public class GetMapCode : MonoBehaviour {
 					+ "f), new Vector3(" 
 						+ go.transform.rotation.eulerAngles.x
 						+"f, "+go.transform.rotation.eulerAngles.y
-						+"f, "+go.transform.rotation.eulerAngles.z+")));\n";
+						+"f, "+go.transform.rotation.eulerAngles.z+"f)));\n";
 		}
 		
 		result += "MapConstructor mc_" + nameT + " = new MapConstructor(bl_" + nameT + ");\n";
