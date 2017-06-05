@@ -295,7 +295,7 @@ namespace Assets.Script
                     Map.Add(new Block("plat/Door3D_plat_col", new Vector3(4, 2, -6), 90));
                     Map.Add(new Block("plat/Door3D_plat_col", new Vector3(-31, 2, -41), 0, "door_1"));
                     Map.Add(new Block("plat/corridoirscile", new Vector3(-74, -84.3f, -8), 0));
-                    Map.Add(new Block("Teleportation portal", new Vector3(-30.08f, 1f, -45.12f), new Vector3(0f, 0f, 0)));
+                    Map.Add(new Block("Teleportation portal", new Vector3(-30.08f, 1f, -45.12f), new Vector3(0.0f, 0.0f, 0.0f), "tp_Stp2"));
                     MapConstructor test2 = new MapConstructor(Map);
 					test2.AddObject("Subtitles/NarrationSystem");
 					test2.AddObject("Subtitles/Subtitle_gun");

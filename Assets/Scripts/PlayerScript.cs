@@ -61,6 +61,10 @@ public class PlayerScript : MonoBehaviour
 				this.player.toActivate.Add(hit.gameObject);
 				this.player.nbHints++;
 				break;
+				
+			case "tp":
+				Game.game.LoadMap(hit.gameObject.name.Replace("tp_", ""));
+				break;
 
 			default:
 				Game.map.WalkOn(hit.gameObject);
