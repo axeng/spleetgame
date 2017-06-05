@@ -227,8 +227,7 @@ namespace Assets.Script
                     MapTest.Add(new Block(BlockType.Icorridor, new Vector3(36, 0, -24), -90));
                     MapTest.Add(new Block(BlockType.Door3D, new Vector3(-17, 2, -6), 90, "door_1"));
                     MapTest.Add(new Block(BlockType.Door3D, new Vector3(77, 2, -54), 90, "door_3"));
-                    MapTest.Add(new Block(BlockType.Lcorridor, new Vector3(60, 0, -60), 180));
-                    //MapTest.Add(new Block(BlockType.Enigme1, new Vector3(91, 23, -71), 180));			
+                    MapTest.Add(new Block(BlockType.Lcorridor, new Vector3(60, 0, -60), 180));		
 					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(147.16f,6.5f,-48.244f), new Vector3(0f, 0f, 0)));
 					MapTest.Add(new Block("FloorNeonAlea_col", new Vector3(107f,0.1244316f,-60.02477f), new Vector3(0f, 180f, 0)));
 					MapTest.Add(new Block("Lcorridor2_col", new Vector3(106.1292f,0.1244316f,-84.1f), new Vector3(0f, 180f, 0)));
