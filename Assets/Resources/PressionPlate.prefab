@@ -205,8 +205,8 @@ GameObject:
   - component: {fileID: 95206189520943552}
   - component: {fileID: 65311095876202236}
   m_Layer: 0
-  m_Name: Plaque de Pression actif
-  m_TagString: Untagged
+  m_Name: PressionPlateOn
+  m_TagString: true
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -239,8 +239,8 @@ GameObject:
   - component: {fileID: 95377835567060952}
   - component: {fileID: 65055095813650744}
   m_Layer: 0
-  m_Name: Plaque de pression inactif
-  m_TagString: Untagged
+  m_Name: PressionPlateOff
+  m_TagString: false
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
