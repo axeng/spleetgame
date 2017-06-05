@@ -187,7 +187,7 @@ namespace Assets.Script
 					b = pressionPlates[i];
 			}
 
-			if (b != null)
+			if (b != null && !b.IsActivate())
 			{
 				b.Push();
 				b.Exec();
@@ -538,6 +538,16 @@ namespace Assets.Script
                     Mapmulti.AddElement(new string[] { "button_2" }, "door_3", ExecType.DOOR, false);
                     Mapmulti.AddElement(new string[] { "button_3" }, "door_1", ExecType.DOOR, false);
 					return Mapmulti;
+					break;
+					
+				case "TestPressionPlate":
+					List<Block> bl_TestPressionPlate = new List<Block>();
+					bl_TestPressionPlate.Add(new Block("PressionPlate", new Vector3(154.8005f,0.22f,117.5f), new Vector3(0f, 0f, 0), "pressionplate_1"));
+					bl_TestPressionPlate.Add(new Block("Door3D_col", new Vector3(155.3491f,2.017251f,130.8972f), new Vector3(0f, 0f, 0), "door_1"));
+					MapConstructor mc_TestPressionPlate = new MapConstructor(bl_TestPressionPlate);
+					Map TestPressionPlate = new Map(mc_TestPressionPlate, name, MapType.OTHER, new Vector3(152,1,108));
+					TestPressionPlate.AddElement(new string[] { "pressionplate_1" }, "door_1", ExecType.DOOR, ExecutorType.PRESSIONPLATE, false);
+					return TestPressionPlate;
 					break;
 
                 default:	
