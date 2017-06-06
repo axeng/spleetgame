@@ -321,7 +321,7 @@ namespace Assets.Script
                     MapTest.Add(new Block("Icorridor2_col", new Vector3(142.1392f,0.1244316f,-60.02477f), new Vector3(0f, 90f, 0)));
 					MapTest.Add(new Block("Door3D_col", new Vector3(146.7791f,2.87381f,-53.90477f), new Vector3(0f, 270f, 0), "door_2"));
 					MapTest.Add(new Block("Icorridor_col", new Vector3(154.6692f,0.1244316f,-59.79901f), new Vector3(0f, 180f, 0)));
-                    MapTest.Add(new Block("Teleportation portal", new Vector3(162.54f, 1f, -54.18f), new Vector3(0f, 0f, 0), "tp_Stp%l"));
+                    MapTest.Add(new Block("Teleportation portal", new Vector3(162.54f, 0.6f, -54.18f), new Vector3(0f, 0f, 0), "tp_Stp%l"));
                     MapConstructor test1 = new MapConstructor(MapTest);
 
                     Map map1 = new Map(test1, name, MapType.TEST, new Vector3(2,2,-6));
@@ -353,7 +353,7 @@ namespace Assets.Script
                     Map.Add(new Block("plat/Icorridor_plat_col", new Vector3(-24.09f, 0f, -49.6f), 90));
                     Map.Add(new Block("plat/Tcorridor_plat_col", new Vector3(-48, 0, 0), 0));
                     Map.Add(new Block("plat/Door3D_plat_col", new Vector3(4, 2, -6), 90));
-                    Map.Add(new Block("plat/Door3D_plat_col", new Vector3(-31, 2, -41), 0, "door_1"));
+                    Map.Add(new Block("plat/Door3D_plat_col", new Vector3(-30.25f, 2, -41), 0, "door_1"));
                     Map.Add(new Block("plat/corridoirscile", new Vector3(-74, -84.3f, -8), 0));
                     Map.Add(new Block("Teleportation portal", new Vector3(-30.08f, 0.5f, -45.12f), new Vector3(0.0f, 0.0f, 0.0f), "tp_Stp%l"));
                     MapConstructor test2 = new MapConstructor(Map);
@@ -667,22 +667,22 @@ namespace Assets.Script
                     bl_enigme.Add(new Block("Icorridor3x6_col", new Vector3(258.0081f, 6.389999f, -16.80916f), new Vector3(0f, 270f, 0f)));
                     bl_enigme.Add(new Block("Icorridor3x6_col", new Vector3(252.0081f, 6.389999f, -14.40916f), new Vector3(0f, 90f, 0f)));
                     bl_enigme.Add(new Block("Button", new Vector3(201.7533f, 8.700001f, -73.82f), new Vector3(0f, 0f, 0f), "button_2"));
-                    bl_enigme.Add(new Block("Button", new Vector3(201.8547f, 6.75f, -55.2f), new Vector3(0f, 0f, 0f), "button_3"));
-                    bl_enigme.Add(new Block("Button", new Vector3(235.22f, 8.889999f, -62.57f), new Vector3(0f, 90f, 0f), "button_4"));
+                    //bl_enigme.Add(new Block("Button", new Vector3(201.8547f, 6.75f, -55.2f), new Vector3(0f, 0f, 0f), "button_3"));
+                    //bl_enigme.Add(new Block("Button", new Vector3(235.22f, 8.889999f, -62.57f), new Vector3(0f, 90f, 0f), "button_4"));
                     bl_enigme.Add(new Block("Button", new Vector3(219.63f, 10.57f, -64.55f), new Vector3(0f, 90f, 0f), "button_5"));
                     bl_enigme.Add(new Block("Button", new Vector3(265.79f, 9.5f, -82.42f), new Vector3(0f, 90f, 0f), "button_6"));
                     bl_enigme.Add(new Block("Button", new Vector3(234.183f, 9.650002f, -17.16518f), new Vector3(0f, 90f, 0f), "button_7"));
-                    bl_enigme.Add(new Block("Button", new Vector3(256.24f, 7.330002f, 9.285f), new Vector3(0f, 0f, 0f), "button_8"));
-                    bl_enigme.Add(new Block("Button", new Vector3(229.61f, 9.456463f, -19.00024f), new Vector3(0f, 90f, 0f), "button_9"));
-                    bl_enigme.Add(new Block("Button", new Vector3(204.267f, 9.484932f, -20.238f), new Vector3(0f, 0f, 0f), "button_10"));
+                    //bl_enigme.Add(new Block("Button", new Vector3(256.24f, 7.330002f, 9.285f), new Vector3(0f, 0f, 0f), "button_8"));
+                    //bl_enigme.Add(new Block("Button", new Vector3(229.61f, 9.456463f, -19.00024f), new Vector3(0f, 90f, 0f), "button_9"));
+                    //bl_enigme.Add(new Block("Button", new Vector3(204.267f, 9.484932f, -20.238f), new Vector3(0f, 0f, 0f), "button_10"));
                     bl_enigme.Add(new Block("Door3D_col", new Vector3(276.7964f, 2.540001f, -29.60845f), new Vector3(0f, 90f, 0f), "door_3"));
                     bl_enigme.Add(new Block("Mur", new Vector3(290.47f, 6.489998f, -29.24608f), new Vector3(0f, 270f, 0f)));
 
 
                     MapConstructor mc_enigme = new MapConstructor(bl_enigme);
-                    Map enigme = new Map(mc_enigme, name, MapType.OTHER, new Vector3(0, 0, -4.7f));
+                    Map enigme = new Map(mc_enigme, name, MapType.OTHER, new Vector3(0, 5, -4.7f));
                     enigme.AddElement(new string[] { "button_1" }, "door_2", ExecType.DOOR, false);
-                    enigme.AddElement(new string[] { "button_2", "button_3", "button_4", "button_5", "button_6", "button_7", "button_8", "button_9", "button_10" }, "door_3", ExecType.DOOR, false);
+                    enigme.AddElement(new string[] { "button_2", "button_5", "button_6", "button_7"}, "door_3", ExecType.DOOR, false);
                     enigme.AddElement(new string[] { "pressionplate_1" }, "door_1", ExecType.DOOR, ExecutorType.PRESSIONPLATE,false);
                     enigme.AddElement(new string[] { "pressionplate_2" }, "window_1", ExecType.WINDOW, ExecutorType.PRESSIONPLATE, false);
                     return enigme;
@@ -887,7 +887,7 @@ namespace Assets.Script
                 case "Stp0":
                     List<Block> bl_Stp0 = new List<Block>();
                     bl_Stp0.Add(new Block("Teleportation portal", new Vector3(0f, 4.386359f, -11.05383f), new Vector3(0f, 0f, 0f),"tp_map1"));
-                    bl_Stp0.Add(new Block("Teleportation portal", new Vector3(-11.05383f, 4.386359f, 0f), new Vector3(0f, 0f, 0f), ""));
+                    bl_Stp0.Add(new Block("Teleportation portal", new Vector3(-11.05383f, 4.386359f, 0f), new Vector3(0f, 0f, 0f), "tp_enigme"));
                     bl_Stp0.Add(new Block("Teleportation portal", new Vector3(11.05383f, 4.386359f, 0f), new Vector3(0f, 0f, 0f), "tp_poulet"));
                     bl_Stp0.Add(new Block("Teleportation portal", new Vector3(0f, 4.386359f, 11.05383f), new Vector3(0f, 0f, 0f), "tp_plat1"));
                     bl_Stp0.Add(new Block("Salle_de_tp_sans_tp_col", new Vector3(0f, 4.126359f, 0f), new Vector3(0f, 0f, 0f)));
