@@ -63,7 +63,10 @@ class Game : MonoBehaviour
 		}
 
 		if (startMap != "None")
+		{
 			map = Map.GetMap(startMap);
+			map.Construct();
+		}
 		else
 			map = new Map("None", MapType.TEST, new Vector3(-13, 5, -8));
 
@@ -198,6 +201,7 @@ class Game : MonoBehaviour
 	{
 		DestroyMap();
 		map = Map.GetMap(name);
+		map.Construct();
 	}
 	
 	public static int AddPlayer(GameObject obj)

@@ -365,6 +365,7 @@ GameObject:
   - component: {fileID: 136554454956639938}
   - component: {fileID: 65957300615191476}
   - component: {fileID: 136310242240258002}
+  - component: {fileID: 95989217832627316}
   m_Layer: 0
   m_Name: Scile
   m_TagString: Untagged
@@ -1223,6 +1224,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0553875, y: 1.7301415, z: 0.57524216}
   m_Center: {x: -0.04826927, y: -0.037847526, z: 0.025601149}
+--- !u!95 &95989217832627316
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1979261441338676}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9b57bae2fad744e7a830aaf86ab2a7b2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!136 &136310242240258002
 CapsuleCollider:
   m_ObjectHideFlags: 1
