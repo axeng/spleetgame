@@ -162,12 +162,25 @@ class Game : MonoBehaviour
 		}*/
 
 		PlayerPrefs.SetInt("STPlevel", level);
+		foreach(string m in Map.mapsName)
+		{
+			if (finishLevels.Contains(m))
+				PlayerPrefs.SetInt("LEVEL" + m, 1);
+			else
+				PlayerPrefs.SetInt("LEVEL" + m, 0);
+		}
 		
 	}
 	
 	public void UseSave()
 	{
 		level = PlayerPrefs.GetInt("STPlevel", 3);
+		foreach(string m in Map.mapsName)
+		{
+			int finish = PlayerPrefs.GetInt("LEVEL" + m, 0);
+			if (finish == 1)
+				finishLevels.Add(m);
+		}
 	}
 	
 	public void DestroyMap()
