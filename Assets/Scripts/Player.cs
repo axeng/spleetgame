@@ -26,7 +26,7 @@ namespace Assets.Script
 		public double stopAdr;
 		public bool adr;
 
-		public int nbHints;
+		public static int nbHints = 0;
 
 		public List<GameObject> toActivate;
 		
@@ -50,8 +50,6 @@ namespace Assets.Script
 			this.doubleJump = false;
 			this.stopAdr = 0;
 			this.adr = false;
-
-			this.nbHints = 2;
 
 			this.toActivate = new List<GameObject>();
         }

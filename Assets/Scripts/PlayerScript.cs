@@ -59,11 +59,11 @@ public class PlayerScript : MonoBehaviour
 			case "dop":
 				hit.gameObject.SetActive(false);
 				//this.player.toActivate.Add(hit.gameObject);
-				this.player.nbHints++;
+				Player.nbHints++;
 				string s = "s";
-				if (this.player.nbHints < 2)
+				if (Player.nbHints < 2)
 					s = "";
-				Game.game.PopupMessage("You have " + this.player.nbHints + " hint" + s, 1);
+				Game.game.PopupMessage("You have " + Player.nbHints + " hint" + s, 1);
 				break;
 				
 			case "tp":
@@ -126,7 +126,7 @@ public class PlayerScript : MonoBehaviour
 			jumpCount = 0;
 		}
 		
-		if ((this.player.IsGrounded() || this.player.doubleJump) && Input.GetKeyDown(settings.jump) && (jumpCount == 0 || this.player.doubleJump && jumpCount <= 2))
+		if ((this.player.IsGrounded() || this.player.doubleJump) && Input.GetKeyDown(settings.jump) && (jumpCount == 0 || this.player.doubleJump && jumpCount < 2))
 		{
 			force.y += 5.0f * jumpForce;
 			jumpCount++;
@@ -150,8 +150,8 @@ public class PlayerScript : MonoBehaviour
 		
 		if (Input.GetKeyDown(KeyCode.H))
 		{
-			if (this.player.nbHints > 0 && Game.map.PopOneHint())
-				this.player.nbHints--;
+			if (Player.nbHints > 0 && Game.map.PopOneHint())
+				Player.nbHints--;
 		}
 	}
 	
