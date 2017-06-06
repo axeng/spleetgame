@@ -25,6 +25,8 @@ class Game : MonoBehaviour
 	public static int level;
 	public static List<string> finishLevels;
 
+	public bool isPopup;
+
 	// Use this for initialization
 	void Start()
 	{
@@ -68,6 +70,8 @@ class Game : MonoBehaviour
 
 		level = 3;
 		finishLevels = new List<string>();
+
+		isPopup = false;
 	}
 
 	// Update is called once per frame
@@ -186,6 +190,7 @@ class Game : MonoBehaviour
 	
 	public void PopupMessage(string message, int delay)
 	{
+		isPopup = true;
 		GameObject canvas = GameObject.FindWithTag("SampleTextGUI").transform.GetChild(0).gameObject;
 		Text text = canvas.transform.GetChild(0).transform.GetChild(0).gameObject.GetComponent<Text>();
 		text.text = message;
@@ -207,5 +212,6 @@ class Game : MonoBehaviour
 		}
 		canvas.SetActive(false);
 		canvas.transform.GetChild(0).GetComponent<CanvasRenderer>().SetAlpha(1.0f);
+		isPopup = false;
 	}
 }

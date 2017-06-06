@@ -51,7 +51,7 @@ namespace Assets.Script
 			this.stopAdr = 0;
 			this.adr = false;
 
-			this.nbHints = 0;
+			this.nbHints = 2;
 
 			this.toActivate = new List<GameObject>();
         }

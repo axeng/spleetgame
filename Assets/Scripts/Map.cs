@@ -23,6 +23,8 @@ namespace Assets.Script
 
 		private List<MapConstructor> constructors;
 
+		private List<string> hintsList;
+
 		public Map(List<MapConstructor> constructors, string name, MapType type, Vector3 spawnPoint) : this(constructors, name, type, new List<Vector3>(new Vector3[] {spawnPoint})){}
         public Map(List<MapConstructor> constructors, string name, MapType type, List<Vector3> spawnPoint) : this(name, type, spawnPoint)
         {
@@ -74,6 +76,7 @@ namespace Assets.Script
 			this.spawnPoint = spawnPoint;
 
 			this.constructors = new List<MapConstructor>();
+			this.hintsList = new List<string>();
         }     
 
 		public List<Checkpoint> GetCheckpoints()
@@ -164,33 +167,28 @@ namespace Assets.Script
 		//call each time a laser hit an object
 		public void Shoot(GameObject gameObject)
 		{
-			Executor b = null;
-			for (int i = 0; b == null && i < buttons.Count; i++)
-			{
-				if (buttons[i].IsThisGameObject(gameObject))
-					b = buttons[i];
-			}
+			List<Executor> b = new List<Executor>();
+			b.AddRange(buttons.FindAll(p => p.IsThisGameObject(gameObject)));
 
-			if (b != null)
+			foreach(Executor e in b)
 			{
-				b.Push();
-				b.Exec();
+				e.Push();
+				e.Exec();
 			}
 		}
 		
 		public void WalkOn(GameObject gameObject)
 		{
-			Executor b = null;
-			for (int i = 0; b == null && i < pressionPlates.Count; i++)
-			{
-				if (pressionPlates[i].IsThisGameObject(gameObject))
-					b = pressionPlates[i];
-			}
+			List<Executor> b = new List<Executor>();
+			b.AddRange(pressionPlates.FindAll(p => p.IsThisGameObject(gameObject)));
 
-			if (b != null && !b.IsActivate())
+			foreach(Executor e in b)
 			{
-				b.Push();
-				b.Exec();
+				if (!e.IsActivate())
+				{
+					e.Push();
+					e.Exec();
+				}
 			}
 		}
 		
@@ -204,6 +202,21 @@ namespace Assets.Script
 			this.buttons.Clear();
 			this.spawnPoint.Clear();
 			this.constructors.Clear();
+		}
+		
+		public bool PopOneHint()
+		{
+			if (hintsList.Count <= 0)
+			{
+				Game.game.PopupMessage("You don't have hints available", 1);
+				return false;
+			}
+
+			if (Game.game.isPopup)
+				return false;
+			Game.game.PopupMessage(hintsList[0], 2);
+			hintsList.RemoveAt(0);
+			return true;
 		}
 
         public static Map GetMap(string name)
@@ -305,6 +318,8 @@ namespace Assets.Script
 					
                     Map plat1 = new Map(test2, name, MapType.TEST, new Vector3(0, 2.33f, -6.2f));
 					plat1.AddElement(new string[] { "button_1" }, "door_1", ExecType.DOOR, false);
+					plat1.hintsList.Add("un indice mdr");
+					plat1.hintsList.Add("un indice mdr 2");
 					return plat1;
                     break;
 

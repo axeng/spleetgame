@@ -146,6 +146,12 @@ public class PlayerScript : MonoBehaviour
 		//camera.transform.Translate(new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")));
 		//transform.rotation.Set(0, camera.transform.rotation.y, 0, 0);
 		camera.transform.rotation = Quaternion.Euler(rotY, rotX, 0);
+		
+		if (Input.GetKeyDown(KeyCode.H))
+		{
+			if (this.player.nbHints > 0 && Game.map.PopOneHint())
+				this.player.nbHints--;
+		}
 	}
 	
 }
