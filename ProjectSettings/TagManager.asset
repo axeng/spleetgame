@@ -18,6 +18,7 @@ TagManager:
   - dop
   - GameOverGUI
   - tp
+  - SampleTextGUI
   layers:
   - Default
   - TransparentFX
