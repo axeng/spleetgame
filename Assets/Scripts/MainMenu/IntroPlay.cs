@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainMenuPlay : MonoBehaviour {
+public class IntroPlay : MonoBehaviour {
 
 	public MovieTexture movTexture;
 
@@ -14,6 +14,7 @@ public class MainMenuPlay : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (!movTexture.isPlaying)
+			UnityEngine.SceneManagement.SceneManager.LoadScene(1);
 	}
 }

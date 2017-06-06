@@ -16,7 +16,7 @@ public class QuitOnClick : MonoBehaviour
     
     public void Exit()
     {
-    	SceneManager.LoadScene(0);
+    	SceneManager.LoadScene(1);
 	}
 
 }
