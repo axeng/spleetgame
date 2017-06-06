@@ -467,7 +467,7 @@ namespace Assets.Script
                     List<Block> bl_enigme = new List<Block>();
                     bl_enigme.Add(new Block("Icorridor_col", new Vector3(143.1f, 0f, -23.6f), new Vector3(0f, 0f, 0f)));
                     bl_enigme.Add(new Block("Lcorridor2_col", new Vector3(95.10001f, 0f, -0.0999999f), new Vector3(0f, 0f, 0f)));
-                    bl_enigme.Add(new Block("windows3D_col", new Vector3(84.22f, 8.599998f, -40.96204f), new Vector3(0f, 0f, 0f)));
+                    bl_enigme.Add(new Block("windows3D_col", new Vector3(84.22f, 8.599998f, -40.96204f), new Vector3(0f, 0f, 0f), "window_4"));
                     bl_enigme.Add(new Block("Icorridor3x6_col", new Vector3(77.36f, 6.299999f, -12.06f), new Vector3(0f, 180f, 0f)));
                     bl_enigme.Add(new Block("Door3D_col", new Vector3(76.85001f, 2.607101f, -6.21f), new Vector3(0f, 90f, 0f), "door_1"));
                     bl_enigme.Add(new Block("Icorridor3x6_col", new Vector3(77.60001f, 6.5f, 5.8f), new Vector3(0f, 180f, 0f)));
@@ -478,9 +478,9 @@ namespace Assets.Script
                     bl_enigme.Add(new Block("Icorridor_col", new Vector3(47.2f, 0f, 0f), new Vector3(0f, 0f, 0f)));
                     bl_enigme.Add(new Block("Icorridor_col", new Vector3(71.10001f, 0f, 0f), new Vector3(0f, 0f, 0f)));
                     bl_enigme.Add(new Block("Icorridor2_col", new Vector3(107.08f, 0f, -35.9f), new Vector3(0f, 180f, 0f)));
-                    bl_enigme.Add(new Block("windows3D_col", new Vector3(96.07001f, 8.599998f, -40.96204f), new Vector3(0f, 0f, 0f)));
+                    bl_enigme.Add(new Block("windows3D_col", new Vector3(96.07001f, 8.599998f, -40.96204f), new Vector3(0f, 0f, 0f), "window_2"));
                     bl_enigme.Add(new Block("sol", new Vector3(119.09f, 0f, -23.7f), new Vector3(0f, 0f, 0f)));
-                    bl_enigme.Add(new Block("windows3D_col", new Vector3(119.4f, 8.599998f, -40.96204f), new Vector3(0f, 0f, 0f)));
+                    bl_enigme.Add(new Block("windows3D_col", new Vector3(119.4f, 8.599998f, -40.96204f), new Vector3(0f, 0f, 0f), "window_3"));
                     bl_enigme.Add(new Block("windows3D_col", new Vector3(107.5f, 8.599998f, -40.96204f), new Vector3(0f, 0f, 0f), "window_1"));
                     bl_enigme.Add(new Block("Icorridor3x6_col", new Vector3(124.99f, 6.689999f, -40.92f), new Vector3(0f, 0f, 0f)));
                     bl_enigme.Add(new Block("Mur", new Vector3(122.3f, 6.408253f, -60.88087f), new Vector3(0f, 0f, 0f)));
@@ -686,10 +686,13 @@ namespace Assets.Script
                     enigme.AddElement(new string[] { "button_2", "button_5", "button_6", "button_7"}, "door_3", ExecType.DOOR, false);
                     enigme.AddElement(new string[] { "pressionplate_1" }, "door_1", ExecType.DOOR, ExecutorType.PRESSIONPLATE,false);
                     enigme.AddElement(new string[] { "pressionplate_2" }, "window_1", ExecType.WINDOW, ExecutorType.PRESSIONPLATE, false);
-
+                    //enigme.AddElement(new string[] { "pressionplate_2" }, "window_2", ExecType.WINDOW, ExecutorType.PRESSIONPLATE, false);
+                    //enigme.AddElement(new string[] { "pressionplate_2" }, "window_3", ExecType.WINDOW, ExecutorType.PRESSIONPLATE, false);
+                    //enigme.AddElement(new string[] { "pressionplate_2" }, "window_4", ExecType.WINDOW, ExecutorType.PRESSIONPLATE, false);
                     enigme.hintsList.Add("Les plaques de pressions se désactivent avec le temps.");
-                    enigme.hintsList.Add("Il y a 4 boutons à activer dans le labyrinthe.");
                     enigme.hintsList.Add("Un a gauche, trois à droite.");
+                    enigme.hintsList.Add("Il y a 4 boutons à activer dans le labyrinthe.");
+                    
 
                     return enigme;
 
