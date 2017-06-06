@@ -33,7 +33,7 @@ namespace Assets.Script
 		}
     }
 
-	enum ExecType
+	public enum ExecType
 	{
 		DOOR,
 		WINDOW

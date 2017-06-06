@@ -24,7 +24,10 @@ namespace Assets.Script
 					"Stp0", 
 					"enigme"
 				};
-    
+
+		public static Dictionary<string, Map> dicoMaps;
+
+		private List<ToAddElement> toAddElement;
     
 		//level name
     	private string name;
@@ -45,31 +48,7 @@ namespace Assets.Script
 		public Map(List<MapConstructor> constructors, string name, MapType type, Vector3 spawnPoint) : this(constructors, name, type, new List<Vector3>(new Vector3[] {spawnPoint})){}
         public Map(List<MapConstructor> constructors, string name, MapType type, List<Vector3> spawnPoint) : this(name, type, spawnPoint)
         {
-			int i = 0;
-			foreach (MapConstructor constructor in constructors)
-			{
-
-				if (i == 0)	
-				{
-					if (Game.multi)
-					{
-						constructor.AddObject("Network/Network Manager");
-						foreach(Vector3 loc in spawnPoint)
-						{
-							constructor.blocks.Add(new Block("Network/SpawnPoint", loc, 0));
-						}
-					}
-					else
-					{
-						constructor.blocks.Add(new Block("Player", spawnPoint[0], 0));
-					}
-				}
-	
-				constructor.Construct();
-				i++;
-			}
-
-			this.constructors = constructors;
+        	this.constructors = constructors;
         }
         
         
@@ -94,6 +73,8 @@ namespace Assets.Script
 
 			this.constructors = new List<MapConstructor>();
 			this.hintsList = new List<string>();
+
+			this.toAddElement = new List<ToAddElement>();
         }     
 
 		public List<Checkpoint> GetCheckpoints()
@@ -128,6 +109,16 @@ namespace Assets.Script
 		}
 		public void AddElement(string[] buts, string element, ExecType type, ExecutorType executorType, bool tag = true)
 		{
+			toAddElement.Add(new ToAddElement(buts, element, type, executorType, tag));
+		}
+		public void OldAddElement(ToAddElement e)
+		{
+			string[] buts = e.buts;
+			string element = e.element;
+			ExecType type = e.type;
+			ExecutorType executorType = e.executorType;
+			bool tag = e.tag;
+			
 			List<Executor> executorsElement = new List<Executor>();
 
 			foreach(string but in buts)
@@ -236,7 +227,45 @@ namespace Assets.Script
 			return true;
 		}
 
-        public static Map GetMap(string name)
+		public void Construct()
+		{
+			int i = 0;
+			foreach (MapConstructor constructor in constructors)
+			{
+
+				if (i == 0)	
+				{
+					if (Game.multi)
+					{
+						constructor.AddObject("Network/Network Manager");
+						foreach(Vector3 loc in spawnPoint)
+						{
+							constructor.blocks.Add(new Block("Network/SpawnPoint", loc, 0));
+						}
+					}
+					else
+					{
+						constructor.blocks.Add(new Block("Player", spawnPoint[0], 0));
+					}
+				}
+	
+				constructor.Construct();
+				i++;
+			}
+
+			foreach (ToAddElement e in toAddElement)
+				OldAddElement(e);
+		}
+
+		public static Map GetMap(string name)
+		{
+			if (dicoMaps.ContainsKey(name))
+				return dicoMaps[name];
+			else
+				return null;
+		}
+
+		public static Map OldGetMap(string name)
         {
             switch (name)
             {
