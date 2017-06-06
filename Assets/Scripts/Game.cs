@@ -195,6 +195,7 @@ class Game : MonoBehaviour
 		GameObject.FindWithTag("MapGUI").transform.GetChild(0).gameObject.SetActive(false);
 		players.Clear();
 		map.DestroyObjects();
+		Map.dicoMaps[map.GetName()] = Map.OldGetMap(map.GetName());
 	}
 	
 	public void LoadMap(string name)
