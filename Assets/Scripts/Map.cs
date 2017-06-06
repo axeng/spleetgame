@@ -285,7 +285,7 @@ namespace Assets.Script
                     MapTest.Add(new Block(BlockType.Lcorridor, new Vector3(24, 0, 0), 0));
                     MapTest.Add(new Block(BlockType.Icorridor, new Vector3(36, 0, -24), -90));
                     MapTest.Add(new Block(BlockType.Door3D, new Vector3(-17, 2, -6), 90, "door_1"));
-                    MapTest.Add(new Block(BlockType.Door3D, new Vector3(77, 2, -54), 90, "door_3"));
+                    MapTest.Add(new Block(BlockType.Door3D, new Vector3(77, 2.25f, -54), 90, "door_3"));
                     MapTest.Add(new Block(BlockType.Lcorridor, new Vector3(60, 0, -60), 180));		
 					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(147.16f,6.5f,-48.244f), new Vector3(0f, 0f, 0)));
 					MapTest.Add(new Block("FloorNeonAlea_col", new Vector3(107f,0.1244316f,-60.02477f), new Vector3(0f, 180f, 0)));
@@ -298,7 +298,8 @@ namespace Assets.Script
 					MapTest.Add(new Block("Icorridor2_col", new Vector3(107.0792f,0.1244316f,-48.01477f), new Vector3(0f, 270f, 0)));
 					MapTest.Add(new Block("Icorridor_col", new Vector3(106.2292f,0.1244316f,-96.12477f), new Vector3(0f, 270f, 0)));
 					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(147.16f,6.5f,-89.54f), new Vector3(0f, 0f, 0)));
-                    MapTest.Add(new Block("windows3D_col", new Vector3(111.9092f, 8.5f, -89.37477f), new Vector3(0f, 180f, 0), "window_1")); MapTest.Add(new Block("FloorNeonAlea_col", new Vector3(83.1f,0.1244316f,-60.02477f), new Vector3(0f, 180f, 0)));
+                    MapTest.Add(new Block("windows3D_col", new Vector3(111.9092f, 8.5f, -89.37477f), new Vector3(0f, 180f, 0), "window_1"));
+                    MapTest.Add(new Block("FloorNeonAlea_col", new Vector3(83.1f,0.1244316f,-60.02477f), new Vector3(0f, 180f, 0)));
 					MapTest.Add(new Block("FloorNeonAlea_col", new Vector3(130.9f,0.1244316f,-60.02477f), new Vector3(0f, 180f, 0)));
 					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(111.81f,6.5f,-103f), new Vector3(0f, 90f, 0)));
 					MapTest.Add(new Block("Icorridor_col", new Vector3(59.72915f,0.1244316f,-59.92477f), new Vector3(0f, 180f, 0)));
@@ -319,7 +320,7 @@ namespace Assets.Script
 					MapTest.Add(new Block("Button", new Vector3(109.9093f,3.955154f,-19.51477f), new Vector3(0f, 180f, 0), "button_5"));
                     MapTest.Add(new Block("Button", new Vector3(76.53f, 2.91f, -57.12f), new Vector3(0f, 90f, 0), "button_6"));
                     MapTest.Add(new Block("Icorridor2_col", new Vector3(142.1392f,0.1244316f,-60.02477f), new Vector3(0f, 90f, 0)));
-					MapTest.Add(new Block("Door3D_col", new Vector3(146.7791f,2.87381f,-53.90477f), new Vector3(0f, 270f, 0), "door_2"));
+					MapTest.Add(new Block("Door3D_col", new Vector3(146.7791f,2.25f,-53.90477f), new Vector3(0f, 270f, 0), "door_2"));
 					MapTest.Add(new Block("Icorridor_col", new Vector3(154.6692f,0.1244316f,-59.79901f), new Vector3(0f, 180f, 0)));
                     MapTest.Add(new Block("Teleportation portal", new Vector3(162.54f, 0.6f, -54.18f), new Vector3(0f, 0f, 0), "tp_Stp%l"));
                     MapConstructor test1 = new MapConstructor(MapTest);
@@ -685,6 +686,11 @@ namespace Assets.Script
                     enigme.AddElement(new string[] { "button_2", "button_5", "button_6", "button_7"}, "door_3", ExecType.DOOR, false);
                     enigme.AddElement(new string[] { "pressionplate_1" }, "door_1", ExecType.DOOR, ExecutorType.PRESSIONPLATE,false);
                     enigme.AddElement(new string[] { "pressionplate_2" }, "window_1", ExecType.WINDOW, ExecutorType.PRESSIONPLATE, false);
+
+                    enigme.hintsList.Add("Les plaques de pressions se désactivent avec le temps.");
+                    enigme.hintsList.Add("Il y a 4 boutons à activer dans le labyrinthe.");
+                    enigme.hintsList.Add("Un a gauche, trois à droite.");
+
                     return enigme;
 
 
