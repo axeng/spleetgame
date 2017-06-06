@@ -32,7 +32,7 @@ class Game : MonoBehaviour
 	{
 		Map.dicoMaps = new Dictionary<string, Map>();
 		foreach (string s in Map.mapsName)
-			Map.dicoMaps.Add(s, Map.GetMap(s));
+			Map.dicoMaps.Add(s, Map.OldGetMap(s));
 	
 		Cursor.lockState = CursorLockMode.Locked;
 
