@@ -9,6 +9,23 @@ namespace Assets.Script
 {
     class Map
     {
+		public static List<string> mapsName = 
+			new List<string>() { 
+					"mctest",
+					"map1", 
+					"plat1", 
+					"poulet", 
+					"mult", 
+					"Mapmulti", 
+					"TestPressionPlate", 
+					"Stp3",
+					"Stp2", 
+					"Stp1", 
+					"Stp0", 
+					"enigme"
+				};
+    
+    
 		//level name
     	private string name;
 		private MapType type;
@@ -415,13 +432,6 @@ namespace Assets.Script
                     poulet.hintsList.Add("Fais attention au timing des scies pour passer.");
                     poulet.hintsList.Add("Dépêche toi avec l'adrénaline tu n'as que  15 secondes.");
                     return poulet;
-
-
-                case "enigme":
-
-                    break;
-
-
 
                 case "mult":
                     List<Block> mult = new List<Block>();
