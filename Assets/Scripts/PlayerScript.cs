@@ -58,8 +58,12 @@ public class PlayerScript : MonoBehaviour
 				
 			case "dop":
 				hit.gameObject.SetActive(false);
-				this.player.toActivate.Add(hit.gameObject);
+				//this.player.toActivate.Add(hit.gameObject);
 				this.player.nbHints++;
+				string s = "s";
+				if (this.player.nbHints < 2)
+					s = "";
+				Game.game.PopupMessage("You have " + this.player.nbHints + " hint" + s, 1);
 				break;
 				
 			case "tp":

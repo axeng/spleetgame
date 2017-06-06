@@ -99,7 +99,7 @@ namespace Assets.Script
 			this.stopAdr = (DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalMilliseconds + seconds * 1000d;
 			doubleJump = true;
 			adr = true;
-			Game.game.PopupMessage("Adrenaline active for : "+seconds+"s", 2);
+			Game.game.PopupMessage("Adrenaline active for "+seconds+"s", 1);
 		}
 		
 		public void Tp(Vector3 loc)

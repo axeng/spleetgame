@@ -190,11 +190,22 @@ class Game : MonoBehaviour
 		Text text = canvas.transform.GetChild(0).transform.GetChild(0).gameObject.GetComponent<Text>();
 		text.text = message;
 		canvas.SetActive(true);
+		StartCoroutine(DepopMessage(delay));
 	}
 	
-	public IEnumerator DepopMessage(int delay)
+	public IEnumerator DepopMessage(float delay)
 	{
-		yield return new WaitForSeconds(delay);
-		GameObject.FindWithTag("SampleTextGUI").transform.GetChild(0).gameObject.SetActive(false);
+		GameObject canvas = GameObject.FindWithTag("SampleTextGUI").transform.GetChild(0).gameObject;
+
+		float step = 1.0f / (delay * 100.0f);
+		
+		while (delay > 0)
+		{
+			yield return new WaitForSeconds(0.01f);
+			canvas.transform.GetChild(0).GetComponent<CanvasRenderer>().SetAlpha(delay * 100.0f * step);
+			delay -= 0.01f;
+		}
+		canvas.SetActive(false);
+		canvas.transform.GetChild(0).GetComponent<CanvasRenderer>().SetAlpha(1.0f);
 	}
 }
