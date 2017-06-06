@@ -24,7 +24,8 @@ namespace Assets.Script
 					"Stp0", 
 					"enigme"
 				};
-    
+
+		public static Dictionary<string, Map> dicoMaps;
     
 		//level name
     	private string name;
@@ -236,7 +237,15 @@ namespace Assets.Script
 			return true;
 		}
 
-        public static Map GetMap(string name)
+		public static Map GetMap(string name)
+		{
+			if (dicoMaps.ContainsKey(name))
+				return dicoMaps[name];
+			else
+				return null;
+		}
+
+		public static Map OldGetMap(string name)
         {
             switch (name)
             {

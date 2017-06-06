@@ -30,6 +30,10 @@ class Game : MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
+		Map.dicoMaps = new Dictionary<string, Map>();
+		foreach (string s in Map.mapsName)
+			Map.dicoMaps.Add(s, Map.GetMap(s));
+	
 		Cursor.lockState = CursorLockMode.Locked;
 
 		players = new List<Player>();
@@ -138,13 +142,15 @@ class Game : MonoBehaviour
 		{
 			Directory.CreateDirectory("saves");
 		}*/
-		string toSave = "";
+		/*string toSave = "";
 
 		toSave += "MAP:" + map.GetName() + "\n";
 
 		//FIXME multiplayer
 		Vector3 check = players[0].GetCurrentCheckpoint();
 		toSave += "LASTCHECK:" + check.x + "," + check.y + "," + check.z + "\n";
+
+		toSave += "LEVEL:" + level;
 
 		try
 		{
@@ -153,7 +159,15 @@ class Game : MonoBehaviour
 		catch(Exception e)
 		{
 			Debug.LogWarning("Error when trying to save : "+e.GetType());
-		}
+		}*/
+
+		PlayerPrefs.SetInt("STPlevel", level);
+		
+	}
+	
+	public void UseSave()
+	{
+		level = PlayerPrefs.GetInt("STPlevel", 3);
 	}
 	
 	public void DestroyMap()

@@ -72,6 +72,7 @@ public class PlayerScript : MonoBehaviour
 				{
 					Game.level--;
 					Game.finishLevels.Add(Game.map.GetName());
+					Game.game.Save();
 				}
 				//yolo code
 				Game.game.StartCoroutine(Game.game.LoadMapTime(hit.gameObject.name.Replace("tp_", "").Replace("%l", ""+Game.level)));
