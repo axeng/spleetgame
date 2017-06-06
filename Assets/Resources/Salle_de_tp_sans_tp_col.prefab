@@ -294,6 +294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4430983663110734}
   - component: {fileID: 95908354936149994}
+  - component: {fileID: 65804071007291084}
   m_Layer: 0
   m_Name: Salle_de_tp_sans_tp_col
   m_TagString: Untagged
@@ -1736,6 +1737,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 25, y: 32, z: 3.3628693}
   m_Center: {x: 8.000038, y: 0.000005155802, z: 13.818565}
+--- !u!65 &65804071007291084
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1633990475276326}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 30, y: 1, z: 30}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65857358848552084
 BoxCollider:
   m_ObjectHideFlags: 1

@@ -263,6 +263,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4778401534555050}
   - component: {fileID: 95039200173209656}
+  - component: {fileID: 65632584926103734}
   m_Layer: 0
   m_Name: Salle_de_tp_sans_tp_1_rouge_col
   m_TagString: Untagged
@@ -1963,6 +1964,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 32, y: 12.007127, z: 22.560734}
   m_Center: {x: 0.22295451, y: 16.692543, z: 19.916462}
+--- !u!65 &65632584926103734
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1482828061522038}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 30, y: 1, z: 30}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65730324681387400
 BoxCollider:
   m_ObjectHideFlags: 1
