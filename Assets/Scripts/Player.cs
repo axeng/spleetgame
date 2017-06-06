@@ -85,7 +85,6 @@ namespace Assets.Script
 				gameObject.SetActive(true);
 
 			adr = false;
-			nbHints = 0;
 			doubleJump = false;
 
 			//GameObject.FindWithTag("GameOverGUI").transform.GetChild(0).gameObject.SetActive(true);
