@@ -262,7 +262,7 @@ namespace Assets.Script
                     MapTest.Add(new Block("Icorridor2_col", new Vector3(142.1392f,0.1244316f,-60.02477f), new Vector3(0f, 90f, 0)));
 					MapTest.Add(new Block("Door3D_col", new Vector3(146.7791f,2.87381f,-53.90477f), new Vector3(0f, 270f, 0), "door_2"));
 					MapTest.Add(new Block("Icorridor_col", new Vector3(154.6692f,0.1244316f,-59.79901f), new Vector3(0f, 180f, 0)));
-                    MapTest.Add(new Block("Teleportation portal", new Vector3(162.54f, 1f, -54.18f), new Vector3(0f, 0f, 0), "tp_Stp1"));
+                    MapTest.Add(new Block("Teleportation portal", new Vector3(162.54f, 1f, -54.18f), new Vector3(0f, 0f, 0), "tp_Stp%l"));
                     MapConstructor test1 = new MapConstructor(MapTest);
 
                     Map map1 = new Map(test1, name, MapType.TEST, new Vector3(2,2,-6));
@@ -295,7 +295,7 @@ namespace Assets.Script
                     Map.Add(new Block("plat/Door3D_plat_col", new Vector3(4, 2, -6), 90));
                     Map.Add(new Block("plat/Door3D_plat_col", new Vector3(-31, 2, -41), 0, "door_1"));
                     Map.Add(new Block("plat/corridoirscile", new Vector3(-74, -84.3f, -8), 0));
-                    Map.Add(new Block("Teleportation portal", new Vector3(-30.08f, 0.5f, -45.12f), new Vector3(0.0f, 0.0f, 0.0f), "tp_Stp2"));
+                    Map.Add(new Block("Teleportation portal", new Vector3(-30.08f, 0.5f, -45.12f), new Vector3(0.0f, 0.0f, 0.0f), "tp_Stp%l"));
                     MapConstructor test2 = new MapConstructor(Map);
 					test2.AddObject("Subtitles/NarrationSystem");
 					test2.AddObject("Subtitles/Subtitle_gun");
@@ -393,7 +393,7 @@ namespace Assets.Script
                     bl_poulet.Add(new Block("plat/trap_pilier_col", new Vector3(318.8f, 16.2f, -5.34f), new Vector3(90f, 0f, 0)));
                     bl_poulet.Add(new Block("ADR", new Vector3(290.1726f, 16.44f, -5.957782f), new Vector3(0f, 0f, 0)));
                     bl_poulet.Add(new Block("plat/Icorridor_plat_col", new Vector3(286.47f, 13.5f, -0.0999999f), new Vector3(0f, 0f, 0)));
-                    bl_poulet.Add(new Block("Teleportation portal", new Vector3(516.8f, 14.844f, -54.07f), new Vector3(0f, 0f, 0), "tp_Stp0"));
+                    bl_poulet.Add(new Block("Teleportation portal", new Vector3(516.8f, 14.844f, -54.07f), new Vector3(0f, 0f, 0), "tp_Stp%l"));
                     MapConstructor mc_poulet = new MapConstructor(bl_poulet);
                     Map poulet = new Map(mc_poulet, name, MapType.OTHER, new Vector3(-12.685F, 26.5F, -5.74F));
                     poulet.GetCheckpoints().Add(new Checkpoint( new Vector2(268, -12), new Vector2(293, 0), new Vector3(274.5F, 15, -6)));

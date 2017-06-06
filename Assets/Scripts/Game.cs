@@ -6,6 +6,7 @@ using Assets.Script;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 
 class Game : MonoBehaviour
 {
@@ -20,6 +21,9 @@ class Game : MonoBehaviour
 	public bool multiplayer = false;
 
 	public string startMap = "plat1";
+
+	public static int level;
+	public static List<string> finishLevels;
 
 	// Use this for initialization
 	void Start()
@@ -61,8 +65,9 @@ class Game : MonoBehaviour
 			players.Add(new Player(players.Count, p, map));*/
 
 		game = this;
-		
-		
+
+		level = 3;
+		finishLevels = new List<string>();
 	}
 
 	// Update is called once per frame
@@ -179,4 +184,17 @@ class Game : MonoBehaviour
 		LoadMap(name);
 	}
 	
+	public void PopupMessage(string message, int delay)
+	{
+		GameObject canvas = GameObject.FindWithTag("SampleTextGUI").transform.GetChild(0).gameObject;
+		Text text = canvas.transform.GetChild(0).transform.GetChild(0).gameObject.GetComponent<Text>();
+		text.text = message;
+		canvas.SetActive(true);
+	}
+	
+	public IEnumerator DepopMessage(int delay)
+	{
+		yield return new WaitForSeconds(delay);
+		GameObject.FindWithTag("SampleTextGUI").transform.GetChild(0).gameObject.SetActive(false);
+	}
 }
