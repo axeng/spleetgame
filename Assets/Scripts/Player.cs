@@ -26,7 +26,7 @@ namespace Assets.Script
 		public double stopAdr;
 		public bool adr;
 
-		public static int nbHints = 0;
+		public static int nbHints;
 
 		public List<GameObject> toActivate;
 		

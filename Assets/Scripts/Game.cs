@@ -36,6 +36,8 @@ class Game : MonoBehaviour
 	
 		Cursor.lockState = CursorLockMode.Locked;
 
+		Player.nbHints = 0;
+
 		players = new List<Player>();
 		multi = multiplayer;
 		
