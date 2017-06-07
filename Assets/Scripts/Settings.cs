@@ -89,7 +89,7 @@ namespace Assets.Script
 			
 			host = PlayerPrefs.GetInt("Shost", 0) != 0;
 			ip = IntToIpAdress(PlayerPrefs.GetInt("Sip", IpAdressToInt(IPAddress.Parse("127.0.0.1"))));
-			port = PlayerPrefs.GetInt("Sport", 4242);
+			port = PlayerPrefs.GetInt("Sport", 7777);
 			
 			
 			SaveSettings();

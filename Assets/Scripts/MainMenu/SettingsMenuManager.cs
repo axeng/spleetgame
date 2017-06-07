@@ -334,6 +334,12 @@ namespace Assets.Script
 			lastWait = null;
 			GameObject.FindWithTag("EventSystem").transform.GetChild(0).gameObject.SetActive(true);
 		}
+		
+		public void InitProgress()
+		{
+			PlayerPrefs.SetInt("STPlevel", 3);
+			PlayerPrefs.Save();
+		}
 
 
 		public void Save()
