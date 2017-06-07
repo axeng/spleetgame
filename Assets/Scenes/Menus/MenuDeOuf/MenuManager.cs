@@ -11,6 +11,7 @@ public class MenuManager : MonoBehaviour {
 
 	// Use this for initialization
 	public void Start () {
+		Time.timeScale = 1.0f;
 		mainMenuAnim = mainMenu.GetComponent<Animator>();
 		weaponsMenuAnim = weaponsMenu.GetComponent<Animator>();
 		graphismeMenuAnim = graphismeMenu.GetComponent<Animator>();

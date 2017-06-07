@@ -37,6 +37,7 @@ class Game : MonoBehaviour
 		Cursor.lockState = CursorLockMode.Locked;
 
 		Player.nbHints = 0;
+		Player.settings = new Settings();
 
 		players = new List<Player>();
 		multi = multiplayer;
@@ -115,7 +116,7 @@ class Game : MonoBehaviour
 			GameObject.FindWithTag("MapGUI").transform.GetChild(0).gameObject.SetActive(true);
 		}
 
-		if (Input.GetKeyDown(KeyCode.P))
+		if (Input.GetKeyDown(Player.settings.pause))
 		{
 			pause = !pause;
 			pauseGui = true;
@@ -175,6 +176,7 @@ class Game : MonoBehaviour
 				PlayerPrefs.SetInt("LEVEL" + m, 0);
 		}
 		
+		PlayerPrefs.Save();
 	}
 	
 	public void UseSave()

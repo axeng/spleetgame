@@ -12,12 +12,14 @@ namespace Assets.Script
 		//pseudo
 		private int id;
 
+		public static Settings settings;
+
 		public GameObject obj { get; set; }
 		public Rigidbody body { get; set; }
 		public CharacterController controller { get; set; }
         private Vector3 currentCheckpoint;
        	
-       	private Settings settings;
+       	//private Settings settings;
        	
         private Map map;
 
@@ -40,7 +42,7 @@ namespace Assets.Script
 
 			this.map = map;
 
-			settings = new Settings();
+			//settings = new Settings();
 
 			//set the spawn point as the current checkpoint
 			this.currentCheckpoint = new Vector3(body.position.x, body.position.y, body.position.z);
@@ -108,11 +110,6 @@ namespace Assets.Script
         {
             this.map = m;
         }
-        
-        public Settings GetSettings()
-        {
-			return this.settings;
-		}
 
 		public Vector3 GetCurrentCheckpoint()
 		{

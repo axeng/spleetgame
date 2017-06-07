@@ -30,7 +30,7 @@ public class PlayerScript : MonoBehaviour
 	{
 		this.id = Game.AddPlayer(gameObject);
 		this.player = Game.players[id];
-		this.settings = new Settings();
+		this.settings = Player.settings;
 		this.camera = Camera.main;
 
 		//this.rotX = camera.transform.rotation.eulerAngles.x;
@@ -148,7 +148,7 @@ public class PlayerScript : MonoBehaviour
 		//transform.rotation.Set(0, camera.transform.rotation.y, 0, 0);
 		camera.transform.rotation = Quaternion.Euler(rotY, rotX, 0);
 		
-		if (Input.GetKeyDown(KeyCode.H))
+		if (Input.GetKeyDown(this.settings.hint))
 		{
 			if (Player.nbHints > 0 && Game.map.PopOneHint())
 				Player.nbHints--;
