@@ -19,6 +19,7 @@ TagManager:
   - GameOverGUI
   - tp
   - SampleTextGUI
+  - EventSystem
   layers:
   - Default
   - TransparentFX

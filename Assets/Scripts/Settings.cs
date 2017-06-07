@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using UnityEngine;
 
 namespace Assets.Script
@@ -39,10 +40,14 @@ namespace Assets.Script
 		
 		public int fov { get; set; }
 		
+		
+		public bool host { get; set; }
+		public IPAddress ip { get; set; }
+		public int port { get; set; }
+		
 		public Settings()
 		{
 			LoadSettings();
-			
 		}
 		
 		private void LoadSettings()
@@ -78,7 +83,14 @@ namespace Assets.Script
 			
 			particlesReduction = PlayerPrefs.GetInt("SparticlesReduction", Convert.ToInt32(QualitySettings.softParticles)) != 0;
 
-			fov = PlayerPrefs.GetInt("Sfov", (int)(Camera.main.fieldOfView));
+			fov = PlayerPrefs.GetInt("Sfov", 60);
+			
+			
+			
+			host = PlayerPrefs.GetInt("Shost", 0) != 0;
+			ip = IntToIpAdress(PlayerPrefs.GetInt("Sip", IpAdressToInt(IPAddress.Parse("127.0.0.1"))));
+			port = PlayerPrefs.GetInt("Sport", 4242);
+			
 			
 			SaveSettings();
 		}
@@ -118,7 +130,21 @@ namespace Assets.Script
 			
 			PlayerPrefs.SetInt("Sfov", fov);
 			
+			PlayerPrefs.SetInt("Shost", Convert.ToInt32(host));
+			PlayerPrefs.SetInt("Sip", IpAdressToInt(ip));
+			PlayerPrefs.SetInt("Sport", port);
+			
 			PlayerPrefs.Save();
+		}
+		
+		public int IpAdressToInt(IPAddress ip)
+		{
+			return BitConverter.ToInt32(IPAddress.Parse(ip.ToString()).GetAddressBytes(), 0);
+		}
+		
+		public IPAddress IntToIpAdress(int ip)
+		{
+			return IPAddress.Parse(new IPAddress(BitConverter.GetBytes(ip)).ToString());
 		}
 	}
 }
