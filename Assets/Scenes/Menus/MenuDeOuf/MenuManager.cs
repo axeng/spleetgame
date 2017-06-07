@@ -28,7 +28,7 @@ public class MenuManager : MonoBehaviour {
 	// fonction des boutons du menu
 
 	public void OnWeaponsButtonClick(){
-		print("OnWeaponsButtonClick");
+		//print("OnWeaponsButtonClick");
 		if (isGraphismeMenuActivate) {
 			OnGraphismeButtonClick ();
 		}
@@ -51,7 +51,7 @@ public class MenuManager : MonoBehaviour {
 		}
 	}
 	public void OnGraphismeButtonClick(){
-		print ("OnGraphismeButtonClick");
+		//print ("OnGraphismeButtonClick");
 		if (isWeaponMenuActivate) {
 			OnWeaponsButtonClick ();
 		}
@@ -73,7 +73,7 @@ public class MenuManager : MonoBehaviour {
 		}
 	}
 	public void OnControlsButtonClick(){
-		print ("OnGraphismeButtonClick");
+		//print ("OnGraphismeButtonClick");
 		if (isWeaponMenuActivate) {
 			OnWeaponsButtonClick ();
 		}
@@ -106,7 +106,7 @@ public class MenuManager : MonoBehaviour {
 		//backgroundAnim = background.GetComponent<Animator>();
 	}
 	public void OnMultiClick(){
-		print ("OnMultiClick");
+		//print ("OnMultiClick");
 		if (isStartMenuLeft == false) {
 			StartMenuAnim.SetBool ("isMovingLeft", true);
 			MultiMenuAnim.SetBool ("isMovingIn", true);
