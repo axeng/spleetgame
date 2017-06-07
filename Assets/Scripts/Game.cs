@@ -129,12 +129,12 @@ class Game : MonoBehaviour
 
 		if (pause)
 		{
-			Time.timeScale = 0.0f;
+			//Time.timeScale = 0.0f;
 			Cursor.lockState = CursorLockMode.Confined;
 		}
 		else
 		{
-			Time.timeScale = 1.0f;
+			//Time.timeScale = 1.0f;
 			Cursor.lockState = CursorLockMode.Locked;
 		}
 

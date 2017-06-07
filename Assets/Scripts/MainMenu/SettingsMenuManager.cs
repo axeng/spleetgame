@@ -132,7 +132,8 @@ namespace Assets.Script
 			changeParticlesReduction(settings.particlesReduction);
 
 			fovSlider.value = settings.fov;
-			changeFov();
+			if (Camera.main != null)
+				changeFov();
 
 
 			forwardText.text = settings.forward.ToString();
@@ -274,7 +275,8 @@ namespace Assets.Script
 		public void changeFov()
 		{
 			int newFov = (int)fovSlider.value;
-			Camera.main.fieldOfView = newFov;
+			if (Camera.main != null)
+				Camera.main.fieldOfView = newFov;
 			settings.fov = newFov;
 			Save();
 		}

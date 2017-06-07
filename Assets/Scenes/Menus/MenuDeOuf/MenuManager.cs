@@ -9,6 +9,7 @@ public class MenuManager : MonoBehaviour {
 	private Animator controlsMenuAnim;
 	private bool isMainMenuOnLeft,isWeaponMenuActivate,isGraphismeMenuActivate,isControlsMenuActivate,isMultiMenuActivate,isStartMenuLeft;
 
+
 	// Use this for initialization
 	public void Start () {
 		Time.timeScale = 1.0f;
