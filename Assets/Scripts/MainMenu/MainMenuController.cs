@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MainMenuController : MonoBehaviour {
 
@@ -13,7 +14,7 @@ public class MainMenuController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		GetComponent<Renderer>().material.mainTexture = IntroVideo;
+		GetComponent<RawImage>().texture = IntroVideo;
 		IntroVideo.Play();
 		playIntro = false;
 		Menu.SetActive(false);
@@ -26,7 +27,7 @@ public class MainMenuController : MonoBehaviour {
 		{
 			playIntro = true;
 			Menu.SetActive(true);
-			GetComponent<Renderer>().material.mainTexture = VideoBoucle;
+			GetComponent<RawImage>().texture = VideoBoucle;
 			VideoBoucle.Play();
 			VideoBoucle.loop = true;
 		}
