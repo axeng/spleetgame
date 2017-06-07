@@ -23,7 +23,7 @@ public class PlayerScript : MonoBehaviour
 	private float rotX;
 	private float rotY;
 
-	private int jumpCount;
+	private bool canDoubleJump;
 
 	void Start()
 	{
@@ -36,7 +36,7 @@ public class PlayerScript : MonoBehaviour
 		this.rotX = 0;
 		this.rotY = 0;
 
-		this.jumpCount = 0;
+		canDoubleJump = this.player.doubleJump;
 	}
 	
 	void OnCollisionEnter(Collision hit)
@@ -82,19 +82,50 @@ public class PlayerScript : MonoBehaviour
 		}
 	}
 	
-	void FixedUpdate()
+	void Update()
 	{
 		if (Game.game.pause)
 			return;
-
+			
 		if (this.player.adr && (DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalMilliseconds >= this.player.stopAdr)
 		{
 			this.player.doubleJump = false;
 			this.player.adr = false;
 		}
+		
+		Vector3 force = new Vector3(0.0f, 0.0f, 0.0f);
+		
+		if (Input.GetKeyDown(Player.settings.jump))
+		{
+			if (Physics.Raycast(transform.position, -Vector3.up, GetComponent<Collider>().bounds.extents.y + 0.1f))
+			{
+				force.y += 5.0f * jumpForce;
+			
+				player.body.velocity = force;
+				canDoubleJump = true;
+			}
+			else if (this.player.doubleJump && canDoubleJump)
+			{
+				player.body.velocity.Set(player.body.velocity.x, 0, player.body.velocity.y);
+				force.y += 5.0f * jumpForce;
+			
+				player.body.velocity = force;
+				canDoubleJump = false;
+			}
+		}
+		
+		if (Input.GetKeyDown(Player.settings.hint))
+		{
+			if (Player.nbHints > 0 && Game.map.PopOneHint())
+				Player.nbHints--;
+		}
+	}	
+	void FixedUpdate()
+	{
+		if (Game.game.pause)
+			return;
 			
 		Vector3 move = new Vector3(0.0f, 0.0f, 0.0f);
-		Vector3 force = new Vector3(0.0f, 0.0f, 0.0f);
 		
 		if (Input.GetKey(Player.settings.forward))
 		{
@@ -119,20 +150,22 @@ public class PlayerScript : MonoBehaviour
 		if (this.player.adr)
 			move = move * adrenalineMultiplier;
 
-		if (this.player.IsGrounded())
+		//Debug.Log(canDoubleJump);
+
+		/*if (this.player.IsGrounded())
 		{
 			jumpCount = 0;
 		}
 
 		if ((this.player.IsGrounded() || this.player.doubleJump) && Input.GetKeyDown(Player.settings.jump) && (jumpCount == 0 || this.player.doubleJump && jumpCount < 2))
 		{
-		/*if (Input.GetKey(Player.settings.jump))
-		{*/
+		//if (Input.GetKey(Player.settings.jump))
+		//{
 			force.y += 5.0f * jumpForce;
 			jumpCount++;
 			
 			player.body.velocity = force;
-		}
+		}*/
 		
 		rotX += Input.GetAxis("Mouse X") * speedCam;
 		rotY -= Input.GetAxis("Mouse Y") * speedCam;
@@ -147,12 +180,6 @@ public class PlayerScript : MonoBehaviour
 		//camera.transform.Translate(new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")));
 		//transform.rotation.Set(0, camera.transform.rotation.y, 0, 0);
 		camera.transform.rotation = Quaternion.Euler(rotY, rotX, 0);
-		
-		if (Input.GetKeyDown(Player.settings.hint))
-		{
-			if (Player.nbHints > 0 && Game.map.PopOneHint())
-				Player.nbHints--;
-		}
 	}
 	
 }

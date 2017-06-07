@@ -150,6 +150,7 @@ class Game : MonoBehaviour
 		{
 			//Time.timeScale = 1.0f;
 			Cursor.lockState = CursorLockMode.Locked;
+			PlayerPrefs.Save();
 		}
 
 		if (pauseGui)
