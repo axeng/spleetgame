@@ -2909,6 +2909,7 @@ GameObject:
   - component: {fileID: 285278225}
   - component: {fileID: 285278224}
   - component: {fileID: 285278223}
+  - component: {fileID: 285278228}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -2991,8 +2992,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2014515342}
-        m_MethodName: OnControlsButtonClick
+      - m_Target: {fileID: 285278228}
+        m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3055,6 +3056,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 285278221}
+--- !u!114 &285278228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 285278221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa23309c7cd82b49900ef7a4f394679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &298810064
 GameObject:
   m_ObjectHideFlags: 0

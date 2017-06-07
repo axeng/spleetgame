@@ -34,6 +34,7 @@ namespace Assets.Script
 		
 		public void Host()
 		{
+			UnityEngine.SceneManagement.SceneManager.LoadScene(3);
 			SettingsMenuManager.settings.host = true;
 			SettingsMenuManager.settings.SaveSettings();
 		}
@@ -85,7 +86,11 @@ namespace Assets.Script
 		public void Join()
 		{
 			if (ipF.colors.highlightedColor == Color.green && portF.colors.highlightedColor == Color.green)
+			{
 				UnityEngine.SceneManagement.SceneManager.LoadScene(3);
+				SettingsMenuManager.settings.host = false;
+				SettingsMenuManager.settings.SaveSettings();
+			}
 		}
 	}
 }

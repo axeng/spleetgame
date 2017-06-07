@@ -280,14 +280,15 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 1587463113644370, guid: b78f01be72c5c43ce89b7b501a3e5655, type: 2}
-      propertyPath: m_Name
-      value: Main
-      objectReference: {fileID: 0}
     - target: {fileID: 114791642887518226, guid: b78f01be72c5c43ce89b7b501a3e5655,
         type: 2}
       propertyPath: multiplayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114791642887518226, guid: b78f01be72c5c43ce89b7b501a3e5655,
+        type: 2}
+      propertyPath: startMap
+      value: mult
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b78f01be72c5c43ce89b7b501a3e5655, type: 2}

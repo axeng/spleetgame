@@ -82,6 +82,20 @@ class Game : MonoBehaviour
 		finishLevels = new List<string>();
 
 		isPopup = false;
+
+		if (multi)
+		{
+			if (Player.settings.host)
+			{
+				NetworkManager.singleton.StartHost();
+			}
+			else
+			{
+				NetworkManager.singleton.networkPort = Player.settings.port;
+				NetworkManager.singleton.networkAddress = Player.settings.ip.ToString();
+				NetworkManager.singleton.StartClient();
+			}
+		}
 	}
 
 	// Update is called once per frame
