@@ -460,6 +460,7 @@ namespace Assets.Script
                     bl_poulet.Add(new Block("plat/Icorridor_plat_col", new Vector3(286.47f, 13.5f, -0.0999999f), new Vector3(0f, 0f, 0)));
                     bl_poulet.Add(new Block("Teleportation portal", new Vector3(516.8f, 14.844f, -54.07f), new Vector3(0f, 0f, 0), "tp_Stp%l"));
                     bl_poulet.Add(new Block("MusicAct", new Vector3(0, 0, 0), new Vector3(0f, 0f, 0f)));
+
                     MapConstructor mc_poulet = new MapConstructor(bl_poulet);
                     Map poulet = new Map(mc_poulet, name, MapType.OTHER, new Vector3(-12.685F, 26.5F, -5.74F));
                     poulet.GetCheckpoints().Add(new Checkpoint( new Vector2(268, -12), new Vector2(293, 0), new Vector3(274.5F, 15, -6)));
@@ -861,7 +862,8 @@ namespace Assets.Script
                     bl_Stp3.Add(new Block("TerrainCOOL", new Vector3(-242.2479f, -0.8736415f, -261.6377f), new Vector3(0f, 0f, 0f)));
                     bl_Stp3.Add(new Block("ADR2", new Vector3(14.41275f, 6.23f, -0.1199999f), new Vector3(325f, 0f, 0f)));
                     bl_Stp3.Add(new Block("Button", new Vector3(0.07999992f, 7.099842f, -14.25f), new Vector3(0f, 0f, 0f)));
-                    bl_Stp3.Add(new Block("Scile", new Vector3(-0.01089096f, 5.39f, 13.12704f), new Vector3(0f, 0f, 0f)));
+                    bl_Stp3.Add(new Block("Scile", new Vector3(-0.01089096f, 6.3f, 13.12704f), new Vector3(0f, 0f, 0f)));
+                    bl_Stp3.Add(new Block("DOP2", new Vector3(-13.43f, 6.23f, -0.37f), new Vector3(325f, 0f, 0f)));
                     MapConstructor mc_Stp3 = new MapConstructor(bl_Stp3);
                     Map Stp3 = new Map(mc_Stp3, name, MapType.OTHER, new Vector3(0, 10, 0));
                     return Stp3;
@@ -876,7 +878,8 @@ namespace Assets.Script
                     bl_Stp2.Add(new Block("TerrainCOOL", new Vector3(-242.2479f, -0.8736415f, -261.6377f), new Vector3(0f, 0f, 0f)));
                     bl_Stp2.Add(new Block("ADR2", new Vector3(14.41275f, 6.23f, -0.1199999f), new Vector3(325f, 0f, 0f)));
                     bl_Stp2.Add(new Block("Button", new Vector3(0.07999992f, 7.099842f, -14.25f), new Vector3(0f, 0f, 0f)));
-                    bl_Stp2.Add(new Block("Scile", new Vector3(-0.01089096f, 5.39f, 13.12704f), new Vector3(0f, 0f, 0f)));
+                    bl_Stp2.Add(new Block("Scile", new Vector3(-0.01089096f, 6.3f, 13.12704f), new Vector3(0f, 0f, 0f)));
+                    bl_Stp2.Add(new Block("DOP2", new Vector3(-13.43f, 6.23f, -0.37f), new Vector3(325f, 0f, 0f)));
                     MapConstructor mc_Stp2 = new MapConstructor(bl_Stp2);
                     Map Stp2 = new Map(mc_Stp2, name, MapType.OTHER, new Vector3(0, 10, 0));
                     return Stp2;
@@ -890,8 +893,9 @@ namespace Assets.Script
                     bl_Stp1.Add(new Block("Teleportation_portal_inactif", new Vector3(-11.05383f, 4.386359f, 0f), new Vector3(0f, 0f, 0f)));
                     bl_Stp1.Add(new Block("Salle_de_tp_sans_tp_1_rouge_col", new Vector3(0f, 4.126359f, 0f), new Vector3(0f, 0f, 0f)));
                     bl_Stp1.Add(new Block("ADR2", new Vector3(14.41275f, 6.23f, -0.1199999f), new Vector3(325f, 0f, 0f)));
+                    bl_Stp1.Add(new Block("DOP2", new Vector3(-13.43f, 6.23f, -0.37f), new Vector3(325f, 0f, 0f)));
                     bl_Stp1.Add(new Block("Button", new Vector3(0.07999992f, 7.099842f, -14.25f), new Vector3(0f, 0f, 0f)));
-                    bl_Stp1.Add(new Block("Scile", new Vector3(-0.01089096f, 5.39f, 13.12704f), new Vector3(0f, 0f, 0f)));
+                    bl_Stp1.Add(new Block("Scile", new Vector3(-0.01089096f, 6.3f, 13.12704f), new Vector3(0f, 0f, 0f)));
                     MapConstructor mc_Stp1 = new MapConstructor(bl_Stp1);
                     Map Stp1 = new Map(mc_Stp1, name, MapType.OTHER, new Vector3(0, 10, 0));
                     return Stp1;
@@ -907,7 +911,8 @@ namespace Assets.Script
                     bl_Stp0.Add(new Block("ADR2", new Vector3(14.41275f, 6.23f, -0.1199999f), new Vector3(325f, 0f, 0f)));
                     bl_Stp0.Add(new Block("Button", new Vector3(0.07999992f, 7.099842f, -14.25f), new Vector3(0f, 0f, 0f)));
                     bl_Stp0.Add(new Block("TerrainCOOL", new Vector3(-242.2479f, -0.8736415f, -261.6377f), new Vector3(0f, 0f, 0f)));
-                    bl_Stp0.Add(new Block("Scile", new Vector3(-0.01089096f, 5.39f, 13.12704f), new Vector3(0f, 0f, 0f)));
+                    bl_Stp0.Add(new Block("Scile", new Vector3(-0.01089096f, 6.3f, 13.12704f), new Vector3(0f, 0f, 0f)));
+                    bl_Stp0.Add(new Block("DOP2", new Vector3(-13.43f, 6.23f, -0.37f), new Vector3(325f, 0f, 0f)));
                     MapConstructor mc_Stp0 = new MapConstructor(bl_Stp0);
                     Map Stp0 = new Map(mc_Stp0, name, MapType.OTHER, new Vector3(0, 10, 0));
                     return Stp0;
