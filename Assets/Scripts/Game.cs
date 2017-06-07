@@ -43,6 +43,11 @@ class Game : MonoBehaviour
 		multi = multiplayer;
 		
 		Scene scene = SceneManager.GetActiveScene();
+		
+		level = 3;
+		finishLevels = new List<string>();
+
+		UseSave();
 
 		switch (scene.name)
 		{
@@ -67,6 +72,8 @@ class Game : MonoBehaviour
 
 		if (startMap != "None")
 		{
+			if (startMap.Length == 4 && startMap.StartsWith("Stp"))
+				startMap = "Stp" + level;
 			map = Map.GetMap(startMap);
 			map.Construct();
 		}
@@ -77,9 +84,6 @@ class Game : MonoBehaviour
 			players.Add(new Player(players.Count, p, map));*/
 
 		game = this;
-
-		level = 3;
-		finishLevels = new List<string>();
 
 		isPopup = false;
 
@@ -96,6 +100,7 @@ class Game : MonoBehaviour
 				NetworkManager.singleton.StartClient();
 			}
 		}
+		
 	}
 
 	// Update is called once per frame
