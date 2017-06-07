@@ -22,8 +22,10 @@ namespace Assets.Script
 					"Stp2", 
 					"Stp1", 
 					"Stp0", 
-					"enigme"
-				};
+					"enigme",
+                    "multe",
+                    "StpMult"
+                };
 
 		public static Dictionary<string, Map> dicoMaps;
 
@@ -834,15 +836,90 @@ namespace Assets.Script
 					bl_Mapmulti.Add(new Block("plat/Scile_col", new Vector3(70.25622f,1.157883f,113.2214f), new Vector3(90f, 90f, 0)));
 					bl_Mapmulti.Add(new Block("plat/Scile_col", new Vector3(81.52622f,-3.252121f,113.2214f), new Vector3(0f, 90f, 0)));
 					bl_Mapmulti.Add(new Block("Button", new Vector3(52.5f, 2.6f, 85.3f), new Vector3(0f, 0f, 0), "button_3"));
-					MapConstructor mc_Mapmulti = new MapConstructor(bl_Mapmulti);
+                    bl_Mapmulti.Add(new Block("Teleportation portal", new Vector3(57.16f, 0.61f, 100.96f), new Vector3(0f, 0f, 0f), "tp_StpMult"));
+                    bl_Mapmulti.Add(new Block("MusicAct", new Vector3(0, 0, 0), new Vector3(0f, 0f, 0f)));
+
+
+                    MapConstructor mc_Mapmulti = new MapConstructor(bl_Mapmulti);
 					Map Mapmulti = new Map(mc_Mapmulti, name, MapType.OTHER, new List<Vector3>(new Vector3[]{new Vector3(77.07f, 2.0f, 150.0f), new Vector3(-13.4f, 2.0f, -7.6f)}));
 					Mapmulti.AddElement(new string[] { "button_1"}, "door_2", ExecType.DOOR, false);
                     Mapmulti.AddElement(new string[] { "button_2" }, "door_3", ExecType.DOOR, false);
                     Mapmulti.AddElement(new string[] { "button_3" }, "door_1", ExecType.DOOR, false);
 					return Mapmulti;
 					break;
-					
-				case "TestPressionPlate":
+
+                case "multe":
+                    List<Block> bl_mapenigmemult = new List<Block>();
+                    bl_mapenigmemult.Add(new Block("Mur_vitre", new Vector3(254.7f, 6.7f, 204.2f), new Vector3(0f, 90f, 0f)));
+                    bl_mapenigmemult.Add(new Block("PressionPlate", new Vector3(263.6991f, 2.190001f, 286.57f), new Vector3(0f, 0f, 0f), "pressionplate_5"));
+                    bl_mapenigmemult.Add(new Block("Door3D_col", new Vector3(228.8248f, 4.12f, 179.52f), new Vector3(0f, 90f, 0f), "door_2"));
+                    bl_mapenigmemult.Add(new Block("Button", new Vector3(240.209f, 11.09f, 259.9f), new Vector3(0f, 90f, 0f), "button_4"));
+                    bl_mapenigmemult.Add(new Block("Button", new Vector3(239.6f, 4.951279f, 198.0933f), new Vector3(0f, 90f, 0f), "button_2"));
+                    bl_mapenigmemult.Add(new Block("PressionPlate", new Vector3(255.5958f, 2.190001f, 286.6f), new Vector3(0f, 0f, 0f), "pressionplate_4"));
+                    bl_mapenigmemult.Add(new Block("Button", new Vector3(271.68f, 10.87f, 225.76f), new Vector3(0f, 90f, 0f), "button_3"));
+                    bl_mapenigmemult.Add(new Block("PressionPlate", new Vector3(221.12f, 14.38f, 158.9927f), new Vector3(0f, 0f, 0f), "pressionplate_3"));
+                    bl_mapenigmemult.Add(new Block("Button", new Vector3(183.5597f, 11.36592f, 168.3124f), new Vector3(0f, 0f, 0f), "button_1"));
+                    bl_mapenigmemult.Add(new Block("Mur", new Vector3(180.16f, 8.567731f, 166.8124f), new Vector3(0f, 0f, 0f)));
+                    bl_mapenigmemult.Add(new Block("PressionPlate", new Vector3(183.93f, 2.05f, 183.18f), new Vector3(0f, 0f, 0f), "pressionplate_2"));
+                    bl_mapenigmemult.Add(new Block("PressionPlate", new Vector3(154.17f, 2.21f, 139.78f), new Vector3(0f, 0f, 0f), "pressionplate_1"));
+                    bl_mapenigmemult.Add(new Block("Door3D_col", new Vector3(154.1f, 3.91f, 143.5172f), new Vector3(0f, 0f, 0f), "door_1"));
+                    bl_mapenigmemult.Add(new Block("Mur", new Vector3(155.0475f, 7.65f, 122.3076f), new Vector3(0f, 0f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Icorridor3x6_col", new Vector3(171.6f, 7.83f, 173.1f), new Vector3(0f, 90f, 0f)));
+                    bl_mapenigmemult.Add(new Block("windows3D_col", new Vector3(183.6761f, 9.9f, 173.2f), new Vector3(0f, 0f, 0f), "window_1"));
+                    bl_mapenigmemult.Add(new Block("Icorridor2_col", new Vector3(172.19f, 1.550622f, 157.1f), new Vector3(0f, 270f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Teleportation portal", new Vector3(279.33f, 2.550623f, 283.8584f), new Vector3(0f, 0f, 0f), "tp_StpMult"));
+                    bl_mapenigmemult.Add(new Block("Mur", new Vector3(286.28f, 8.07f, 277.9542f), new Vector3(0f, 0f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Door3D_col", new Vector3(273.86f, 4.19f, 283.7f), new Vector3(0f, 90f, 0f), "door_6"));
+                    bl_mapenigmemult.Add(new Block("Door3D_col", new Vector3(259.82f, 4.12f, 265f), new Vector3(0f, 0f, 0f), "door_5"));
+                    bl_mapenigmemult.Add(new Block("Mur", new Vector3(274.2f, 8.01f, 265.9f), new Vector3(0f, 270f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Icorridor2_col", new Vector3(256.1f, 1.550622f, 203.1f), new Vector3(0f, 90f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Icorridor2_col", new Vector3(244.1f, 1.550622f, 215f), new Vector3(0f, 0f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Lcorridor2_col", new Vector3(268.13f, 1.550622f, 203.2f), new Vector3(0f, 90f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Lcorridor2_col", new Vector3(202.2f, 13.8f, 165.4f), new Vector3(0f, 0f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Plateforme_col", new Vector3(199.26f, 3.1f, 162.3f), new Vector3(0f, 0f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Mur", new Vector3(202.8f, 7.9f, 149f), new Vector3(0f, 0f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Icorridor_col", new Vector3(208f, 1.550623f, 154.0327f), new Vector3(0f, 90f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Tcorridor_col", new Vector3(184f, 1.6f, 186.1f), new Vector3(0f, 0f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Lcorridor_col", new Vector3(148.17f, 1.550622f, 162.8f), new Vector3(0f, 270f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Icorridor_col", new Vector3(160f, 1.550623f, 127.0853f), new Vector3(0f, 90f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Icorridor_col", new Vector3(160f, 1.550623f, 151.05f), new Vector3(0f, 90f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Mur", new Vector3(202.8f, 19.6f, 149f), new Vector3(0f, 0f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Mur", new Vector3(194.92f, 19.6f, 162.01f), new Vector3(0f, 90f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Mur", new Vector3(223.31f, 19.6f, 149f), new Vector3(0f, 0f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Mur", new Vector3(220.1f, 19.6f, 172.71f), new Vector3(0f, 0f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Plateforme_col", new Vector3(202.4f, 6.312173f, 156.8f), new Vector3(0f, 0f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Plateforme_col", new Vector3(203.7f, -0.3000002f, 167f), new Vector3(0f, 0f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Icorridor_col", new Vector3(232f, 1.550623f, 185.7f), new Vector3(0f, 0f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Mur", new Vector3(238.1f, 7.8f, 197.1f), new Vector3(0f, 90f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Icorridor2_col", new Vector3(268.1f, 1.550622f, 203f), new Vector3(0f, 180f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Icorridor2_col", new Vector3(268.1f, 1.550622f, 224.8f), new Vector3(0f, 180f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Icorridor2_col", new Vector3(244.1f, 1.550622f, 236.8f), new Vector3(0f, 0f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Icorridor2_col", new Vector3(244.1f, 1.550622f, 260.9f), new Vector3(0f, 0f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Icorridor2_col", new Vector3(268.1f, 1.550622f, 248.9f), new Vector3(0f, 180f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Lcorridor2_col", new Vector3(244.5f, 1.550622f, 260.6f), new Vector3(0f, 270f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Icorridor2_col", new Vector3(268.2f, 1.550622f, 260f), new Vector3(0f, 270f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Door3D_col", new Vector3(249.5f, 4.05f, 233.2f), new Vector3(0f, 0f, 0f), "door_4"));
+                    bl_mapenigmemult.Add(new Block("Door3D_col", new Vector3(259.82f, 3.81f, 204.9f), new Vector3(0f, 0f, 0f), "door_3"));
+                    bl_mapenigmemult.Add(new Block("Door3D_col", new Vector3(275.7f, 8f, 265f), new Vector3(0f, 0f, 90f)));
+                    bl_mapenigmemult.Add(new Block("Door3D_col", new Vector3(275.7f, 7.74f, 204.47f), new Vector3(0f, 0f, 90f)));
+                    bl_mapenigmemult.Add(new Block("Door3D_col", new Vector3(233.58f, 7.99f, 232.86f), new Vector3(0f, 0f, 270f)));
+                    bl_mapenigmemult.Add(new Block("Mur", new Vector3(285.0276f, 8.567731f, 277.9542f), new Vector3(0f, 270f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Icorridor3x6_col", new Vector3(165.57f, 7.83f, 173.1f), new Vector3(0f, 90f, 0f)));
+                    bl_mapenigmemult.Add(new Block("Mur_vitre", new Vector3(254.7f, 6.7f, 244.09f), new Vector3(0f, 90f, 0f)));
+                    bl_mapenigmemult.Add(new Block("MusicRfx", new Vector3(0, 0, 0), new Vector3(0f, 0f, 0f)));
+                    MapConstructor mc_mapenigmemult = new MapConstructor(bl_mapenigmemult);
+                    Map mapenigmemult = new Map(mc_mapenigmemult, name, MapType.OTHER, new Vector3(151, 4, 125)); //multi x + 5
+                    mapenigmemult.AddElement(new string[] { "pressionplate_1" }, "door_1", ExecType.DOOR, ExecutorType.PRESSIONPLATE, false);   //infini
+                    mapenigmemult.AddElement(new string[] { "pressionplate_2", "pressionplate_3" }, "window_1", ExecType.WINDOW, ExecutorType.PRESSIONPLATE, false);  //0s
+                    mapenigmemult.AddElement(new string[] { "pressionplate_4", "pressionplate_5" }, "door_6", ExecType.DOOR, ExecutorType.PRESSIONPLATE, false); // infini
+                    mapenigmemult.AddElement(new string[] { "button_1" }, "door_2", ExecType.DOOR, false);
+                    mapenigmemult.AddElement(new string[] { "button_2" }, "door_3", ExecType.DOOR, false);
+                    mapenigmemult.AddElement(new string[] { "button_3" }, "door_4", ExecType.DOOR, false);
+                    mapenigmemult.AddElement(new string[] { "button_4" }, "door_5", ExecType.DOOR, false);
+
+                    return mapenigmemult;
+
+                case "TestPressionPlate":
 					List<Block> bl_TestPressionPlate = new List<Block>();
 					bl_TestPressionPlate.Add(new Block("PressionPlate", new Vector3(154.8005f,0.22f,117.5f), new Vector3(0f, 0f, 0), "pressionplate_1"));
 					bl_TestPressionPlate.Add(new Block("Door3D_col", new Vector3(155.3491f,2.017251f,130.8972f), new Vector3(0f, 0f, 0), "door_1"));
@@ -916,6 +993,18 @@ namespace Assets.Script
                     MapConstructor mc_Stp0 = new MapConstructor(bl_Stp0);
                     Map Stp0 = new Map(mc_Stp0, name, MapType.OTHER, new Vector3(0, 10, 0));
                     return Stp0;
+
+                case "StpMult":
+                    List<Block> bl_StpMult = new List<Block>();
+                    bl_StpMult.Add(new Block("Teleportation portal", new Vector3(-0.04207814f, 0.2f, 8.642775f), new Vector3(0f, 0f, 0f), "tp_Mapmulti"));
+                    bl_StpMult.Add(new Block("Teleportation portal", new Vector3(-0.05963409f, 0.2f, -8.685814f), new Vector3(0f, 0f, 0f), "tp_multe"));
+                    bl_StpMult.Add(new Block("Salle_de_tp_sans_tp_col", new Vector3(0f, 0f, 0f), new Vector3(0f, 0f, 0f)));
+                    bl_StpMult.Add(new Block("DOP2", new Vector3(0.1072242f, 1.68f, -11.68243f), new Vector3(325f, 0f, 0f)));
+                    bl_StpMult.Add(new Block("ADR2", new Vector3(0.02700901f, 1.88f, 11.4859f), new Vector3(325f, 0f, 0f)));
+                    MapConstructor mc_StpMult = new MapConstructor(bl_StpMult);
+                    Map StpMult = new Map(mc_StpMult, name, MapType.OTHER, new Vector3(10, 10, 0));
+                    return StpMult;
+                    break;
 
 
                 default:	
