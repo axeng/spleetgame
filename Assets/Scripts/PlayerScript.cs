@@ -123,9 +123,11 @@ public class PlayerScript : MonoBehaviour
 		{
 			jumpCount = 0;
 		}
-		
+
 		if ((this.player.IsGrounded() || this.player.doubleJump) && Input.GetKeyDown(Player.settings.jump) && (jumpCount == 0 || this.player.doubleJump && jumpCount < 2))
 		{
+		/*if (Input.GetKey(Player.settings.jump))
+		{*/
 			force.y += 5.0f * jumpForce;
 			jumpCount++;
 			
