@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using Assets.Script;
 
 public class RaycastShootComplete : MonoBehaviour
 {
@@ -34,7 +35,7 @@ public class RaycastShootComplete : MonoBehaviour
     void Update()
     {
         // Check if the player has pressed the fire button and if enough time has elapsed since they last fired
-        if (Input.GetButtonDown("Fire1") && Time.time > nextFire && !Game.game.pause)
+        if (Input.GetKeyDown(Player.settings.fire) && Time.time > nextFire && !Game.game.pause)
         {
             // Update the time when our player can fire next
             nextFire = Time.time + fireRate;

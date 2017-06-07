@@ -19,6 +19,8 @@ namespace Assets.Script
 		public KeyCode pause { get; set; }
 		public KeyCode hint { get; set; }
 		
+		public KeyCode fire { get; set; }
+		
 		
 		public int volume { get; set; }
 		
@@ -64,6 +66,8 @@ namespace Assets.Script
 			pause = (KeyCode)PlayerPrefs.GetInt("Spause", (int)KeyCode.P);
 			hint = (KeyCode)PlayerPrefs.GetInt("Shint", (int)KeyCode.H);
 
+			fire = (KeyCode)PlayerPrefs.GetInt("Sfire", (int)KeyCode.Mouse0);
+
 			
 			volume = PlayerPrefs.GetInt("Svolume", 5);
 
@@ -108,6 +112,8 @@ namespace Assets.Script
 			
 			PlayerPrefs.SetInt("Spause", (int)pause);
 			PlayerPrefs.SetInt("Shint", (int)hint);
+			
+			PlayerPrefs.SetInt("Sfire", (int)fire);
 			
 			
 			PlayerPrefs.SetInt("Svolume", volume);

@@ -49,9 +49,12 @@ namespace Assets.Script
 		public Text pauseText;
 		public Text hintText;
 
+		public Text fireText;
+
 		public Text lastWait;
 
-		public bool inGame;
+
+		private bool inGame;
 		
 		void Start()
 		{
@@ -148,6 +151,7 @@ namespace Assets.Script
 			jumpText.text = settings.jump.ToString();
 			pauseText.text = settings.pause.ToString();
 			hintText.text = settings.hint.ToString();
+			fireText.text = settings.fire.ToString();
 			lastWait = null;
 		}
 
@@ -328,6 +332,9 @@ namespace Assets.Script
 
 			else if (text == hintText)
 				settings.hint = key;
+
+			else if (text == fireText)
+				settings.fire = key;
 
 			Save();
 
