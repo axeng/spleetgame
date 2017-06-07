@@ -654,7 +654,7 @@ namespace Assets.Script
                     bl_enigme.Add(new Block("Icorridor3x6_col", new Vector3(208.4f, 5.700001f, -50.2f), new Vector3(0f, 180f, 0f)));
                     bl_enigme.Add(new Block("Icorridor3x6_col", new Vector3(206.1f, 5.700001f, -56.2f), new Vector3(0f, 0f, 0f)));
                     bl_enigme.Add(new Block("Icorridor3x6_col", new Vector3(197.4f, 6.5f, -36.9f), new Vector3(0f, 180f, 0f)));
-                    bl_enigme.Add(new Block("Teleportation portal", new Vector3(283.6161f, 0.5299988f, -30.01839f), new Vector3(0f, 0f, 0f)));
+                    bl_enigme.Add(new Block("Teleportation portal", new Vector3(283.6161f, 0.5299988f, -30.01839f), new Vector3(0f, 0f, 0f), "tp_Stp%l"));
                     bl_enigme.Add(new Block("Icorridor3x6_col", new Vector3(268.4081f, 6.389999f, -10.90916f), new Vector3(0f, 270f, 0f)));
                     bl_enigme.Add(new Block("Icorridor3x6_col", new Vector3(262.4081f, 6.389999f, -8.509156f), new Vector3(0f, 90f, 0f)));
                     bl_enigme.Add(new Block("Icorridor3x6_col", new Vector3(252.0081f, 6.389999f, -2.009156f), new Vector3(0f, 90f, 0f)));
