@@ -418,7 +418,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u2191"
+  m_Text: "\u2190"
 --- !u!222 &30825796
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -439,7 +439,7 @@ GameObject:
   - component: {fileID: 36183006}
   - component: {fileID: 36183005}
   m_Layer: 5
-  m_Name: MenuItem (14)
+  m_Name: x2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -617,7 +617,7 @@ GameObject:
   - component: {fileID: 71521348}
   - component: {fileID: 71521347}
   m_Layer: 5
-  m_Name: MenuItem (14)
+  m_Name: Medium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -796,7 +796,7 @@ GameObject:
   - component: {fileID: 75971584}
   - component: {fileID: 75971583}
   m_Layer: 5
-  m_Name: graphisme
+  m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1719,7 +1719,7 @@ GameObject:
   - component: {fileID: 215484414}
   - component: {fileID: 215484413}
   m_Layer: 5
-  m_Name: Start
+  m_Name: StartMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1798,7 +1798,7 @@ RectTransform:
   m_Children:
   - {fileID: 253360727}
   m_Father: {fileID: 2014515346}
-  m_RootOrder: 9
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1872,7 +1872,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CONTROLS
+  m_Text: Controls
 --- !u!222 &227296416
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1892,7 +1892,7 @@ GameObject:
   - component: {fileID: 228741664}
   - component: {fileID: 228741663}
   m_Layer: 5
-  m_Name: VOLUME
+  m_Name: VolumeMenuSettings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1978,7 +1978,7 @@ RectTransform:
   - {fileID: 1889319121}
   - {fileID: 1086457981}
   m_Father: {fileID: 2014515346}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1998,7 +1998,7 @@ GameObject:
   - component: {fileID: 242352109}
   - component: {fileID: 242352108}
   m_Layer: 5
-  m_Name: MenuItem (11)
+  m_Name: 800x600
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2433,7 +2433,7 @@ GameObject:
   - component: {fileID: 253360727}
   - component: {fileID: 253360728}
   m_Layer: 5
-  m_Name: Menu
+  m_Name: StartMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2636,7 +2636,7 @@ GameObject:
   - component: {fileID: 278634885}
   - component: {fileID: 278634884}
   m_Layer: 5
-  m_Name: MenuItem (2)
+  m_Name: Backward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2956,7 +2956,7 @@ GameObject:
   - component: {fileID: 298810067}
   - component: {fileID: 298810066}
   m_Layer: 5
-  m_Name: MenuItem (6)
+  m_Name: Jump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3298,7 +3298,7 @@ GameObject:
   - component: {fileID: 331073134}
   - component: {fileID: 331073133}
   m_Layer: 5
-  m_Name: MenuItem (7)
+  m_Name: Pause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3627,7 +3627,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Music
+  m_Text: 'Master
+
+'
 --- !u!222 &359713248
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3863,7 +3865,7 @@ GameObject:
   - component: {fileID: 366966352}
   - component: {fileID: 366966351}
   m_Layer: 5
-  m_Name: MenuItem (7)
+  m_Name: Shadow_off
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4019,7 +4021,7 @@ GameObject:
   - component: {fileID: 375700060}
   - component: {fileID: 375700059}
   m_Layer: 5
-  m_Name: MenuItem (10)
+  m_Name: 640x480
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4196,7 +4198,7 @@ GameObject:
   - component: {fileID: 392448077}
   - component: {fileID: 392448076}
   m_Layer: 5
-  m_Name: MenuItem (2)
+  m_Name: Port
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4992,7 +4994,7 @@ GameObject:
   - component: {fileID: 476184729}
   - component: {fileID: 476184728}
   m_Layer: 5
-  m_Name: Shadow
+  m_Name: ShadowResolutionMenuSettingsGraphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5078,7 +5080,7 @@ RectTransform:
   - {fileID: 204828216}
   - {fileID: 709183320}
   m_Father: {fileID: 2014515346}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5285,7 +5287,7 @@ GameObject:
   - component: {fileID: 509524947}
   - component: {fileID: 509524946}
   m_Layer: 5
-  m_Name: MenuItem (3)
+  m_Name: Anti-Aliasing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5441,7 +5443,7 @@ GameObject:
   - component: {fileID: 533949034}
   - component: {fileID: 533949033}
   m_Layer: 5
-  m_Name: MenuItem (12)
+  m_Name: 840x524
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5682,7 +5684,7 @@ GameObject:
   - component: {fileID: 547658020}
   - component: {fileID: 547658019}
   m_Layer: 5
-  m_Name: MenuItem (5)
+  m_Name: ParticlesReduction_off
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5701,7 +5703,7 @@ RectTransform:
   m_Children:
   - {fileID: 910883601}
   m_Father: {fileID: 2119816947}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5892,7 +5894,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: GRAPHISME
+  m_Text: Graphics
 --- !u!222 &559633861
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5911,7 +5913,7 @@ GameObject:
   - component: {fileID: 562075668}
   - component: {fileID: 562075667}
   m_Layer: 5
-  m_Name: MenuItem (5)
+  m_Name: Sprint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6082,7 +6084,7 @@ GameObject:
   - component: {fileID: 591626330}
   - component: {fileID: 591626329}
   m_Layer: 5
-  m_Name: Help
+  m_Name: HelpMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6161,7 +6163,7 @@ RectTransform:
   m_Children:
   - {fileID: 1091905638}
   m_Father: {fileID: 2014515346}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6452,7 +6454,7 @@ GameObject:
   - component: {fileID: 607324617}
   - component: {fileID: 607324616}
   m_Layer: 5
-  m_Name: MenuItem (4)
+  m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6543,7 +6545,7 @@ GameObject:
   - component: {fileID: 608970795}
   - component: {fileID: 608970796}
   m_Layer: 5
-  m_Name: Menu
+  m_Name: ShadowResolutionMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7000,7 +7002,7 @@ GameObject:
   - component: {fileID: 632039702}
   - component: {fileID: 632039701}
   m_Layer: 5
-  m_Name: MenuItem (3)
+  m_Name: Effects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7093,7 +7095,7 @@ GameObject:
   - component: {fileID: 635982014}
   - component: {fileID: 635982013}
   m_Layer: 5
-  m_Name: MenuItem (3)
+  m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7376,7 +7378,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: medium
+  m_Text: Medium
 --- !u!222 &636996259
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7832,7 +7834,7 @@ GameObject:
   - component: {fileID: 673421464}
   - component: {fileID: 673421465}
   m_Layer: 5
-  m_Name: Menu
+  m_Name: MenuSettings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7895,7 +7897,7 @@ GameObject:
   - component: {fileID: 680595008}
   - component: {fileID: 680595007}
   m_Layer: 5
-  m_Name: MenuItem (16)
+  m_Name: x4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8147,7 +8149,7 @@ GameObject:
   - component: {fileID: 692488369}
   - component: {fileID: 692488368}
   m_Layer: 5
-  m_Name: Multiplayer
+  m_Name: MultiplayerMenuStart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8233,7 +8235,7 @@ RectTransform:
   - {fileID: 351271205}
   - {fileID: 1415865013}
   m_Father: {fileID: 2014515346}
-  m_RootOrder: 10
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8252,7 +8254,7 @@ GameObject:
   - component: {fileID: 697917602}
   - component: {fileID: 697917601}
   m_Layer: 5
-  m_Name: Join
+  m_Name: Host
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8345,7 +8347,7 @@ GameObject:
   - component: {fileID: 698001807}
   - component: {fileID: 698001806}
   m_Layer: 5
-  m_Name: Resolution
+  m_Name: ResolutionMenuSettingsGraphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8431,7 +8433,7 @@ RectTransform:
   - {fileID: 611354451}
   - {fileID: 1280231615}
   m_Father: {fileID: 2014515346}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8735,7 +8737,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: GRAPHICS
 --- !u!222 &709183322
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8755,7 +8757,7 @@ GameObject:
   - component: {fileID: 713424597}
   - component: {fileID: 713424596}
   m_Layer: 5
-  m_Name: MenuItem (9)
+  m_Name: FOV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8905,7 +8907,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: GRAPHICS
 --- !u!222 &722338182
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8926,7 +8928,7 @@ GameObject:
   - component: {fileID: 738626173}
   - component: {fileID: 738626172}
   m_Layer: 5
-  m_Name: MenuItem (2)
+  m_Name: Resolution
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9150,7 +9152,7 @@ GameObject:
   - component: {fileID: 774140377}
   - component: {fileID: 774140376}
   m_Layer: 5
-  m_Name: MenuItem (3)
+  m_Name: Join
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9393,7 +9395,7 @@ GameObject:
   - component: {fileID: 789376118}
   - component: {fileID: 789376117}
   m_Layer: 5
-  m_Name: MenuItem (20)
+  m_Name: 2560x1600
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9799,7 +9801,7 @@ GameObject:
   - component: {fileID: 833485444}
   - component: {fileID: 833485443}
   m_Layer: 5
-  m_Name: MenuItem (4)
+  m_Name: V-sync_on
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10029,7 +10031,7 @@ GameObject:
   - component: {fileID: 834576426}
   - component: {fileID: 834576425}
   m_Layer: 5
-  m_Name: MenuItem (17)
+  m_Name: 1650x1050
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10207,7 +10209,7 @@ GameObject:
   - component: {fileID: 844234572}
   - component: {fileID: 844234571}
   m_Layer: 5
-  m_Name: MenuItem (10)
+  m_Name: Fullscreen_off
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10828,7 +10830,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Particle reduction
+  m_Text: Particles reduction
 --- !u!222 &910883603
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11032,7 +11034,7 @@ GameObject:
   - component: {fileID: 933736248}
   - component: {fileID: 933736247}
   m_Layer: 5
-  m_Name: MenuItem (1)
+  m_Name: Master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11368,7 +11370,7 @@ GameObject:
   - component: {fileID: 962157035}
   - component: {fileID: 962157034}
   m_Layer: 5
-  m_Name: MenuItem (12)
+  m_Name: Shadow_on
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11770,7 +11772,7 @@ GameObject:
   - component: {fileID: 999159197}
   - component: {fileID: 999159196}
   m_Layer: 5
-  m_Name: MenuItem (18)
+  m_Name: x8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12021,7 +12023,7 @@ GameObject:
   - component: {fileID: 1057484897}
   - component: {fileID: 1057484896}
   m_Layer: 5
-  m_Name: MenuItem (1)
+  m_Name: Forward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12115,7 +12117,7 @@ GameObject:
   - component: {fileID: 1064650673}
   - component: {fileID: 1064650672}
   m_Layer: 5
-  m_Name: MenuItem (10)
+  m_Name: Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12917,7 +12919,7 @@ GameObject:
   - component: {fileID: 1101098932}
   - component: {fileID: 1101098931}
   m_Layer: 5
-  m_Name: MenuItem (16)
+  m_Name: 1440x900
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13259,7 +13261,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Effects
+  m_Text: Musics
 --- !u!222 &1118796575
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14141,7 +14143,7 @@ GameObject:
   - component: {fileID: 1215351409}
   - component: {fileID: 1215351408}
   m_Layer: 5
-  m_Name: MenuItem (1)
+  m_Name: Fullscreen_on
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14799,7 +14801,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'GRAPHISME
+  m_Text: 'GRAPHICS
 
 '
 --- !u!222 &1280231617
@@ -15185,7 +15187,7 @@ GameObject:
   - component: {fileID: 1349258503}
   - component: {fileID: 1349258504}
   m_Layer: 5
-  m_Name: Menu
+  m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15692,7 +15694,7 @@ GameObject:
   - component: {fileID: 1403859560}
   - component: {fileID: 1403859559}
   m_Layer: 5
-  m_Name: MenuItem
+  m_Name: Volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16096,7 +16098,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: VOLUME
+  m_Text: 
 --- !u!222 &1415865015
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19647,7 +19649,7 @@ GameObject:
   - component: {fileID: 1487714489}
   - component: {fileID: 1487714488}
   m_Layer: 5
-  m_Name: MenuItem (18)
+  m_Name: 1680x1050
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20014,7 +20016,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: low
+  m_Text: Low
 --- !u!222 &1502145191
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20399,7 +20401,7 @@ GameObject:
   - component: {fileID: 1532362083}
   - component: {fileID: 1532362082}
   m_Layer: 5
-  m_Name: MenuItem (19)
+  m_Name: 2048x1280
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20574,7 +20576,7 @@ GameObject:
   - component: {fileID: 1535044256}
   - component: {fileID: 1535044257}
   m_Layer: 5
-  m_Name: Menu
+  m_Name: Anti-AliasingMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20784,7 +20786,7 @@ GameObject:
   - component: {fileID: 1548359575}
   - component: {fileID: 1548359574}
   m_Layer: 5
-  m_Name: GRAPHISME
+  m_Name: GraphicsMenuSettings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20870,7 +20872,7 @@ RectTransform:
   - {fileID: 1082292976}
   - {fileID: 1548716355}
   m_Father: {fileID: 2014515346}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -20946,7 +20948,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'GRAPHISME
+  m_Text: 'GRAPHICS
 
 '
 --- !u!222 &1548716357
@@ -21042,7 +21044,7 @@ GameObject:
   - component: {fileID: 1563145027}
   - component: {fileID: 1563145026}
   m_Layer: 5
-  m_Name: MenuItem (2)
+  m_Name: Musics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21135,7 +21137,7 @@ GameObject:
   - component: {fileID: 1566450502}
   - component: {fileID: 1566450501}
   m_Layer: 5
-  m_Name: MenuItem (9)
+  m_Name: Empty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21227,7 +21229,7 @@ GameObject:
   - component: {fileID: 1571794636}
   - component: {fileID: 1571794635}
   m_Layer: 5
-  m_Name: MenuItem (21)
+  m_Name: 2880x1800
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21482,7 +21484,7 @@ GameObject:
   - component: {fileID: 1593253273}
   - component: {fileID: 1593253272}
   m_Layer: 5
-  m_Name: MenuItem (16)
+  m_Name: High
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22107,7 +22109,7 @@ GameObject:
   - component: {fileID: 1667486064}
   - component: {fileID: 1667486065}
   m_Layer: 5
-  m_Name: Menu
+  m_Name: MultiplayerMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22206,7 +22208,7 @@ GameObject:
   - component: {fileID: 1683472199}
   - component: {fileID: 1683472198}
   m_Layer: 5
-  m_Name: MenuItem (13)
+  m_Name: 1024x708
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22384,7 +22386,7 @@ GameObject:
   - component: {fileID: 1697672190}
   - component: {fileID: 1697672189}
   m_Layer: 5
-  m_Name: MenuItem (10)
+  m_Name: x0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22596,7 +22598,7 @@ GameObject:
   - component: {fileID: 1723041689}
   - component: {fileID: 1723041688}
   m_Layer: 5
-  m_Name: Parameters
+  m_Name: SettingsMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22675,7 +22677,7 @@ RectTransform:
   m_Children:
   - {fileID: 673421464}
   m_Father: {fileID: 2014515346}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -22695,7 +22697,7 @@ GameObject:
   - component: {fileID: 1737798555}
   - component: {fileID: 1737798554}
   m_Layer: 5
-  m_Name: MenuItem (15)
+  m_Name: 1280x800
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23003,7 +23005,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Master
+  m_Text: Effects
 --- !u!222 &1751860848
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23023,7 +23025,7 @@ GameObject:
   - component: {fileID: 1755452321}
   - component: {fileID: 1755452320}
   m_Layer: 5
-  m_Name: MenuItem (1)
+  m_Name: Ip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23118,7 +23120,7 @@ GameObject:
   - component: {fileID: 1781667479}
   - component: {fileID: 1781667478}
   m_Layer: 5
-  m_Name: Parameters
+  m_Name: Settings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23526,7 +23528,7 @@ GameObject:
   - component: {fileID: 1801405016}
   - component: {fileID: 1801405015}
   m_Layer: 5
-  m_Name: RIEN (1)
+  m_Name: Empty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23673,7 +23675,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: VOLUME
+  m_Text: Volume
 --- !u!222 &1807757151
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24036,7 +24038,7 @@ GameObject:
   - component: {fileID: 1898029212}
   - component: {fileID: 1898029211}
   m_Layer: 5
-  m_Name: CONTROLS
+  m_Name: ControlsMenuSettings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24122,7 +24124,7 @@ RectTransform:
   - {fileID: 1850472469}
   - {fileID: 324975546}
   m_Father: {fileID: 2014515346}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -24142,7 +24144,7 @@ GameObject:
   - component: {fileID: 1904491459}
   - component: {fileID: 1904491458}
   m_Layer: 5
-  m_Name: MenuItem (22)
+  m_Name: 3360x2100
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24513,7 +24515,7 @@ GameObject:
   - component: {fileID: 1918747022}
   - component: {fileID: 1918747023}
   m_Layer: 5
-  m_Name: Menu
+  m_Name: ControlsMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24583,7 +24585,7 @@ GameObject:
   - component: {fileID: 1927374214}
   - component: {fileID: 1927374213}
   m_Layer: 5
-  m_Name: MenuItem (8)
+  m_Name: ShadowResolution
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24813,7 +24815,7 @@ GameObject:
   - component: {fileID: 1952811496}
   - component: {fileID: 1952811495}
   m_Layer: 5
-  m_Name: MenuItem (11)
+  m_Name: V-sync_off
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25125,7 +25127,7 @@ RectTransform:
   m_Children:
   - {fileID: 1349258503}
   m_Father: {fileID: 2014515346}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -25201,7 +25203,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: very high
+  m_Text: Very High
 --- !u!222 &1971445586
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25222,7 +25224,7 @@ GameObject:
   - component: {fileID: 1971699726}
   - component: {fileID: 1971699725}
   m_Layer: 5
-  m_Name: Anti-Aliasing
+  m_Name: Anti-AliasingMenuSettingsGraphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25308,7 +25310,7 @@ RectTransform:
   - {fileID: 196638385}
   - {fileID: 722338180}
   m_Father: {fileID: 2014515346}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -25444,7 +25446,7 @@ GameObject:
   - component: {fileID: 1989333874}
   - component: {fileID: 1989333875}
   m_Layer: 5
-  m_Name: Menu
+  m_Name: ResolutionMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25518,7 +25520,7 @@ GameObject:
   - component: {fileID: 1993888331}
   - component: {fileID: 1993888330}
   m_Layer: 5
-  m_Name: MenuItem (8)
+  m_Name: Hint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25848,7 +25850,7 @@ GameObject:
   - component: {fileID: 2014515343}
   - component: {fileID: 2014515342}
   m_Layer: 5
-  m_Name: MENU
+  m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25937,6 +25939,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 1971426886}
+  - {fileID: 215484417}
+  - {fileID: 692488372}
   - {fileID: 1723041692}
   - {fileID: 228741667}
   - {fileID: 1548359578}
@@ -25944,10 +25949,7 @@ RectTransform:
   - {fileID: 698001810}
   - {fileID: 1971699729}
   - {fileID: 476184732}
-  - {fileID: 1971426886}
   - {fileID: 591626333}
-  - {fileID: 215484417}
-  - {fileID: 692488372}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -25970,7 +25972,7 @@ GameObject:
   - component: {fileID: 2031298095}
   - component: {fileID: 2031298096}
   m_Layer: 5
-  m_Name: Menu
+  m_Name: VolumeMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26090,7 +26092,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: high
+  m_Text: High
 --- !u!222 &2031390808
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26111,7 +26113,7 @@ GameObject:
   - component: {fileID: 2037059539}
   - component: {fileID: 2037059538}
   m_Layer: 5
-  m_Name: MenuItem (18)
+  m_Name: Very High
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26289,7 +26291,7 @@ GameObject:
   - component: {fileID: 2041537094}
   - component: {fileID: 2041537093}
   m_Layer: 5
-  m_Name: MenuItem (14)
+  m_Name: 1152x720
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26600,7 +26602,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Particle reduction
+  m_Text: Particles reduction
 --- !u!222 &2076484152
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26806,7 +26808,7 @@ GameObject:
   - component: {fileID: 2119816947}
   - component: {fileID: 2119816948}
   m_Layer: 5
-  m_Name: Menu
+  m_Name: GraphicsMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26832,8 +26834,8 @@ RectTransform:
   - {fileID: 366966355}
   - {fileID: 962157033}
   - {fileID: 509524945}
-  - {fileID: 2125639780}
   - {fileID: 547658018}
+  - {fileID: 2125639780}
   - {fileID: 713424595}
   m_Father: {fileID: 817119470}
   m_RootOrder: 0
@@ -26879,7 +26881,7 @@ GameObject:
   - component: {fileID: 2125639777}
   - component: {fileID: 2125639776}
   m_Layer: 5
-  m_Name: MenuItem (13)
+  m_Name: ParticlesReduction_on
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27015,7 +27017,7 @@ RectTransform:
   m_Children:
   - {fileID: 2076484150}
   m_Father: {fileID: 2119816947}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
