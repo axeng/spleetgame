@@ -50,9 +50,13 @@ namespace Assets.Script
 		public Text hintText;
 
 		public Text lastWait;
+
+		public bool inGame;
 		
 		void Start()
 		{
+			inGame = GameObject.Find("Main") != null;
+		
 			settings = new Settings();
 		
 			volumeSlider.value = settings.volume;
@@ -334,6 +338,8 @@ namespace Assets.Script
 
 		public void Save()
 		{
+			if (inGame)
+				Player.settings = settings;
 			settings.SaveSettings();
 		}
 	}

@@ -18,7 +18,6 @@ public class PlayerScript : MonoBehaviour
 
 	private int id;
 	private Player player;
-	private Settings settings;
 	private Camera camera;
 
 	private float rotX;
@@ -30,7 +29,6 @@ public class PlayerScript : MonoBehaviour
 	{
 		this.id = Game.AddPlayer(gameObject);
 		this.player = Game.players[id];
-		this.settings = Player.settings;
 		this.camera = Camera.main;
 
 		//this.rotX = camera.transform.rotation.eulerAngles.x;
@@ -98,24 +96,24 @@ public class PlayerScript : MonoBehaviour
 		Vector3 move = new Vector3(0.0f, 0.0f, 0.0f);
 		Vector3 force = new Vector3(0.0f, 0.0f, 0.0f);
 		
-		if (Input.GetKey(settings.forward))
+		if (Input.GetKey(Player.settings.forward))
 		{
 			move.z += 0.1f * speedMov;
 		}
-		if (Input.GetKey(settings.left))
+		if (Input.GetKey(Player.settings.left))
 		{
 			move.x -= 0.1f * speedMov;
 		}
-		if (Input.GetKey(settings.backward))
+		if (Input.GetKey(Player.settings.backward))
 		{
 			move.z -= 0.1f * speedMov;
 		}
-		if (Input.GetKey(settings.right))
+		if (Input.GetKey(Player.settings.right))
 		{
 			move.x += 0.1f * speedMov;
 		}
 
-		if (Input.GetKey(settings.sprint))
+		if (Input.GetKey(Player.settings.sprint))
 			move = move * sprintMultiplier;
 
 		if (this.player.adr)
@@ -126,7 +124,7 @@ public class PlayerScript : MonoBehaviour
 			jumpCount = 0;
 		}
 		
-		if ((this.player.IsGrounded() || this.player.doubleJump) && Input.GetKeyDown(settings.jump) && (jumpCount == 0 || this.player.doubleJump && jumpCount < 2))
+		if ((this.player.IsGrounded() || this.player.doubleJump) && Input.GetKeyDown(Player.settings.jump) && (jumpCount == 0 || this.player.doubleJump && jumpCount < 2))
 		{
 			force.y += 5.0f * jumpForce;
 			jumpCount++;
@@ -148,7 +146,7 @@ public class PlayerScript : MonoBehaviour
 		//transform.rotation.Set(0, camera.transform.rotation.y, 0, 0);
 		camera.transform.rotation = Quaternion.Euler(rotY, rotX, 0);
 		
-		if (Input.GetKeyDown(this.settings.hint))
+		if (Input.GetKeyDown(Player.settings.hint))
 		{
 			if (Player.nbHints > 0 && Game.map.PopOneHint())
 				Player.nbHints--;

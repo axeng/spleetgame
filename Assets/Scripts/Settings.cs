@@ -134,7 +134,7 @@ namespace Assets.Script
 			PlayerPrefs.SetInt("Sip", IpAdressToInt(ip));
 			PlayerPrefs.SetInt("Sport", port);
 			
-			PlayerPrefs.Save();
+			//PlayerPrefs.Save();
 		}
 		
 		public int IpAdressToInt(IPAddress ip)
