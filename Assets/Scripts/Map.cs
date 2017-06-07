@@ -908,7 +908,7 @@ namespace Assets.Script
                     bl_mapenigmemult.Add(new Block("Mur_vitre", new Vector3(254.7f, 6.7f, 244.09f), new Vector3(0f, 90f, 0f)));
                     bl_mapenigmemult.Add(new Block("MusicRfx", new Vector3(0, 0, 0), new Vector3(0f, 0f, 0f)));
                     MapConstructor mc_mapenigmemult = new MapConstructor(bl_mapenigmemult);
-                    Map mapenigmemult = new Map(mc_mapenigmemult, name, MapType.OTHER, new Vector3(151, 4, 125)); //multi x + 5
+                    Map mapenigmemult = new Map(mc_mapenigmemult, name, MapType.OTHER, new List<Vector3>(new Vector3[] { new Vector3(151, 4, 125), new Vector3(156, 4, 125) })); //multi x + 5
                     mapenigmemult.AddElement(new string[] { "pressionplate_1" }, "door_1", ExecType.DOOR, ExecutorType.PRESSIONPLATE, false);   //infini
                     mapenigmemult.AddElement(new string[] { "pressionplate_2", "pressionplate_3" }, "window_1", ExecType.WINDOW, ExecutorType.PRESSIONPLATE, false);  //0s
                     mapenigmemult.AddElement(new string[] { "pressionplate_4", "pressionplate_5" }, "door_6", ExecType.DOOR, ExecutorType.PRESSIONPLATE, false); // infini
@@ -941,6 +941,7 @@ namespace Assets.Script
                     bl_Stp3.Add(new Block("Button", new Vector3(0.07999992f, 7.099842f, -14.25f), new Vector3(0f, 0f, 0f)));
                     bl_Stp3.Add(new Block("Scile", new Vector3(-0.01089096f, 6.3f, 13.12704f), new Vector3(0f, 0f, 0f)));
                     bl_Stp3.Add(new Block("DOP2", new Vector3(-13.43f, 6.23f, -0.37f), new Vector3(325f, 0f, 0f)));
+                    bl_Stp3.Add(new Block("MusicRfx", new Vector3(0, 0, 0), new Vector3(0f, 0f, 0f)));
                     MapConstructor mc_Stp3 = new MapConstructor(bl_Stp3);
                     Map Stp3 = new Map(mc_Stp3, name, MapType.OTHER, new Vector3(0, 10, 0));
                     return Stp3;
@@ -957,6 +958,7 @@ namespace Assets.Script
                     bl_Stp2.Add(new Block("Button", new Vector3(0.07999992f, 7.099842f, -14.25f), new Vector3(0f, 0f, 0f)));
                     bl_Stp2.Add(new Block("Scile", new Vector3(-0.01089096f, 6.3f, 13.12704f), new Vector3(0f, 0f, 0f)));
                     bl_Stp2.Add(new Block("DOP2", new Vector3(-13.43f, 6.23f, -0.37f), new Vector3(325f, 0f, 0f)));
+                    bl_Stp2.Add(new Block("MusicRfx", new Vector3(0, 0, 0), new Vector3(0f, 0f, 0f)));
                     MapConstructor mc_Stp2 = new MapConstructor(bl_Stp2);
                     Map Stp2 = new Map(mc_Stp2, name, MapType.OTHER, new Vector3(0, 10, 0));
                     return Stp2;
@@ -973,6 +975,7 @@ namespace Assets.Script
                     bl_Stp1.Add(new Block("DOP2", new Vector3(-13.43f, 6.23f, -0.37f), new Vector3(325f, 0f, 0f)));
                     bl_Stp1.Add(new Block("Button", new Vector3(0.07999992f, 7.099842f, -14.25f), new Vector3(0f, 0f, 0f)));
                     bl_Stp1.Add(new Block("Scile", new Vector3(-0.01089096f, 6.3f, 13.12704f), new Vector3(0f, 0f, 0f)));
+                    bl_Stp1.Add(new Block("MusicRfx", new Vector3(0, 0, 0), new Vector3(0f, 0f, 0f)));
                     MapConstructor mc_Stp1 = new MapConstructor(bl_Stp1);
                     Map Stp1 = new Map(mc_Stp1, name, MapType.OTHER, new Vector3(0, 10, 0));
                     return Stp1;
@@ -990,6 +993,7 @@ namespace Assets.Script
                     bl_Stp0.Add(new Block("TerrainCOOL", new Vector3(-242.2479f, -0.8736415f, -261.6377f), new Vector3(0f, 0f, 0f)));
                     bl_Stp0.Add(new Block("Scile", new Vector3(-0.01089096f, 6.3f, 13.12704f), new Vector3(0f, 0f, 0f)));
                     bl_Stp0.Add(new Block("DOP2", new Vector3(-13.43f, 6.23f, -0.37f), new Vector3(325f, 0f, 0f)));
+                    bl_Stp0.Add(new Block("MusicRfx", new Vector3(0, 0, 0), new Vector3(0f, 0f, 0f)));
                     MapConstructor mc_Stp0 = new MapConstructor(bl_Stp0);
                     Map Stp0 = new Map(mc_Stp0, name, MapType.OTHER, new Vector3(0, 10, 0));
                     return Stp0;
@@ -1001,6 +1005,7 @@ namespace Assets.Script
                     bl_StpMult.Add(new Block("Salle_de_tp_sans_tp_col", new Vector3(0f, 0f, 0f), new Vector3(0f, 0f, 0f)));
                     bl_StpMult.Add(new Block("DOP2", new Vector3(0.1072242f, 1.68f, -11.68243f), new Vector3(325f, 0f, 0f)));
                     bl_StpMult.Add(new Block("ADR2", new Vector3(0.02700901f, 1.88f, 11.4859f), new Vector3(325f, 0f, 0f)));
+                    bl_StpMult.Add(new Block("MusicRfx", new Vector3(0, 0, 0), new Vector3(0f, 0f, 0f)));
                     MapConstructor mc_StpMult = new MapConstructor(bl_StpMult);
                     Map StpMult = new Map(mc_StpMult, name, MapType.OTHER, new Vector3(10, 10, 0));
                     return StpMult;
