@@ -1007,7 +1007,7 @@ namespace Assets.Script
                     bl_StpMult.Add(new Block("ADR2", new Vector3(0.02700901f, 1.88f, 11.4859f), new Vector3(325f, 0f, 0f)));
                     bl_StpMult.Add(new Block("MusicRfx", new Vector3(0, 0, 0), new Vector3(0f, 0f, 0f)));
                     MapConstructor mc_StpMult = new MapConstructor(bl_StpMult);
-                    Map StpMult = new Map(mc_StpMult, name, MapType.OTHER, new Vector3(10, 10, 0));
+                    Map StpMult = new Map(mc_StpMult, name, MapType.OTHER, new List<Vector3>(new Vector3[] { new Vector3(10, 4, 0), new Vector3(-10, 4 , 0) }));
                     return StpMult;
                     break;
 
