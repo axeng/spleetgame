@@ -29,5 +29,10 @@ namespace Assets.Script
 			UpdateColors();
 			this.Exec();
 		}
+		
+		public void changeActiveDuration(int newDuration)
+		{
+			this.activeDuration = newDuration;
+		}
 	}
 }
