@@ -35,7 +35,7 @@ public class RayCast_net : NetworkBehaviour
     void Update()
     {
          // Check if the player has pressed the fire button and if enough time has elapsed since they last fired
-        if (Input.GetKey(Player.settings.fire) && Time.time > nextFire)
+        if (Input.GetKey(Player.settings.fire) && Time.time > nextFire && !Game.game.pause)
         {
         	// Update the time when our player can fire next
     		nextFire = Time.time + fireRate;

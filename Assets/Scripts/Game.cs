@@ -106,8 +106,15 @@ class Game : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		foreach (Player p in players) 
-			p.Move();
+		List<Player> toremove = new List<Player>();
+		foreach (Player p in players)
+		{
+			if (p.body == null)
+				toremove.Add(p);
+			else
+				p.Move();
+		}
+		players.RemoveAll(p => toremove.Contains(p));
 
 		/*
 		//some key for s1
@@ -160,6 +167,16 @@ class Game : MonoBehaviour
 
 		if (pauseGui)
 			GameObject.FindWithTag("PauseGUI").transform.GetChild(0).gameObject.SetActive(pause);
+
+
+		if (multi)
+		{
+			if (!NetworkClient.active && !NetworkServer.active)
+			{
+				NetworkManager.Shutdown();
+				SceneManager.LoadScene(1);
+			}
+		}
 	}
 	
 	public void Save()
@@ -215,12 +232,13 @@ class Game : MonoBehaviour
 	
 	public void DestroyMap()
 	{
-		if (multi)
+		/*if (multi)
 		{
 			NetworkManager.Shutdown();
-		}
+		}*/
 		GameObject.FindWithTag("MapGUI").transform.GetChild(0).gameObject.SetActive(false);
-		players.Clear();
+		if (!multi)
+			players.Clear();
 		map.DestroyObjects();
 		Map.dicoMaps[map.GetName()] = Map.OldGetMap(map.GetName());
 	}
@@ -230,6 +248,14 @@ class Game : MonoBehaviour
 		DestroyMap();
 		map = Map.GetMap(name);
 		map.Construct();
+		if (multi)
+		{
+			for (int i = 0; i < players.Count; i++)
+			{
+				players[i].Tp(map.spawnPoint[i]);
+				players[i].SetCurrentCheckpoint(map.spawnPoint[i]);
+			}
+		}
 	}
 	
 	public static int AddPlayer(GameObject obj)

@@ -54,6 +54,8 @@ namespace Assets.Script
 		public Text lastWait;
 
 
+		public Slider mousSensibilitySlider;
+
 		private bool inGame;
 		
 		void Start()
@@ -67,7 +69,7 @@ namespace Assets.Script
 
 			fullscreen_on.SetActive(settings.fullscreen);
 			fullscreen_off.SetActive(!settings.fullscreen);
-			changeFullscreen(settings.fullscreen);
+			//changeFullscreen(settings.fullscreen);
 
 			//RESOLUTIONS
 			List<Resolution> rs = new List<Resolution>();
@@ -91,7 +93,7 @@ namespace Assets.Script
 					if (settings.resolutionW + "" == width && settings.resolutionH + "" == height)
 					{
 						//g.GetComponent<Image>().color = new Color(62, 255, 0);
-						changeResolution(settings.resolutionW + "x" + settings.resolutionH);
+						//changeResolution(settings.resolutionW + "x" + settings.resolutionH);
 					}
 				}
 			}
@@ -153,6 +155,10 @@ namespace Assets.Script
 			hintText.text = settings.hint.ToString();
 			fireText.text = settings.fire.ToString();
 			lastWait = null;
+			
+			
+			mousSensibilitySlider.value = settings.mouseSensibility;
+			changeMouseSensibility();
 		}
 
 		// Update is called once per frame
@@ -348,6 +354,12 @@ namespace Assets.Script
 			PlayerPrefs.Save();
 		}
 
+		public void changeMouseSensibility()
+		{
+			int newSensi = (int)mousSensibilitySlider.value;
+			settings.mouseSensibility = newSensi;
+			Save();
+		}
 
 		public void Save()
 		{

@@ -66,11 +66,15 @@ public class PlayerScript : MonoBehaviour
 				
 			case "tp":
 				hit.gameObject.SetActive(false);
-				if (Game.level > 0 && hit.gameObject.name.Contains("Stp") && !Game.finishLevels.Contains(Game.map.GetName()))
+
+				if (!Game.multi)
 				{
-					Game.level--;
-					Game.finishLevels.Add(Game.map.GetName());
-					Game.game.Save();
+					if (Game.level > 0 && hit.gameObject.name.Contains("Stp") && !Game.finishLevels.Contains(Game.map.GetName()))
+					{
+						Game.level--;
+						Game.finishLevels.Add(Game.map.GetName());
+						Game.game.Save();
+					}
 				}
 				//yolo code
 				Game.game.StartCoroutine(Game.game.LoadMapTime(hit.gameObject.name.Replace("tp_", "").Replace("%l", ""+Game.level)));
@@ -167,8 +171,10 @@ public class PlayerScript : MonoBehaviour
 			player.body.velocity = force;
 		}*/
 		
-		rotX += Input.GetAxis("Mouse X") * speedCam;
-		rotY -= Input.GetAxis("Mouse Y") * speedCam;
+		//rotX += Input.GetAxis("Mouse X") * speedCam;
+		//rotY -= Input.GetAxis("Mouse Y") * speedCam;
+		rotX += Input.GetAxis("Mouse X") * (Player.settings.mouseSensibility / 10.0f);
+		rotY -= Input.GetAxis("Mouse Y") * (Player.settings.mouseSensibility / 10.0f);
 		if (rotY > maxDegreeView)
 			rotY = maxDegreeView;
 		else if (rotY < minDegreeView)
