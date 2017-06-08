@@ -8938,7 +8938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allTexts: []
-  lang: 1
+  lang: 0
 --- !u!114 &114229757370910030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17365,8 +17365,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pause: 0
-  multiplayer: 1
-  startMap: StpMult
+  multiplayer: 0
+  startMap: Stp3
   isPopup: 0
 --- !u!114 &114791951281789894
 MonoBehaviour:
