@@ -59,14 +59,14 @@ MonoBehaviour:
     mainAudio: {fileID: 0}
     phrases:
     - audio: {fileID: 0}
-      text: Tu dois activer ce bouton pour ouvir la porte.
+      text: Tu dois activer ce bouton pour ouvrir la porte.
       duration: 10
       drawAudio: 1
       lastCalculatedHeight: 90
       move: 0
     LoopAudioForDuration: 0
     expanded: 1
-    lastCalculatedHeight: 70
+    lastCalculatedHeight: 178
     useSmartSubs: 0
   OnFailure: 1
   OnSuccess: 1
