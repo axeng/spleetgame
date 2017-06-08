@@ -9445,8 +9445,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af5a70bd6d30e455bb10209aa29fc903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IntroVideo: {fileID: 15200000, guid: 8116464734d6846aab39acf695dad69c, type: 3}
-  VideoBoucle: {fileID: 15200000, guid: a66ad6f184e0f46188c3649f850fb860, type: 3}
+  IntroVideo: {fileID: 15200000, guid: b3760386982fe4707b3bd74af0fb9ed4, type: 3}
+  VideoBoucle: {fileID: 15200000, guid: bf0a52c3d86ce49619b6782989b72182, type: 3}
   Menu: {fileID: 2014515341}
 --- !u!114 &765554192
 MonoBehaviour:
