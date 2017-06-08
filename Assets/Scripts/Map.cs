@@ -40,6 +40,7 @@ namespace Assets.Script
 
 		private List<Executor> buttons;
 		private List<Executor> pressionPlates;
+		public Dictionary<string, int> pressionPlatesDurations;
 
 		public List<Vector3> spawnPoint;
 
@@ -70,6 +71,7 @@ namespace Assets.Script
 
 			this.buttons = new List<Executor>();
 			this.pressionPlates = new List<Executor>();
+			this.pressionPlatesDurations = new Dictionary<string, int>();
 
 			this.spawnPoint = spawnPoint;
 
@@ -130,14 +132,24 @@ namespace Assets.Script
 					if (executorType == ExecutorType.BUTTON)
 						executorsElement.Add(new Button(null, GameObject.FindWithTag(but + "_true"), GameObject.FindWithTag(but + "_false"), tag));
 					else if (executorType == ExecutorType.PRESSIONPLATE)
-						executorsElement.Add(new PressionPlate(null, GameObject.FindWithTag(but + "_true"), GameObject.FindWithTag(but + "_false"), tag));
+					{
+						PressionPlate plate = new PressionPlate(null, GameObject.FindWithTag(but + "_true"), GameObject.FindWithTag(but + "_false"), tag);
+						if (pressionPlatesDurations.ContainsKey(but))
+							plate.changeActiveDuration(pressionPlatesDurations[but]);
+						executorsElement.Add(plate);
+					}
 				}
 				else
 				{
 					if (executorType == ExecutorType.BUTTON)
 						executorsElement.Add(new Button(null, GameObject.Find(but + "_true"), GameObject.Find(but + "_false"), tag));
 					else if (executorType == ExecutorType.PRESSIONPLATE)
-						executorsElement.Add(new PressionPlate(null, GameObject.Find(but + "_true"), GameObject.Find(but + "_false"), tag));
+					{
+						PressionPlate plate = new PressionPlate(null, GameObject.Find(but + "_true"), GameObject.Find(but + "_false"), tag);
+						if (pressionPlatesDurations.ContainsKey(but))
+							plate.changeActiveDuration(pressionPlatesDurations[but]);
+						executorsElement.Add(plate);
+					}
 				}
 			}
 
@@ -910,8 +922,12 @@ namespace Assets.Script
                     MapConstructor mc_mapenigmemult = new MapConstructor(bl_mapenigmemult);
                     Map mapenigmemult = new Map(mc_mapenigmemult, name, MapType.OTHER, new List<Vector3>(new Vector3[] { new Vector3(151, 4, 125), new Vector3(156, 4, 125) })); //multi x + 5
                     mapenigmemult.AddElement(new string[] { "pressionplate_1" }, "door_1", ExecType.DOOR, ExecutorType.PRESSIONPLATE, false);   //infini
+					mapenigmemult.pressionPlatesDurations.Add("pressionplate_1", 3600);
                     mapenigmemult.AddElement(new string[] { "pressionplate_2", "pressionplate_3" }, "window_1", ExecType.WINDOW, ExecutorType.PRESSIONPLATE, false);  //0s
+					mapenigmemult.pressionPlatesDurations.Add("pressionplate_2", 1);
                     mapenigmemult.AddElement(new string[] { "pressionplate_4", "pressionplate_5" }, "door_6", ExecType.DOOR, ExecutorType.PRESSIONPLATE, false); // infini
+                    mapenigmemult.pressionPlatesDurations.Add("pressionplate_4", 3600);
+                    mapenigmemult.pressionPlatesDurations.Add("pressionplate_5", 3600);
                     mapenigmemult.AddElement(new string[] { "button_1" }, "door_2", ExecType.DOOR, false);
                     mapenigmemult.AddElement(new string[] { "button_2" }, "door_3", ExecType.DOOR, false);
                     mapenigmemult.AddElement(new string[] { "button_3" }, "door_4", ExecType.DOOR, false);
