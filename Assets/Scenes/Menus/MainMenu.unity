@@ -341,7 +341,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Shadow resolution
+  m_Text: ml:shadowresolution
 --- !u!222 &17099349
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1392,7 +1392,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Settings
+  m_Text: ml:settings
 --- !u!222 &182146536
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1987,7 +1987,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Controls
+  m_Text: ml:controls
 --- !u!222 &227296416
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3446,7 +3446,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 38
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -3455,7 +3455,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CONTROLS
+  m_Text: ml:controls(CAPSLOCK)
 --- !u!222 &324975548
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3676,7 +3676,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Singleplayer
+  m_Text: ml:solo
 --- !u!222 &347018048
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3823,9 +3823,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Master
-
-'
+  m_Text: ml:master
 --- !u!222 &359713248
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5134,7 +5132,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Anti-Aliasing
+  m_Text: ml:antialiasing
 --- !u!222 &439829545
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6412,7 +6410,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Graphics
+  m_Text: ml:graphics
 --- !u!222 &559633861
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6862,7 +6860,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back
+  m_Text: ml:back
 --- !u!222 &593587298
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7372,7 +7370,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: V-sync
+  m_Text: ml:vsync
 --- !u!222 &611357081
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8006,7 +8004,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Medium
+  m_Text: ml:medium
 --- !u!222 &636996259
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8836,7 +8834,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Start
+  m_Text: ml:start
 --- !u!222 &681234174
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9267,7 +9265,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Multiplayer
+  m_Text: ml:multi
 --- !u!222 &705705772
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9343,7 +9341,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fullscreen
+  m_Text: ml:fullscreen
 --- !u!222 &706541091
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9494,10 +9492,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: GRAPHICS
+  m_Text: ml:graphics(CAPSLOCK)
 --- !u!222 &709183322
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9664,10 +9662,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: GRAPHICS
+  m_Text: ml:graphics(CAPSLOCK)
 --- !u!222 &722338182
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11441,7 +11439,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Join
+  m_Text: ml:join
 --- !u!222 &867861761
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11724,10 +11722,10 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Particles reduction
+  m_Text: ml:particlesreduction
 --- !u!222 &910883603
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11802,7 +11800,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Help
+  m_Text: ml:help
 --- !u!222 &923371407
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12213,7 +12211,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quit
+  m_Text: ml:quit
 --- !u!222 &959088877
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12853,7 +12851,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back
+  m_Text: ml:back
 --- !u!222 &987495769
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13972,7 +13970,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: VOLUME
+  m_Text: ml:volume(CAPSLOCK)
 --- !u!222 &1086457983
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15076,7 +15074,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Reset save
+  m_Text: ml:resetsave
 --- !u!222 &1169037784
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16395,12 +16393,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'GRAPHICS
-
-'
+  m_Text: ml:graphics(CAPSLOCK)
 --- !u!222 &1280231617
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16455,7 +16451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.88235295, g: 1, b: 0.8831643, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -16465,7 +16461,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 33
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
@@ -16475,15 +16471,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Bienvenue dans SPLEET !\n\n\nSpleet est un jeu qui partage r\xE9flexion
-    et action dans un univers futuriste et aseptis\xE9. Vous contr\xF4lez un patient
-    qui a subi un grave traumatisme c\xE9r\xE9brale suite un accident de voiture.
-    Il se retrouve bloqu\xE9 dans son propre subconscient. Un certain docteur d\xE9nomm\xE9
-    Winston a une solution et vous guidera au sein de votre espace c\xE9r\xE9brale
-    via \xE0 une de ses inventions. Son invention est un moyen de mod\xE9liser le
-    cerveau entier d\u2019un humain sous la forme d\u2019un univers. \nLe but du jeu
-    sera de reconnecter les liaisons c\xE9r\xE9brales du patient en r\xE9solvent des
-    objectifs au cours des niveaux en passant d\u2019un univers \xE0 l\u2019autre. "
+  m_Text: ml:helptext
 --- !u!222 &1285371614
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16806,7 +16794,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Host
+  m_Text: ml:host
 --- !u!222 &1338291537
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17241,7 +17229,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: V-sync
+  m_Text: ml:vsync
 --- !u!222 &1392367784
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18334,7 +18322,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mouse Sensibility
+  m_Text: ml:mousesensibility
 --- !u!222 &1458589693
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18567,7 +18555,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Port :'
+  m_Text: ml:port
 --- !u!222 &1479720418
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21776,7 +21764,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Low
+  m_Text: ml:low
 --- !u!222 &1502145191
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21961,6 +21949,53 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1516414179}
+--- !u!1001 &1521347663
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4489737128922750, guid: 89af3c303af3142b4bba80ed336a15f2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 4614.6714
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489737128922750, guid: 89af3c303af3142b4bba80ed336a15f2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3106.1733
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489737128922750, guid: 89af3c303af3142b4bba80ed336a15f2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -474.68475
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489737128922750, guid: 89af3c303af3142b4bba80ed336a15f2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489737128922750, guid: 89af3c303af3142b4bba80ed336a15f2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489737128922750, guid: 89af3c303af3142b4bba80ed336a15f2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489737128922750, guid: 89af3c303af3142b4bba80ed336a15f2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489737128922750, guid: 89af3c303af3142b4bba80ed336a15f2, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114234794878211908, guid: 89af3c303af3142b4bba80ed336a15f2,
+        type: 2}
+      propertyPath: lang
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 89af3c303af3142b4bba80ed336a15f2, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1521492971
 GameObject:
   m_ObjectHideFlags: 0
@@ -22169,7 +22204,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Shadow
+  m_Text: ml:shadow
 --- !u!222 &1526566284
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22745,12 +22780,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'GRAPHICS
-
-'
+  m_Text: ml:graphics(CAPSLOCK)
 --- !u!222 &1548716357
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23181,7 +23214,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: FOV
+  m_Text: ml:fov
 --- !u!222 &1587551506
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23447,7 +23480,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Shadow
+  m_Text: ml:shadow
 --- !u!222 &1599118925
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23524,7 +23557,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'IP :'
+  m_Text: ml:ip
 --- !u!222 &1607646282
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25283,7 +25316,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Volume
+  m_Text: ml:volume
 --- !u!222 &1807757151
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25410,7 +25443,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back
+  m_Text: ml:back
 --- !u!222 &1827099255
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26116,7 +26149,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Resolution
+  m_Text: ml:resolution
 --- !u!222 &1914769232
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26661,7 +26694,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fullscreen
+  m_Text: ml:fullscreen
 --- !u!222 &1962155176
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26837,7 +26870,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Very High
+  m_Text: ml:veryhigh
 --- !u!222 &1971445586
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -27536,6 +27569,7 @@ GameObject:
   - component: {fileID: 2014515344}
   - component: {fileID: 2014515343}
   - component: {fileID: 2014515342}
+  - component: {fileID: 2014515347}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -27647,6 +27681,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2014515347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2014515341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 559361a3a03204f28b0440925715446b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2025648890 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100008, guid: b6a1cf4e3eeaf9a4ca38bf8acb910a6d, type: 2}
@@ -27779,7 +27824,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: High
+  m_Text: ml:high
 --- !u!222 &2031390808
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28308,10 +28353,10 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Particles reduction
+  m_Text: ml:particlesreduction
 --- !u!222 &2076484152
 CanvasRenderer:
   m_ObjectHideFlags: 0
