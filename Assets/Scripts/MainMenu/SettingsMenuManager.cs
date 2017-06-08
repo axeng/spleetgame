@@ -54,6 +54,8 @@ namespace Assets.Script
 		public Text lastWait;
 
 
+		public Slider mousSensibilitySlider;
+
 		private bool inGame;
 		
 		void Start()
@@ -153,6 +155,10 @@ namespace Assets.Script
 			hintText.text = settings.hint.ToString();
 			fireText.text = settings.fire.ToString();
 			lastWait = null;
+			
+			
+			mousSensibilitySlider.value = settings.mouseSensibility;
+			changeMouseSensibility();
 		}
 
 		// Update is called once per frame
@@ -348,6 +354,12 @@ namespace Assets.Script
 			PlayerPrefs.Save();
 		}
 
+		public void changeMouseSensibility()
+		{
+			int newSensi = (int)mousSensibilitySlider.value;
+			settings.mouseSensibility = newSensi;
+			Save();
+		}
 
 		public void Save()
 		{

@@ -171,8 +171,10 @@ public class PlayerScript : MonoBehaviour
 			player.body.velocity = force;
 		}*/
 		
-		rotX += Input.GetAxis("Mouse X") * speedCam;
-		rotY -= Input.GetAxis("Mouse Y") * speedCam;
+		//rotX += Input.GetAxis("Mouse X") * speedCam;
+		//rotY -= Input.GetAxis("Mouse Y") * speedCam;
+		rotX += Input.GetAxis("Mouse X") * (Player.settings.mouseSensibility / 10.0f);
+		rotY -= Input.GetAxis("Mouse Y") * (Player.settings.mouseSensibility / 10.0f);
 		if (rotY > maxDegreeView)
 			rotY = maxDegreeView;
 		else if (rotY < minDegreeView)
