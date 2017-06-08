@@ -338,7 +338,7 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: ml:shadowresolution
@@ -23135,6 +23135,11 @@ Prefab:
       propertyPath: lang
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114234794878211908, guid: 89af3c303af3142b4bba80ed336a15f2,
+        type: 2}
+      propertyPath: XMLObject
+      value: 
+      objectReference: {fileID: 4900000, guid: 72b57716e52a84c4580a1f6bff5dc619, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 89af3c303af3142b4bba80ed336a15f2, type: 2}
   m_IsPrefabParent: 0

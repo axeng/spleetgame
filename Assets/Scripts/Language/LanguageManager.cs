@@ -78,17 +78,28 @@ namespace Assets.Script
 			}
 		}*/
 
-		public static LanguageManager Load()
+		public static LanguageManager Load(TextAsset XMLObject)
 		{
-			if (File.Exists(g_filepath))
+			//Resources.Load(g_filepath);
+			/*if (File.Exists(g_filepath))
 			{
 				XmlSerializer serializer = new XmlSerializer(typeof(LanguageManager));
 				using (FileStream stream = new FileStream(g_filepath, FileMode.Open))
 				{
 					return serializer.Deserialize(stream) as LanguageManager;
 				}
-			}
-			return new LanguageManager();
+			}*/
+			
+			StringReader xml;
+			LanguageManager data = new LanguageManager();
+			
+			xml= new StringReader(XMLObject.text); 
+        	
+        	XmlSerializer serializer = new XmlSerializer(typeof(LanguageManager));
+ 
+        	return serializer.Deserialize(xml) as LanguageManager;
+			
+			//return new LanguageManager();
 		}
 
 		public int FindKey(string key)

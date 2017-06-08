@@ -13,13 +13,15 @@ namespace Assets.Script
 		public static Manager manager;
 		
 		public Language lang;
+
+		public TextAsset XMLObject;
 		
 		void Awake()
 		{
 			manager = this;
 			allTextsDico = new Dictionary<Text, string>();
 			//allTexts = new List<Text>();
-			langManager = LanguageManager.Load();
+			langManager = LanguageManager.Load(XMLObject);
 		}
 		
 		public void Refresh()

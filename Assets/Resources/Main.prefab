@@ -9524,6 +9524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lang: 0
+  XMLObject: {fileID: 4900000, guid: 72b57716e52a84c4580a1f6bff5dc619, type: 3}
 --- !u!114 &114229757370910030
 MonoBehaviour:
   m_ObjectHideFlags: 1

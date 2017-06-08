@@ -9,6 +9,7 @@ namespace Assets.Script
 		
 		void Start()
 		{
+			//Debug.Log(Application.persistentDataPath);
 			foreach (Text t in GetComponentsInChildren<Text>(true))
 				Manager.manager.allTextsDico.Add(t, t.text);
 				//Manager.manager.allTexts.Add(t);
