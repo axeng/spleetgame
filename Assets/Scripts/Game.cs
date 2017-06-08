@@ -219,7 +219,7 @@ class Game : MonoBehaviour
 	public void UseSave()
 	{
 		level = PlayerPrefs.GetInt("STPlevel", 3);
-		if (level <= 3)
+		if (level < 3)
 		{
 			foreach (string m in Map.mapsName)
 			{
