@@ -697,7 +697,7 @@ namespace Assets.Script
                     //enigme.AddElement(new string[] { "pressionplate_2" }, "window_3", ExecType.WINDOW, ExecutorType.PRESSIONPLATE, false);
                     //enigme.AddElement(new string[] { "pressionplate_2" }, "window_4", ExecType.WINDOW, ExecutorType.PRESSIONPLATE, false);
                     enigme.hintsList.Add("Les plaques de pressions se désactivent avec le temps.");
-                    enigme.hintsList.Add("Un a gauche, trois à droite.");
+                    enigme.hintsList.Add("Un à gauche, trois à droite.");
                     enigme.hintsList.Add("Il y a 4 boutons à activer dans le labyrinthe.");
                     
 
@@ -826,7 +826,7 @@ namespace Assets.Script
 					bl_Mapmulti.Add(new Block("plat/trap_pilier_col", new Vector3(58.26322f,0f,59.5017f), new Vector3(0f, 0f, 0)));
 					bl_Mapmulti.Add(new Block("Button", new Vector3(51.2f,5.496685f,60.57917f), new Vector3(0f, 90f, 0), "button_1"));
 					bl_Mapmulti.Add(new Block("plat/Scile_col", new Vector3(52.05f,-3.5f,54.1f), new Vector3(0f, 270f, 0)));
-					bl_Mapmulti.Add(new Block("Button", new Vector3(34.01f,13.49f,181.4f), new Vector3(0f, 0f, 0), "button_2"));
+					bl_Mapmulti.Add(new Block("Button", new Vector3(34.01f,13.49f,180.4f), new Vector3(0f, 0f, 0), "button_2"));
 					bl_Mapmulti.Add(new Block("plat/trap_pilier_col", new Vector3(36.60698f,0.9f,149.86f), new Vector3(0f, 0f, 0)));
 					bl_Mapmulti.Add(new Block("plat/trap_pilier_col", new Vector3(33.52055f,3.332898f,156.2393f), new Vector3(0f, 0f, 0)));
 					bl_Mapmulti.Add(new Block("plat/trap_pilier_col", new Vector3(-12.50207f,4.120001f,90.14619f), new Vector3(0f, 0f, 0)));
