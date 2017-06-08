@@ -237,7 +237,8 @@ namespace Narrate {
                     src.Play();
                 }
                 if (subManager != null)
-                    subManager.DisplaySubtitle(curPhrase.text, subDuration, !pressToContinue);
+                	subManager.DisplaySubtitle(Assets.Script.Manager.manager.GetTranslation(curPhrase.text), subDuration, !pressToContinue);
+                    //subManager.DisplaySubtitle(curPhrase.text, subDuration, !pressToContinue);
                 if (subDuration <= 0) {
                     subDuration = defaultPhraseDuration;
                     if (subManager != null)

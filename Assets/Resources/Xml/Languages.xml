@@ -126,5 +126,90 @@
       <english>Resume</english>
       <french>Reprendre</french>
     </translations>
+    <translations key="nohintsavailable">
+      <english>You don't have hints available</english>
+      <french>Aucun n'indices n'est disponibles</french>
+    </translations>
+    <translations key="hintshootabutton">
+      <english>To activate a button you have to shoot it</english>
+      <french>Tirer sur un bouton l'active</french>
+    </translations>
+    <translations key="hintwarningtiming">
+      <english>Pay attention to the timing of the saws to pass</english>
+      <french>Fais attention au timing des scies pour passer</french>
+    </translations>
+    <translations key="hintadrenalinetime">
+      <english>Hurry up ! with adrenaline you only have 15 seconds</english>
+      <french>Dépêche toi ! avec l'adrénaline tu n'as que  15 secondes</french>
+    </translations>
+    <translations key="hintpressionsplatestime">
+      <english>Pressure plates deactivate with time</english>
+      <french>Les plaques de pressions se désactivent avec le temps</french>
+    </translations>
+    <translations key="hintwaylaby">
+      <english>One left, three right</english>
+      <french>Un à gauche, trois à droite</french>
+    </translations>
+    <translations key="hintbuttonlaby">
+      <english>There are 4 buttons to activate in the labyrinth</english>
+      <french>Il y a 4 boutons à activer dans le labyrinthe</french>
+    </translations>
+    <translations key="adrenalineactive">
+      <english>Adrenaline active for %ss</english>
+      <french>Activation de l'adrenaline pour %ss</french>
+    </translations>
+    <translations key="newhint">
+      <english>You have %h hint</english>
+      <french>Tu as %h indice</french>
+    </translations>
+    <translations key="phrasesubtitleintroduction1">
+      <english>Hello, how are you today ?</english>
+      <french>Bonjour comment allez-vous aujourd’hui ?</french>
+    </translations>
+    <translations key="phrasesubtitleintroduction2">
+      <english>Hmm ... I see. Oh, you probably have to ask yourself who's talking to you and what happens to you, is'n it ?</english>
+      <french>Hmm… Je vois. Oh tu dois sans doute te demander qui te parles et qu’est-ce qui t’arrive n’est-ce pas ?</french>
+    </translations>
+    <translations key="phrasesubtitleintroduction3">
+      <english>Well, I'm Professor Winston, and I'm in charge of you so that you can get the fastest recovery.</english>
+      <french>Eh bien je suis le Professeur Winston, je suis chargé de vous soigner afin que vous puissiez le plus rapidement vous rétablir.</french>
+    </translations>
+    <translations key="phrasesubtitleintroduction4">
+      <english>What happened to you and where are you ?</english>
+      <french>Qu’est-ce qui vous êtes arrivé et où êtes-vous ?</french>
+    </translations>
+    <translations key="phrasesubtitleintroduction5">
+      <english>Well you had a serious car accident on the highway. Unfortunately, you suffered a lot of trauma to the brain.</english>
+      <french>Eh bien vous avez eu un grave accident de voiture sur l’autoroute. Malheureusement vous avez subi un important traumatisme au cerveau.</french>
+    </translations>
+    <translations key="phrasesubtitleintroduction6">
+      <english>Sadly, many connections between the right and left hemisphere of your brain have been broken. They must therefore be reconnected.</english>
+      <french> Hélas, de nombreuses connexions entre l’hémisphère droit et gauche de votre cerveau ont étés rompus. Il faut donc les reconnecter.</french>
+    </translations>
+    <translations key="phrasesubtitleintroduction7">
+      <english>To be done I invented it a few years with my collaborator, Dr. Churchill a machine that gives access to the cortex area to the patient.</english>
+      <french>Pour se faire j’ai inventé il a quelques années avec mon collaborateur , le docteur Churchill une machine qui donne accès à la région du cortex au patient.</french>
+    </translations>
+    <translations key="phrasesubtitleintroduction8">
+      <english>Your objective is to evolve in multiple levels in order to reconnect these famous connections of the brain.</english>
+      <french> Votre objectif est d’évoluer dans de multiples niveaux afin de reconnecter ces fameuses connexions du cerveau.</french>
+    </translations>
+    
+    <translations key="phrasesubtitlegun1">
+      <english>I've equipped you with a laser weapon, you'll need it to solve some puzzles. Pull the buttons with your laser to activate them.</english>
+      <french>Je t’ai équipé d’une arme laser, tu en auras besoin pour résoudre certaines énigmes. Tire sur les interrupteurs avec ton laser afin de les activer.</french>
+    </translations>
+    <translations key="phrasesubtitlegun2">
+      <english>The buttons change from red to green when activated.</english>
+      <french>Les interrupteurs passent de la couleur rouge à la couleur verte quand ils sont activés.</french>
+    </translations>
+    <translations key="phrasesubtitlegun3">
+      <english>He has many pitfalls! Stay alert!</english>
+      <french>Il a de nombreux pièges! Reste vigilant!</french>
+    </translations>
+    <translations key="phrasesubtitlebutton1">
+      <english>You must activate this button to open the door.</english>
+      <french>Tu dois activer ce bouton pour ouvrir la porte.</french>
+    </translations>
   </translations>
 </LanguageManager>

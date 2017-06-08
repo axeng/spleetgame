@@ -39,5 +39,10 @@ namespace Assets.Script
 				text.text = text.text.Replace("(LINEBREAK)", "\n");
 			}
 		}
+		
+		public string GetTranslation(string key)
+		{
+			return langManager.GetString(key, lang);
+		}
 	}
 }

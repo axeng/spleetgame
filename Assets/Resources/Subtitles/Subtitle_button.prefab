@@ -59,7 +59,7 @@ MonoBehaviour:
     mainAudio: {fileID: 0}
     phrases:
     - audio: {fileID: 0}
-      text: Tu dois activer ce bouton pour ouvrir la porte.
+      text: phrasesubtitlebutton1
       duration: 10
       drawAudio: 1
       lastCalculatedHeight: 90

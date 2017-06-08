@@ -59,56 +59,49 @@ MonoBehaviour:
     mainAudio: {fileID: 0}
     phrases:
     - audio: {fileID: 0}
-      text: "Bonjour comment allez-vous aujourd\u2019hui?"
+      text: phrasesubtitleintroduction1
       duration: 5
       drawAudio: 1
       lastCalculatedHeight: 90
       move: 0
     - audio: {fileID: 0}
-      text: "Hmm\u2026 Je vois. Oh tu dois sans doute te demander qui te parles et
-        qu\u2019est-ce qui t\u2019arrive n\u2019est-ce pas?"
+      text: phrasesubtitleintroduction2
       duration: 5
       drawAudio: 1
       lastCalculatedHeight: 90
       move: 0
     - audio: {fileID: 0}
-      text: "Eh bien je suis le Professeur Winston, je suis charg\xE9 de vous soigner
-        afin que vous puissiez le plus rapidement vous r\xE9tablir."
+      text: phrasesubtitleintroduction3
       duration: 5
       drawAudio: 1
       lastCalculatedHeight: 90
       move: 0
     - audio: {fileID: 0}
-      text: "Qu\u2019est-ce qui vous \xEAtes arriv\xE9 et o\xF9 \xEAtes-vous? "
+      text: phrasesubtitleintroduction4
       duration: 5
       drawAudio: 1
       lastCalculatedHeight: 90
       move: 0
     - audio: {fileID: 0}
-      text: "Eh bien vous avez eu un grave accident de voiture sur l\u2019autoroute.
-        Malheureusement vous avez subi un important traumatisme au cerveau."
+      text: phrasesubtitleintroduction5
       duration: 5
       drawAudio: 1
       lastCalculatedHeight: 90
       move: 0
     - audio: {fileID: 0}
-      text: " H\xE9las, de nombreuses connexions entre l\u2019h\xE9misph\xE8re droit
-        et gauche de votre cerveau ont \xE9t\xE9s rompus. Il faut donc les reconnecter."
+      text: phrasesubtitleintroduction6
       duration: 5
       drawAudio: 1
       lastCalculatedHeight: 90
       move: 0
     - audio: {fileID: 0}
-      text: "Pour se faire j\u2019ai invent\xE9 il a quelques ann\xE9es avec mon collaborateur
-        , le docteur Churchill une machine qui donne acc\xE8s \xE0 la r\xE9gion du
-        cortex au patient. "
+      text: phrasesubtitleintroduction7
       duration: 5
       drawAudio: 1
       lastCalculatedHeight: 90
       move: 0
     - audio: {fileID: 0}
-      text: " Votre objectif est d\u2019\xE9voluer dans de multiples niveaux afin
-        de reconnecter ces fameuses connexions du cerveau."
+      text: phrasesubtitleintroduction8
       duration: 5
       drawAudio: 1
       lastCalculatedHeight: 90

@@ -17365,8 +17365,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pause: 0
-  multiplayer: 0
-  startMap: Stp3
+  multiplayer: 1
+  startMap: StpMult
   isPopup: 0
 --- !u!114 &114791951281789894
 MonoBehaviour:

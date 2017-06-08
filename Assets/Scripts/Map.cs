@@ -230,13 +230,13 @@ namespace Assets.Script
 		{
 			if (hintsList.Count <= 0)
 			{
-				Game.game.PopupMessage("You don't have hints available", 1);
+				Game.game.PopupMessage(Manager.manager.GetTranslation("nohintsavailable"), 1);
 				return false;
 			}
 
 			if (Game.game.isPopup)
 				return false;
-			Game.game.PopupMessage(hintsList[0], 2);
+			Game.game.PopupMessage(Manager.manager.GetTranslation(hintsList[0]), 2);
 			hintsList.RemoveAt(0);
 			return true;
 		}
@@ -346,7 +346,7 @@ namespace Assets.Script
 					map1.AddElement(new string[] { "button_1" }, "window_2", ExecType.WINDOW, false);
 					map1.AddElement(new string[] { "button_4" }, "door_2", ExecType.DOOR, false);
                     map1.AddElement(new string[] { "button_6" }, "door_3", ExecType.DOOR, false);
-                    map1.hintsList.Add("Tirer sur un bouton l'active.");
+                    map1.hintsList.Add("hintshootabutton");
                     return map1;
                     break;
 
@@ -478,8 +478,8 @@ namespace Assets.Script
                     MapConstructor mc_poulet = new MapConstructor(bl_poulet);
                     Map poulet = new Map(mc_poulet, name, MapType.OTHER, new Vector3(-12.685F, 26.5F, -5.74F));
                     poulet.GetCheckpoints().Add(new Checkpoint( new Vector2(268, -12), new Vector2(293, 0), new Vector3(274.5F, 15, -6)));
-                    poulet.hintsList.Add("Fais attention au timing des scies pour passer.");
-                    poulet.hintsList.Add("Dépêche toi avec l'adrénaline tu n'as que  15 secondes.");
+                    poulet.hintsList.Add("hintwarningtiming");
+                    poulet.hintsList.Add("hintadrenalinetime");
                     return poulet;
 
                 case "enigme":
@@ -708,9 +708,9 @@ namespace Assets.Script
                     //enigme.AddElement(new string[] { "pressionplate_2" }, "window_2", ExecType.WINDOW, ExecutorType.PRESSIONPLATE, false);
                     //enigme.AddElement(new string[] { "pressionplate_2" }, "window_3", ExecType.WINDOW, ExecutorType.PRESSIONPLATE, false);
                     //enigme.AddElement(new string[] { "pressionplate_2" }, "window_4", ExecType.WINDOW, ExecutorType.PRESSIONPLATE, false);
-                    enigme.hintsList.Add("Les plaques de pressions se désactivent avec le temps.");
-                    enigme.hintsList.Add("Un à gauche, trois à droite.");
-                    enigme.hintsList.Add("Il y a 4 boutons à activer dans le labyrinthe.");
+                    enigme.hintsList.Add("hintpressionsplatestime");
+                    enigme.hintsList.Add("hintwaylaby");
+                    enigme.hintsList.Add("hintbuttonlaby");
                     
 
                     return enigme;

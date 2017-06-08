@@ -61,7 +61,7 @@ public class PlayerScript : MonoBehaviour
 				string s = "s";
 				if (Player.nbHints < 2)
 					s = "";
-				Game.game.PopupMessage("You have " + Player.nbHints + " hint" + s, 1);
+				Game.game.PopupMessage(Manager.manager.GetTranslation("newhint").Replace("%h", Player.nbHints.ToString()) + s, 1);
 				break;
 				
 			case "tp":
@@ -69,12 +69,14 @@ public class PlayerScript : MonoBehaviour
 
 				if (!Game.multi)
 				{
+					//Debug.Log(Game.level + " " + hit.gameObject.name + " " + Game.finishLevels.FindAll(p => p == Game.map.GetName()).Count);
 					if (Game.level > 0 && hit.gameObject.name.Contains("Stp") && !Game.finishLevels.Contains(Game.map.GetName()))
 					{
 						Game.level--;
 						Game.finishLevels.Add(Game.map.GetName());
 						Game.game.Save();
 					}
+					//Debug.Log(Game.level);
 				}
 				//yolo code
 				Game.game.StartCoroutine(Game.game.LoadMapTime(hit.gameObject.name.Replace("tp_", "").Replace("%l", ""+Game.level)));
