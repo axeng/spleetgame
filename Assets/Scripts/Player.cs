@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
+using UnityEngine.Networking;
 
 namespace Assets.Script
 {
@@ -128,19 +129,22 @@ namespace Assets.Script
 		
 		public IEnumerator FadeGameOver(float delay)
 		{
-			GameObject canvas = GameObject.FindWithTag("GameOverGUI").transform.GetChild(0).gameObject;
-
-			float step = 1.0f / (delay * 100.0f);
-		
-			canvas.SetActive(true);
-			while (delay > 0)
+			if (!Game.multi || this.obj.GetComponent<NetworkIdentity>().isLocalPlayer)
 			{
-				yield return new WaitForSeconds(0.01f);
-				canvas.transform.GetChild(0).GetComponent<CanvasRenderer>().SetAlpha(delay * 100.0f * step);
-				delay -= 0.01f;
+				GameObject canvas = GameObject.FindWithTag("GameOverGUI").transform.GetChild(0).gameObject;
+
+				float step = 1.0f / (delay * 100.0f);
+
+				canvas.SetActive(true);
+				while (delay > 0)
+				{
+					yield return new WaitForSeconds(0.01f);
+					canvas.transform.GetChild(0).GetComponent<CanvasRenderer>().SetAlpha(delay * 100.0f * step);
+					delay -= 0.01f;
+				}
+				canvas.SetActive(false);
+				canvas.transform.GetChild(0).GetComponent<CanvasRenderer>().SetAlpha(1.0f);
 			}
-			canvas.SetActive(false);
-			canvas.transform.GetChild(0).GetComponent<CanvasRenderer>().SetAlpha(1.0f);
 		}
     }
 }
