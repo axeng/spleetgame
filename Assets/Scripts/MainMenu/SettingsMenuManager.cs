@@ -67,7 +67,7 @@ namespace Assets.Script
 
 			fullscreen_on.SetActive(settings.fullscreen);
 			fullscreen_off.SetActive(!settings.fullscreen);
-			changeFullscreen(settings.fullscreen);
+			//changeFullscreen(settings.fullscreen);
 
 			//RESOLUTIONS
 			List<Resolution> rs = new List<Resolution>();
@@ -91,7 +91,7 @@ namespace Assets.Script
 					if (settings.resolutionW + "" == width && settings.resolutionH + "" == height)
 					{
 						//g.GetComponent<Image>().color = new Color(62, 255, 0);
-						changeResolution(settings.resolutionW + "x" + settings.resolutionH);
+						//changeResolution(settings.resolutionW + "x" + settings.resolutionH);
 					}
 				}
 			}

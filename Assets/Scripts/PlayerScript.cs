@@ -66,11 +66,15 @@ public class PlayerScript : MonoBehaviour
 				
 			case "tp":
 				hit.gameObject.SetActive(false);
-				if (Game.level > 0 && hit.gameObject.name.Contains("Stp") && !Game.finishLevels.Contains(Game.map.GetName()))
+
+				if (!Game.multi)
 				{
-					Game.level--;
-					Game.finishLevels.Add(Game.map.GetName());
-					Game.game.Save();
+					if (Game.level > 0 && hit.gameObject.name.Contains("Stp") && !Game.finishLevels.Contains(Game.map.GetName()))
+					{
+						Game.level--;
+						Game.finishLevels.Add(Game.map.GetName());
+						Game.game.Save();
+					}
 				}
 				//yolo code
 				Game.game.StartCoroutine(Game.game.LoadMapTime(hit.gameObject.name.Replace("tp_", "").Replace("%l", ""+Game.level)));

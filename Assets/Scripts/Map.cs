@@ -41,7 +41,7 @@ namespace Assets.Script
 		private List<Executor> buttons;
 		private List<Executor> pressionPlates;
 
-		private List<Vector3> spawnPoint;
+		public List<Vector3> spawnPoint;
 
 		private List<MapConstructor> constructors;
 
