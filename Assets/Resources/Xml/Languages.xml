@@ -79,7 +79,7 @@
       <french>V-sync</french>
     </translations>
     <translations key="shadowresolution">
-      <english>Shadow résolution</english>
+      <english>Shadow resolution</english>
       <french>Résolution ombres</french>
     </translations>
     <translations key="shadow">
@@ -120,7 +120,11 @@
     </translations>
     <translations key="helptext">
       <english>Welcome to SPLEET !  (LINEBREAK)(LINEBREAK)Spleet is a game that shares reflection and action in a futuristic and aseptic universe. You control a patient who has suffered a severe brain injury after a car accident. He finds himself stuck in his own subconscious mind. A certain doctor named Winston has a solution and will guide you within your brain with one of his invention. This invention is a way to model the entire human brain in a universe. The aim of the game will be to reconnect the patient's brain connections in resolving different goals over levels.</english>
-      <french>Bienvenue dans SPLEET ! (LINEBREAK)(LINEBREAK)Spleet est un jeu qui partage réflexion et action dans un univers futuriste et aseptisé. Vous contrôlez un patient qui a subi un grave traumatisme cérébrale suite un accident de voiture. Il se retrouve bloqué dans son propre subconscient. Un certain docteur dénommé Winston a une solution et vous guidera au sein de votre espace cérébrale via à une de ses inventions. Son invention est un moyen de modéliser le cerveau entier d’un humain sous la forme d’un univers. Le but du jeu sera de reconnecter les liaisons cérébrales du patient en résolvent des objectifs au cours des niveaux en passant d’un univers à l’autre.  </french>
+      <french>Bienvenue dans SPLEET ! (LINEBREAK)(LINEBREAK)Spleet est un jeu qui partage rélexion et action dans un univers futuriste et aseptisé Vous contrôlez un patient qui a subi un grave traumatisme cérérale suite un accident de voiture. Il se retrouve bloqué dans son propre subconscient. Un certain docteur dénommé Winston a une solution et vous guidera au sein de votre espace cérérale via une de ses inventions. Son invention est un moyen de modéiser le cerveau entier d'un humain sous la forme d'un univers. Le but du jeu sera de reconnecter les liaisons cérérales du patient en résolvant des objectifs au cours des niveaux en passant d'un univers à l'autre.  </french>
+    </translations>
+    <translations key="resume">
+      <english>Resume</english>
+      <french>Reprendre</french>
     </translations>
   </translations>
 </LanguageManager>

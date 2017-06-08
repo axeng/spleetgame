@@ -707,6 +707,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1156731230207078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4881002869604128}
+  - component: {fileID: 114228698904074880}
+  m_Layer: 0
+  m_Name: LanguageManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1157578705176160
 GameObject:
   m_ObjectHideFlags: 1
@@ -2752,6 +2768,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4616942240362500}
   - component: {fileID: 114791642887518226}
+  - component: {fileID: 114470317639209070}
   m_Layer: 0
   m_Name: Main
   m_TagString: Untagged
@@ -4773,7 +4790,7 @@ Transform:
   m_Children:
   - {fileID: 4581043095591366}
   m_Father: {fileID: 4616942240362500}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4070715982905724
 Transform:
@@ -4800,7 +4817,7 @@ Transform:
   m_Children:
   - {fileID: 224703311189182470}
   m_Father: {fileID: 4616942240362500}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4224119652699168
 Transform:
@@ -4844,7 +4861,7 @@ Transform:
   - {fileID: 224309623170327482}
   - {fileID: 4224119652699168}
   m_Father: {fileID: 4616942240362500}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4581043095591366
 Transform:
@@ -4871,6 +4888,7 @@ Transform:
   m_LocalPosition: {x: -18.110767, y: 2, z: 17.465626}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 4881002869604128}
   - {fileID: 4450907197305004}
   - {fileID: 4026510117244274}
   - {fileID: 4188578093138038}
@@ -4890,7 +4908,7 @@ Transform:
   m_Children:
   - {fileID: 224713342322054388}
   m_Father: {fileID: 4616942240362500}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4740573150890838
 Transform:
@@ -4929,6 +4947,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4372641863832492}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4881002869604128
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1156731230207078}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4614.6714, y: -3106.1733, z: -474.68475}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4616942240362500}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4923079637496858
@@ -5756,7 +5787,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Graphics
+  m_Text: ml:graphics
 --- !u!114 &114012298936702164
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5860,10 +5891,10 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Particles reduction
+  m_Text: ml:particlesreduction
 --- !u!114 &114014902074006954
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6533,7 +6564,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back
+  m_Text: ml:back
 --- !u!114 &114056803659284836
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6727,9 +6758,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Master
-
-'
+  m_Text: ml:master
 --- !u!114 &114064608909914520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6980,12 +7009,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'GRAPHICS
-
-'
+  m_Text: ml:graphics(CAPSLOCK)
 --- !u!114 &114104072923711686
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7544,7 +7571,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fullscreen
+  m_Text: ml:fullscreen
 --- !u!114 &114130789143114248
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7723,7 +7750,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back
+  m_Text: ml:back
 --- !u!114 &114159495183144662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7953,7 +7980,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Anti-Aliasing
+  m_Text: ml:antialiasing
 --- !u!114 &114177013870321908
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8403,7 +8430,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: V-sync
+  m_Text: ml:vsync
 --- !u!114 &114202555972283704
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8457,7 +8484,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Controls
+  m_Text: ml:controls
 --- !u!114 &114207124908284686
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8899,6 +8926,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114228698904074880
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1156731230207078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f39276cfd13044a5589970e64e4f5aaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allTexts: []
+  lang: 1
 --- !u!114 &114229757370910030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8931,7 +8971,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Multiplayer
+  m_Text: ml:multi
 --- !u!114 &114231042438266052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9398,10 +9438,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: GRAPHICS
+  m_Text: ml:graphics(CAPSLOCK)
 --- !u!114 &114253222613860474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9974,7 +10014,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Port :'
+  m_Text: ml:port
 --- !u!114 &114282385285507608
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11285,10 +11325,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: VOLUME
+  m_Text: ml:volume(CAPSLOCK)
 --- !u!114 &114382992652640152
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11395,7 +11435,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'IP :'
+  m_Text: ml:ip
 --- !u!114 &114384601698530740
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11840,7 +11880,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fullscreen
+  m_Text: ml:fullscreen
 --- !u!114 &114403617925726428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12602,7 +12642,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Low
+  m_Text: ml:low
 --- !u!114 &114444279889696224
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13170,7 +13210,18 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Medium
+  m_Text: ml:medium
+--- !u!114 &114470317639209070
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1587463113644370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 559361a3a03204f28b0440925715446b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114472544359880690
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13368,7 +13419,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Join
+  m_Text: ml:join
 --- !u!114 &114489644365351936
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13711,12 +13762,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'GRAPHICS
-
-'
+  m_Text: ml:graphics(CAPSLOCK)
 --- !u!114 &114519989334113390
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13869,10 +13918,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CONTROLS
+  m_Text: ml:controls(CAPSLOCK)
 --- !u!114 &114524033890574454
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15008,7 +15057,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Singleplayer
+  m_Text: ml:solo
 --- !u!114 &114608627401011888
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15445,7 +15494,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Very High
+  m_Text: ml:veryhigh
 --- !u!114 &114632867590762612
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15475,10 +15524,10 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Particles reduction
+  m_Text: ml:particlesreduction
 --- !u!114 &114634503572769404
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16343,7 +16392,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Volume
+  m_Text: ml:volume
 --- !u!114 &114717340577763162
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16650,7 +16699,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quit
+  m_Text: ml:quit
 --- !u!114 &114738732467453864
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16683,7 +16732,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: V-sync
+  m_Text: ml:vsync
 --- !u!114 &114742214390246590
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16713,10 +16762,10 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Shadow resolution
+  m_Text: ml:shadowresolution
 --- !u!114 &114743781092697250
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18101,7 +18150,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Shadow
+  m_Text: ml:shadow
 --- !u!114 &114827938047916550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18152,7 +18201,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mouse Sensibility
+  m_Text: ml:mousesensibility
 --- !u!114 &114835923601463882
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18290,7 +18339,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: High
+  m_Text: ml:high
 --- !u!114 &114848163123555718
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18486,7 +18535,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: FOV
+  m_Text: ml:fov
 --- !u!114 &114856464359139468
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18588,10 +18637,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: GRAPHICS
+  m_Text: ml:graphics(CAPSLOCK)
 --- !u!114 &114865130751145872
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18624,7 +18673,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back
+  m_Text: ml:back
 --- !u!114 &114874373363959450
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18657,7 +18706,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Settings
+  m_Text: ml:settings
 --- !u!114 &114874576850275220
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18712,7 +18761,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Resolution
+  m_Text: ml:resolution
 --- !u!114 &114876608871511026
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18910,7 +18959,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Resume
+  m_Text: ml:resume
 --- !u!114 &114888399633761408
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19487,7 +19536,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Host
+  m_Text: ml:host
 --- !u!114 &114939550677986086
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19887,7 +19936,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Shadow
+  m_Text: ml:shadow
 --- !u!114 &114973393351996168
 MonoBehaviour:
   m_ObjectHideFlags: 1

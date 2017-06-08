@@ -69,14 +69,14 @@ namespace Assets.Script
 			translations.RemoveAt(FindKey(key));
 		}
 
-		public void Save()
+		/*public void Save()
 		{
 			XmlSerializer serializer = new XmlSerializer(typeof(LanguageManager));
 			using (FileStream stream = new FileStream(g_filepath, FileMode.Create))
 			{
 				serializer.Serialize(stream, this);
 			}
-		}
+		}*/
 
 		public static LanguageManager Load()
 		{
