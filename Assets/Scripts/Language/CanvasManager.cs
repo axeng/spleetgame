@@ -10,7 +10,8 @@ namespace Assets.Script
 		void Start()
 		{
 			foreach (Text t in GetComponentsInChildren<Text>(true))
-				Manager.manager.allTexts.Add(t);
+				Manager.manager.allTextsDico.Add(t, t.text);
+				//Manager.manager.allTexts.Add(t);
 
 			Manager.manager.Refresh();
 		}

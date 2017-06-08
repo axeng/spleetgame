@@ -7,7 +7,8 @@ namespace Assets.Script
 {
 	public class Manager : MonoBehaviour
 	{
-		public List<Text> allTexts;
+		public Dictionary<Text, string> allTextsDico;
+		//public List<Text> allTexts;
 		public LanguageManager langManager;
 		public static Manager manager;
 		
@@ -16,15 +17,16 @@ namespace Assets.Script
 		void Awake()
 		{
 			manager = this;
-			allTexts = new List<Text>();
+			allTextsDico = new Dictionary<Text, string>();
+			//allTexts = new List<Text>();
 			langManager = LanguageManager.Load();
 		}
 		
 		public void Refresh()
 		{
-			allTexts.RemoveAll(p => !p.text.Contains("ml:"));
+			//allTexts.RemoveAll(p => !p.text.Contains("ml:"));
 			
-			foreach (Text text in allTexts)
+			/*foreach (Text text in allTexts)
 			{
 				bool capslock = text.text.Contains("(CAPSLOCK)");
 
@@ -32,6 +34,23 @@ namespace Assets.Script
 					text.text = text.text.Replace("(CAPSLOCK)", "");
 					
 				text.text = langManager.GetString(text.text.Replace("ml:", ""), lang);
+
+				if (capslock)
+					text.text = text.text.ToUpper();
+
+				text.text = text.text.Replace("(LINEBREAK)", "\n");
+			}*/
+			
+			foreach (Text text in allTextsDico.Keys)
+			{
+				string str = allTextsDico[text];
+				
+				if (!str.Contains("ml"))
+					continue;
+					
+				bool capslock = str.Contains("(CAPSLOCK)");
+					
+				text.text = langManager.GetString(str.Replace("ml:", "").Replace("(CAPSLOCK)", ""), lang);
 
 				if (capslock)
 					text.text = text.text.ToUpper();

@@ -56,6 +56,11 @@ namespace Assets.Script
 
 		public Slider mousSensibilitySlider;
 
+		public GameObject englishLang_off;
+		public GameObject englishLang_on;
+		public GameObject frenchLang_off;
+		public GameObject frenchLang_on;
+
 		private bool inGame;
 		
 		void Start()
@@ -159,6 +164,13 @@ namespace Assets.Script
 			
 			mousSensibilitySlider.value = settings.mouseSensibility;
 			changeMouseSensibility();
+
+
+			frenchLang_off.SetActive(settings.lang != "french");
+			frenchLang_on.SetActive(settings.lang == "french");
+			englishLang_off.SetActive(settings.lang != "english");
+			englishLang_on.SetActive(settings.lang == "english");
+			changeLang(settings.lang);
 		}
 
 		// Update is called once per frame
@@ -358,6 +370,28 @@ namespace Assets.Script
 		{
 			int newSensi = (int)mousSensibilitySlider.value;
 			settings.mouseSensibility = newSensi;
+			Save();
+		}
+		
+		public void changeLang(string lang)
+		{
+		
+			if (lang == "french")
+			{
+				settings.lang = "french";
+				/*frenchLang.GetComponent<Image>().color = new Color(62, 255, 0);
+				englishLang.GetComponent<Image>().color = new Color(255, 255, 255);*/
+				Manager.manager.lang = Language.French;
+			}
+			else if (lang == "english")
+			{
+				settings.lang = "english";
+				/*englishLang.GetComponent<Image>().color = new Color(62, 255, 0);
+				frenchLang.GetComponent<Image>().color = new Color(255, 255, 255);*/
+				Manager.manager.lang = Language.English;
+			}
+			
+			Manager.manager.Refresh();
 			Save();
 		}
 

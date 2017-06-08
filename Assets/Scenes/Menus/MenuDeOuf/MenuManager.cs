@@ -3,11 +3,11 @@ using System.Collections;
 
 public class MenuManager : MonoBehaviour {
 
-	public GameObject mainMenu, weaponsMenu,graphismeMenu,controlsMenu,MultiMenu, /*background,*/StartMenu;
+	public GameObject mainMenu, weaponsMenu,graphismeMenu,languageMenu,controlsMenu,MultiMenu, /*background,*/StartMenu;
 
-	private Animator mainMenuAnim,weaponsMenuAnim,graphismeMenuAnim,/*backgroundAnim,*/MultiMenuAnim,StartMenuAnim;
+	private Animator mainMenuAnim,weaponsMenuAnim,graphismeMenuAnim, languageMenuAnim,/*backgroundAnim,*/MultiMenuAnim,StartMenuAnim;
 	private Animator controlsMenuAnim;
-	private bool isMainMenuOnLeft,isWeaponMenuActivate,isGraphismeMenuActivate,isControlsMenuActivate,isMultiMenuActivate,isStartMenuLeft;
+	private bool isMainMenuOnLeft,isWeaponMenuActivate,isGraphismeMenuActivate, isLanguageMenuActivate,isControlsMenuActivate,isMultiMenuActivate,isStartMenuLeft;
 
 
 	// Use this for initialization
@@ -16,6 +16,7 @@ public class MenuManager : MonoBehaviour {
 		mainMenuAnim = mainMenu.GetComponent<Animator>();
 		weaponsMenuAnim = weaponsMenu.GetComponent<Animator>();
 		graphismeMenuAnim = graphismeMenu.GetComponent<Animator>();
+		languageMenuAnim = languageMenu.GetComponent<Animator>();
 		MultiMenuAnim = MultiMenu.GetComponent<Animator>();
 		controlsMenuAnim = controlsMenu.GetComponent<Animator>();
 		//backgroundAnim = background.GetComponent<Animator>();
@@ -37,6 +38,8 @@ public class MenuManager : MonoBehaviour {
 		if (isControlsMenuActivate) {
 			OnControlsButtonClick ();
 		}
+		if (isLanguageMenuActivate)
+			OnLanguageButtonClick();
 		if(isMainMenuOnLeft==false){
 			mainMenuAnim.SetBool("isMovingLeft",true);
 			weaponsMenuAnim.SetBool("isMovingIn",true);
@@ -72,6 +75,29 @@ public class MenuManager : MonoBehaviour {
 			//backgroundAnim.SetBool ("isTurning", false);
 			isMainMenuOnLeft = false;
 			isGraphismeMenuActivate = false;
+		}
+	}
+	
+	public void OnLanguageButtonClick(){
+		//print ("OnGraphismeButtonClick");
+		if (isWeaponMenuActivate) {
+			OnWeaponsButtonClick ();
+		}
+		if (isControlsMenuActivate) {
+			OnControlsButtonClick ();
+		}
+		if (isMainMenuOnLeft == false) {
+			mainMenuAnim.SetBool ("isMovingLeft", true);
+			languageMenuAnim.SetBool ("isMovingIn", true);
+			//backgroundAnim.SetBool ("isTurning", true);
+			isMainMenuOnLeft = true;
+			isLanguageMenuActivate = true;
+		} else {
+			mainMenuAnim.SetBool ("isMovingLeft", false);
+			languageMenuAnim.SetBool ("isMovingIn", false);
+			//backgroundAnim.SetBool ("isTurning", false);
+			isMainMenuOnLeft = false;
+			isLanguageMenuActivate = false;
 		}
 	}
 	public void OnControlsButtonClick(){

@@ -49,6 +49,9 @@ namespace Assets.Script
 		public IPAddress ip { get; set; }
 		public int port { get; set; }
 		
+		
+		public string lang { get; set; }
+		
 		public Settings()
 		{
 			LoadSettings();
@@ -92,8 +95,9 @@ namespace Assets.Script
 			particlesReduction = PlayerPrefs.GetInt("SparticlesReduction", Convert.ToInt32(QualitySettings.softParticles)) != 0;
 
 			fov = PlayerPrefs.GetInt("Sfov", 60);
-			
-			
+
+
+			lang = PlayerPrefs.GetString("Slang", "english");
 			
 			host = PlayerPrefs.GetInt("Shost", 0) != 0;
 			ip = IntToIpAdress(PlayerPrefs.GetInt("Sip", IpAdressToInt(IPAddress.Parse("127.0.0.1"))));
@@ -145,6 +149,8 @@ namespace Assets.Script
 			PlayerPrefs.SetInt("Shost", Convert.ToInt32(host));
 			PlayerPrefs.SetInt("Sip", IpAdressToInt(ip));
 			PlayerPrefs.SetInt("Sport", port);
+			
+			PlayerPrefs.SetString("Slang", lang);
 			
 			PlayerPrefs.Save();
 		}

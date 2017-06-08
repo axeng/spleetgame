@@ -126,6 +126,20 @@
       <english>Resume</english>
       <french>Reprendre</french>
     </translations>
+    
+    <translations key="language">
+      <english>Language</english>
+      <french>Language</french>
+    </translations>
+    <translations key="french">
+      <english>Français</english>
+      <french>Français</french>
+    </translations>
+    <translations key="english">
+      <english>English</english>
+      <french>English</french>
+    </translations>
+    
     <translations key="nohintsavailable">
       <english>You don't have hints available</english>
       <french>Aucun n'indices n'est disponibles</french>
