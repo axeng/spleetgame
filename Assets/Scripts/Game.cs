@@ -36,7 +36,7 @@ class Game : MonoBehaviour
 	
 		Cursor.lockState = CursorLockMode.Locked;
 
-		Player.nbHints = 0;
+		Player.nbHints = 2;
 		Player.settings = new Settings();
 
 		players = new List<Player>();
@@ -131,15 +131,36 @@ class Game : MonoBehaviour
 			players["Player1"].Tp(new Vector3(19.224444f, 21.89996f, 132.9029f));
 		}*/
 
-		if (Input.GetKeyDown(KeyCode.O))
+		/*if (Input.GetKeyDown(KeyCode.O))
 		{
 			map.GetButtons()[0].Push();
 			map.GetButtons()[0].Exec();
-		}
+		}*/
 
-		if (Input.GetKeyDown(KeyCode.M))
+		/*if (Input.GetKeyDown(KeyCode.M))
 		{
 			GameObject.FindWithTag("MapGUI").transform.GetChild(0).gameObject.SetActive(true);
+		}*/
+
+		if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.N))
+		{
+			Player.nbHints++;
+			string s = "s";
+			if (Player.nbHints < 2)
+				s = "";
+			Game.game.PopupMessage(Manager.manager.GetTranslation("newhint").Replace("%h", Player.nbHints.ToString()) + s, 1);
+		}
+
+		if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.B))
+		{
+			foreach(Executor button in map.GetButtons())
+			{
+				if (!button.IsActivate())
+				{
+					button.Push();
+					button.Exec();
+				}
+			}
 		}
 
 		if (Input.GetKeyDown(Player.settings.pause))
