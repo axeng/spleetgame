@@ -328,10 +328,10 @@ namespace Assets.Script
 					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(152.91f,6.5f,-77.2f), new Vector3(0f, 0f, 0)));
 					MapTest.Add(new Block("Icorridor3x6_col", new Vector3(152.91f,6.5f,-83.02f), new Vector3(0f, 0f, 0)));
 					MapTest.Add(new Block("Button", new Vector3(113.0092f,10.11381f,-101.2148f), new Vector3(0f, 180f, 0), "button_1"));
-					MapTest.Add(new Block("Button", new Vector3(146.5f,5.550602f,-37.2305f), new Vector3(0f, 270f, 0), "button_2"));
-					MapTest.Add(new Block("Button", new Vector3(79.2f,9.683808f,-43.08684f), new Vector3(0f, 270f, 0), "button_3"));
+                    MapTest.Add(new Block("Button", new Vector3(145.8f, 9.69f, -35.05f), new Vector3(0f, 270f, 0), "button_2"));
+                    MapTest.Add(new Block("Button", new Vector3(79.2f,9.683808f,-43.08684f), new Vector3(0f, 270f, 0), "button_3"));
 					MapTest.Add(new Block("Button", new Vector3(151.2691f,10.02381f,-76.16476f), new Vector3(0f, 270f, 0), "button_4"));
-					MapTest.Add(new Block("Button", new Vector3(109.9093f,3.955154f,-19.51477f), new Vector3(0f, 180f, 0), "button_5"));
+                    MapTest.Add(new Block("Button", new Vector3(112.05f, 9.78f, -20f), new Vector3(0f, 180f, 0), "button_5"));
                     MapTest.Add(new Block("Button", new Vector3(76.53f, 2.91f, -57.12f), new Vector3(0f, 90f, 0), "button_6"));
                     MapTest.Add(new Block("Icorridor2_col", new Vector3(142.1392f,0.1244316f,-60.02477f), new Vector3(0f, 90f, 0)));
 					MapTest.Add(new Block("Door3D_col", new Vector3(146.7791f,2.25f,-53.90477f), new Vector3(0f, 270f, 0), "door_2"));
@@ -846,8 +846,8 @@ namespace Assets.Script
 					bl_Mapmulti.Add(new Block("plat/Scile_col", new Vector3(72.85621f,-3.202118f,108.5214f), new Vector3(0f, 270f, 0)));
 					bl_Mapmulti.Add(new Block("plat/Icorridor_plat_col", new Vector3(83.15989f,-0.161499f,119.9214f), new Vector3(0f, 90f, 0)));
 					bl_Mapmulti.Add(new Block("plat/Scile_col", new Vector3(70.25622f,1.157883f,113.2214f), new Vector3(90f, 90f, 0)));
-					bl_Mapmulti.Add(new Block("plat/Scile_col", new Vector3(81.52622f,-3.252121f,113.2214f), new Vector3(0f, 90f, 0)));
-					bl_Mapmulti.Add(new Block("Button", new Vector3(52.5f, 2.6f, 85.3f), new Vector3(0f, 0f, 0), "button_3"));
+                    bl_Mapmulti.Add(new Block("plat/Scile_col", new Vector3(81.52622f, 9.91f, 108.84f), new Vector3(0f, 90f, 180f)));
+                    bl_Mapmulti.Add(new Block("Button", new Vector3(52.5f, 2.6f, 85.3f), new Vector3(0f, 0f, 0), "button_3"));
                     bl_Mapmulti.Add(new Block("Teleportation portal", new Vector3(57.16f, 0.61f, 100.96f), new Vector3(0f, 0f, 0f), "tp_StpMult"));
                     bl_Mapmulti.Add(new Block("MusicAct", new Vector3(0, 0, 0), new Vector3(0f, 0f, 0f)));
 
