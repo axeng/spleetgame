@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: 06f1ae3291bb04cba8b5ea189e90b9dc
+timeCreated: 1496670683
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: 1
+    100002: 1_SWEEP
+    100004: 2
+    100006: 2___TRACER
+    100008: 3
+    100010: 3___TRACER
+    100012: 4
+    100014: 4___TRACER
+    100016: 5
+    100018: 5___TRACER
+    100020: 6
+    100022: 6___TRACER
+    100024: //RootNode
+    100026: CERCLE
+    100028: CERCLE_2
+    100030: CERCLE_3
+    100032: CERCLE_4
+    100034: CERCLE_5
+    100036: CERCLE_6
+    100038: COUVERCLE_1
+    100040: COUVERCLE_2
+    400000: 1
+    400002: 1_SWEEP
+    400004: 2
+    400006: 2___TRACER
+    400008: 3
+    400010: 3___TRACER
+    400012: 4
+    400014: 4___TRACER
+    400016: 5
+    400018: 5___TRACER
+    400020: 6
+    400022: 6___TRACER
+    400024: //RootNode
+    400026: CERCLE
+    400028: CERCLE_2
+    400030: CERCLE_3
+    400032: CERCLE_4
+    400034: CERCLE_5
+    400036: CERCLE_6
+    400038: COUVERCLE_1
+    400040: COUVERCLE_2
+    2300000: 1
+    2300002: 1_SWEEP
+    2300004: 2
+    2300006: 2___TRACER
+    2300008: 3
+    2300010: 3___TRACER
+    2300012: 4
+    2300014: 4___TRACER
+    2300016: 5
+    2300018: 5___TRACER
+    2300020: 6
+    2300022: 6___TRACER
+    2300024: CERCLE
+    2300026: CERCLE_2
+    2300028: CERCLE_3
+    2300030: CERCLE_4
+    2300032: CERCLE_5
+    2300034: CERCLE_6
+    2300036: COUVERCLE_1
+    2300038: COUVERCLE_2
+    3300000: 1
+    3300002: 1_SWEEP
+    3300004: 2
+    3300006: 2___TRACER
+    3300008: 3
+    3300010: 3___TRACER
+    3300012: 4
+    3300014: 4___TRACER
+    3300016: 5
+    3300018: 5___TRACER
+    3300020: 6
+    3300022: 6___TRACER
+    3300024: CERCLE
+    3300026: CERCLE_2
+    3300028: CERCLE_3
+    3300030: CERCLE_4
+    3300032: CERCLE_5
+    3300034: CERCLE_6
+    3300036: COUVERCLE_1
+    3300038: COUVERCLE_2
+    4300000: 1
+    4300002: 1_SWEEP
+    4300004: 2
+    4300006: 2___TRACER
+    4300008: 3
+    4300010: 3___TRACER
+    4300012: 4
+    4300014: 4___TRACER
+    4300016: 5
+    4300018: 5___TRACER
+    4300020: 6
+    4300022: 6___TRACER
+    4300024: CERCLE
+    4300026: CERCLE_2
+    4300028: CERCLE_3
+    4300030: CERCLE_4
+    4300032: CERCLE_5
+    4300034: CERCLE_6
+    4300036: COUVERCLE_1
+    4300038: COUVERCLE_2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

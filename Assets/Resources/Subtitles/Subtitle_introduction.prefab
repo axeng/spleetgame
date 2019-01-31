@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1532772036305826}
+  m_IsPrefabParent: 1
+--- !u!1 &1532772036305826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4695536498630550}
+  - component: {fileID: 114721366904315612}
+  m_Layer: 0
+  m_Name: Subtitle_introduction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4695536498630550
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1532772036305826}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2, z: -6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114721366904315612
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1532772036305826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b64140504f9afa49890af388446118e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseNarrationList: 0
+  narrationList: {fileID: 0}
+  theNarration:
+    busyBehavior: 0
+    singleAudio_MultiSub: 0
+    mainAudio: {fileID: 0}
+    phrases:
+    - audio: {fileID: 0}
+      text: phrasesubtitleintroduction1
+      duration: 5
+      drawAudio: 1
+      lastCalculatedHeight: 90
+      move: 0
+    - audio: {fileID: 0}
+      text: phrasesubtitleintroduction2
+      duration: 5
+      drawAudio: 1
+      lastCalculatedHeight: 90
+      move: 0
+    - audio: {fileID: 0}
+      text: phrasesubtitleintroduction3
+      duration: 5
+      drawAudio: 1
+      lastCalculatedHeight: 90
+      move: 0
+    - audio: {fileID: 0}
+      text: phrasesubtitleintroduction4
+      duration: 5
+      drawAudio: 1
+      lastCalculatedHeight: 90
+      move: 0
+    - audio: {fileID: 0}
+      text: phrasesubtitleintroduction5
+      duration: 5
+      drawAudio: 1
+      lastCalculatedHeight: 90
+      move: 0
+    - audio: {fileID: 0}
+      text: phrasesubtitleintroduction6
+      duration: 5
+      drawAudio: 1
+      lastCalculatedHeight: 90
+      move: 0
+    - audio: {fileID: 0}
+      text: phrasesubtitleintroduction7
+      duration: 5
+      drawAudio: 1
+      lastCalculatedHeight: 90
+      move: 0
+    - audio: {fileID: 0}
+      text: phrasesubtitleintroduction8
+      duration: 5
+      drawAudio: 1
+      lastCalculatedHeight: 90
+      move: 0
+    LoopAudioForDuration: 0
+    expanded: 1
+    lastCalculatedHeight: 808
+    useSmartSubs: 0
+  OnFailure: 1
+  OnSuccess: 1
+  ResetCooldown: 0
+  delayPlayingBy: 0
+  is2D: 0
+  triggeredBy: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+  proximity: 1
+  timeInProximityToTrigger: 0
+  timeMustBeConsecutive: 0

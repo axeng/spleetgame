@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageManager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <currentLanguage>English</currentLanguage>
+  <translations>
+    <translations key="start">
+      <english>Start</english>
+      <french>Jouer</french>
+    </translations>
+    <translations key="settings">
+      <english>Settings</english>
+      <french>Réglages</french>
+    </translations>
+    <translations key="help">
+      <english>Help</english>
+      <french>Aide</french>
+    </translations>
+    <translations key="quit">
+      <english>Quit</english>
+      <french>Quitter</french>
+    </translations>
+    <translations key="solo">
+      <english>Singleplayer</english>
+      <french>Solo</french>
+    </translations>
+    <translations key="multi">
+      <english>Mutliplayer</english>
+      <french>Multijoueur</french>
+    </translations>
+    <translations key="back">
+      <english>Back</english>
+      <french>Retour</french>
+    </translations>
+    <translations key="resetsave">
+      <english>Reset save</english>
+      <french>Réinitialiser</french>
+    </translations>
+    <translations key="host">
+      <english>Host</english>
+      <french>Héberger</french>
+    </translations>
+    <translations key="ip">
+      <english>IP :</english>
+      <french>IP :</french>
+    </translations>
+    <translations key="port">
+      <english>Port :</english>
+      <french>Port :</french>
+    </translations>
+    <translations key="join">
+      <english>Join</english>
+      <french>Rejoindre</french>
+    </translations>
+    <translations key="volume">
+      <english>Volume</english>
+      <french>Volume</french>
+    </translations>
+    <translations key="graphics">
+      <english>Graphics</english>
+      <french>Graphismes</french>
+    </translations>
+    <translations key="controls">
+      <english>Controls</english>
+      <french>Contrôles</french>
+    </translations>
+    <translations key="master">
+      <english>Master</english>
+      <french>Principal</french>
+    </translations>
+    <translations key="fullscreen">
+      <english>Fullscreen</english>
+      <french>Plein écran</french>
+    </translations>
+    <translations key="resolution">
+      <english>Resolution</english>
+      <french>Résolution</french>
+    </translations>
+    <translations key="vsync">
+      <english>V-sync</english>
+      <french>V-sync</french>
+    </translations>
+    <translations key="shadowresolution">
+      <english>Shadow resolution</english>
+      <french>Résolution ombres</french>
+    </translations>
+    <translations key="shadow">
+      <english>Shadow</english>
+      <french>Ombres</french>
+    </translations>
+    <translations key="particlesreduction">
+      <english>Particles reduction</english>
+      <french>Réduction particules</french>
+    </translations>
+    <translations key="fov">
+      <english>FOV</english>
+      <french>FOV</french>
+    </translations>
+    <translations key="antialiasing">
+      <english>Anti-Aliasing</english>
+      <french>Anti-Aliasing</french>
+    </translations>
+    <translations key="low">
+      <english>Low</english>
+      <french>Bas</french>
+    </translations>
+    <translations key="medium">
+      <english>Medium</english>
+      <french>Moyen</french>
+    </translations>
+    <translations key="high">
+      <english>High</english>
+      <french>Haut</french>
+    </translations>
+    <translations key="veryhigh">
+      <english>Very High</english>
+      <french>Très Haut</french>
+    </translations>
+    <translations key="mousesensibility">
+      <english>Mouse sensibility</english>
+      <french>Sensibilitée souris</french>
+    </translations>
+    <translations key="helptext">
+      <english>Welcome to SPLEET !  (LINEBREAK)(LINEBREAK)Spleet is a game that shares reflection and action in a futuristic and aseptic universe. You control a patient who has suffered a severe brain injury after a car accident. He finds himself stuck in his own subconscious mind. A certain doctor named Winston has a solution and will guide you within your brain with one of his invention. This invention is a way to model the entire human brain in a universe. The aim of the game will be to reconnect the patient's brain connections in resolving different goals over levels.</english>
+      <french>Bienvenue dans SPLEET ! (LINEBREAK)(LINEBREAK)Spleet est un jeu qui partage rélexion et action dans un univers futuriste et aseptisé Vous contrôlez un patient qui a subi un grave traumatisme cérérale suite un accident de voiture. Il se retrouve bloqué dans son propre subconscient. Un certain docteur dénommé Winston a une solution et vous guidera au sein de votre espace cérérale via une de ses inventions. Son invention est un moyen de modéiser le cerveau entier d'un humain sous la forme d'un univers. Le but du jeu sera de reconnecter les liaisons cérérales du patient en résolvant des objectifs au cours des niveaux en passant d'un univers à l'autre.  </french>
+    </translations>
+    <translations key="resume">
+      <english>Resume</english>
+      <french>Reprendre</french>
+    </translations>
+    
+    <translations key="language">
+      <english>Language</english>
+      <french>Language</french>
+    </translations>
+    <translations key="french">
+      <english>Français</english>
+      <french>Français</french>
+    </translations>
+    <translations key="english">
+      <english>English</english>
+      <french>English</french>
+    </translations>
+    
+    <translations key="nohintsavailable">
+      <english>You don't have hints available</english>
+      <french>Aucun n'indices n'est disponibles</french>
+    </translations>
+    <translations key="hintshootabutton">
+      <english>To activate a button you have to shoot it</english>
+      <french>Tirer sur un bouton l'active</french>
+    </translations>
+    <translations key="hintwarningtiming">
+      <english>Pay attention to the timing of the saws to pass</english>
+      <french>Fais attention au timing des scies pour passer</french>
+    </translations>
+    <translations key="hintadrenalinetime">
+      <english>Hurry up ! with adrenaline you only have 15 seconds</english>
+      <french>Dépêche toi ! avec l'adrénaline tu n'as que  15 secondes</french>
+    </translations>
+    <translations key="hintpressionsplatestime">
+      <english>Pressure plates deactivate with time</english>
+      <french>Les plaques de pressions se désactivent avec le temps</french>
+    </translations>
+    <translations key="hintwaylaby">
+      <english>One left, three right</english>
+      <french>Un à gauche, trois à droite</french>
+    </translations>
+    <translations key="hintbuttonlaby">
+      <english>There are 4 buttons to activate in the labyrinth</english>
+      <french>Il y a 4 boutons à activer dans le labyrinthe</french>
+    </translations>
+    <translations key="adrenalineactive">
+      <english>Adrenaline active for %ss</english>
+      <french>Activation de l'adrenaline pour %ss</french>
+    </translations>
+    <translations key="newhint">
+      <english>You have %h hint</english>
+      <french>Tu as %h indice</french>
+    </translations>
+    <translations key="phrasesubtitleintroduction1">
+      <english>Hello, how are you today ?</english>
+      <french>Bonjour comment allez-vous aujourd’hui ?</french>
+    </translations>
+    <translations key="phrasesubtitleintroduction2">
+      <english>Hmm ... I see. Oh, you probably have to ask yourself who's talking to you and what happens to you, is'n it ?</english>
+      <french>Hmm… Je vois. Oh tu dois sans doute te demander qui te parles et qu’est-ce qui t’arrive n’est-ce pas ?</french>
+    </translations>
+    <translations key="phrasesubtitleintroduction3">
+      <english>Well, I'm Professor Winston, and I'm in charge of you so that you can get the fastest recovery.</english>
+      <french>Eh bien je suis le Professeur Winston, je suis chargé de vous soigner afin que vous puissiez le plus rapidement vous rétablir.</french>
+    </translations>
+    <translations key="phrasesubtitleintroduction4">
+      <english>What happened to you and where are you ?</english>
+      <french>Qu’est-ce qui vous êtes arrivé et où êtes-vous ?</french>
+    </translations>
+    <translations key="phrasesubtitleintroduction5">
+      <english>Well you had a serious car accident on the highway. Unfortunately, you suffered a lot of trauma to the brain.</english>
+      <french>Eh bien vous avez eu un grave accident de voiture sur l’autoroute. Malheureusement vous avez subi un important traumatisme au cerveau.</french>
+    </translations>
+    <translations key="phrasesubtitleintroduction6">
+      <english>Sadly, many connections between the right and left hemisphere of your brain have been broken. They must therefore be reconnected.</english>
+      <french> Hélas, de nombreuses connexions entre l’hémisphère droit et gauche de votre cerveau ont étés rompus. Il faut donc les reconnecter.</french>
+    </translations>
+    <translations key="phrasesubtitleintroduction7">
+      <english>To be done I invented it a few years with my collaborator, Dr. Churchill a machine that gives access to the cortex area to the patient.</english>
+      <french>Pour se faire j’ai inventé il a quelques années avec mon collaborateur , le docteur Churchill une machine qui donne accès à la région du cortex au patient.</french>
+    </translations>
+    <translations key="phrasesubtitleintroduction8">
+      <english>Your objective is to evolve in multiple levels in order to reconnect these famous connections of the brain.</english>
+      <french> Votre objectif est d’évoluer dans de multiples niveaux afin de reconnecter ces fameuses connexions du cerveau.</french>
+    </translations>
+    
+    <translations key="phrasesubtitlegun1">
+      <english>I've equipped you with a laser weapon, you'll need it to solve some puzzles. Pull the buttons with your laser to activate them.</english>
+      <french>Je t’ai équipé d’une arme laser, tu en auras besoin pour résoudre certaines énigmes. Tire sur les interrupteurs avec ton laser afin de les activer.</french>
+    </translations>
+    <translations key="phrasesubtitlegun2">
+      <english>The buttons change from red to green when activated.</english>
+      <french>Les interrupteurs passent de la couleur rouge à la couleur verte quand ils sont activés.</french>
+    </translations>
+    <translations key="phrasesubtitlegun3">
+      <english>He has many pitfalls! Stay alert!</english>
+      <french>Il a de nombreux pièges! Reste vigilant!</french>
+    </translations>
+    <translations key="phrasesubtitlebutton1">
+      <english>You must activate this button to open the door.</english>
+      <french>Tu dois activer ce bouton pour ouvrir la porte.</french>
+    </translations>
+  </translations>
+</LanguageManager>

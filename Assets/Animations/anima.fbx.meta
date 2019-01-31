@@ -1,0 +1,296 @@
+fileFormatVersion: 2
+guid: caf2164b76f0645d6875eede26f0d6da
+timeCreated: 1496486997
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: 1
+    100002: 1_sweep
+    100004: 2
+    100006: 2___Tracer
+    100008: 2_sweep
+    100010: 3
+    100012: 3___Tracer
+    100014: 3_sweep
+    100016: 4
+    100018: 4___Tracer
+    100020: 4_sweep
+    100022: 5
+    100024: 5___Tracer
+    100026: 5_sweep
+    100028: 6
+    100030: 6___Tracer
+    100032: 6_sweep
+    100034: //RootNode
+    100036: Cercle
+    100038: Cercle_2
+    100040: Cercle_3
+    100042: Cercle_4
+    100044: Cercle_5
+    100046: Cercle_6
+    100048: Couvercle_1
+    100050: Couvercle_2
+    100052: Drop_1
+    100054: Drop_2
+    100056: Drop_3
+    100058: Drop_4
+    100060: Drop_5
+    100062: Drop_6
+    100064: Editeur_Cinema_4D
+    100066: Generators
+    100068: Mesh
+    100070: Motion_Drop
+    100072: Shape_Instance
+    100074: Shape_Instance_2
+    100076: Shape_Instance_3
+    100078: Shape_Instance_4
+    100080: Shape_Instance_5
+    400000: 1
+    400002: 1_sweep
+    400004: 2
+    400006: 2___Tracer
+    400008: 2_sweep
+    400010: 3
+    400012: 3___Tracer
+    400014: 3_sweep
+    400016: 4
+    400018: 4___Tracer
+    400020: 4_sweep
+    400022: 5
+    400024: 5___Tracer
+    400026: 5_sweep
+    400028: 6
+    400030: 6___Tracer
+    400032: 6_sweep
+    400034: //RootNode
+    400036: Cercle
+    400038: Cercle_2
+    400040: Cercle_3
+    400042: Cercle_4
+    400044: Cercle_5
+    400046: Cercle_6
+    400048: Couvercle_1
+    400050: Couvercle_2
+    400052: Drop_1
+    400054: Drop_2
+    400056: Drop_3
+    400058: Drop_4
+    400060: Drop_5
+    400062: Drop_6
+    400064: Editeur_Cinema_4D
+    400066: Generators
+    400068: Mesh
+    400070: Motion_Drop
+    400072: Shape_Instance
+    400074: Shape_Instance_2
+    400076: Shape_Instance_3
+    400078: Shape_Instance_4
+    400080: Shape_Instance_5
+    2300000: 1
+    2300002: 1_sweep
+    2300004: 2
+    2300006: 3
+    2300008: 4
+    2300010: 5
+    2300012: 6
+    2300014: Couvercle_1
+    2300016: Couvercle_2
+    3300000: 1
+    3300002: 1_sweep
+    3300004: 2
+    3300006: 3
+    3300008: 4
+    3300010: 5
+    3300012: 6
+    3300014: Couvercle_1
+    3300016: Couvercle_2
+    4300000: 1_sweep
+    4300002: Couvercle_1
+    4300004: Couvercle_2
+    4300006: 1
+    4300008: 2
+    4300010: 3
+    4300012: 4
+    4300014: 5
+    4300016: 6
+    7400000: CINEMA_4D_Prise Principale
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: CINEMA_4D_Prise Principale
+      takeName: CINEMA_4D_Prise Principale
+      firstFrame: 0
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Editeur_Cinema_4D
+        weight: 1
+      - path: Motion_Drop
+        weight: 1
+      - path: Motion_Drop/Generators
+        weight: 1
+      - path: Motion_Drop/Generators/1
+        weight: 1
+      - path: Motion_Drop/Generators/1/2
+        weight: 1
+      - path: Motion_Drop/Generators/1/2/3
+        weight: 1
+      - path: Motion_Drop/Generators/1/2/3/4
+        weight: 1
+      - path: Motion_Drop/Generators/1/2/3/4/5
+        weight: 1
+      - path: Motion_Drop/Generators/1/2/3/4/5/6
+        weight: 1
+      - path: Motion_Drop/Mesh
+        weight: 1
+      - path: Motion_Drop/Mesh/Cercle
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_1
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_1/1_sweep
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_1/1_sweep/Couvercle_1
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_1/1_sweep/Couvercle_2
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_2
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_2/2_sweep
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_2/2_sweep/2___Tracer
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_2/2_sweep/Shape_Instance
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_2/2_sweep/Shape_Instance/Cercle_2
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_3
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_3/3_sweep
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_3/3_sweep/3___Tracer
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_3/3_sweep/Shape_Instance_2
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_3/3_sweep/Shape_Instance_2/Cercle_3
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_4
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_4/4_sweep
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_4/4_sweep/4___Tracer
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_4/4_sweep/Shape_Instance_3
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_4/4_sweep/Shape_Instance_3/Cercle_4
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_5
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_5/5_sweep
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_5/5_sweep/5___Tracer
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_5/5_sweep/Shape_Instance_4
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_5/5_sweep/Shape_Instance_4/Cercle_5
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_6
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_6/6_sweep
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_6/6_sweep/6___Tracer
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_6/6_sweep/Shape_Instance_5
+        weight: 1
+      - path: Motion_Drop/Mesh/Drop_6/6_sweep/Shape_Instance_5/Cercle_6
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

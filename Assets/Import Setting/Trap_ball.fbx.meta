@@ -1,0 +1,164 @@
+fileFormatVersion: 2
+guid: b52c4cb9cdb824e8f8da5359336667cb
+timeCreated: 1492695681
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Editeur_Cinema_4D
+    100002: Neutre
+    100004: Neutre_1
+    100006: Neutre_2
+    100008: Neutre_2_2
+    100010: Neutre_3
+    100012: Neutre_4
+    100014: Neutre_5
+    100016: Pyramide
+    100018: Pyramide_10
+    100020: Pyramide_11
+    100022: Pyramide_12
+    100024: Pyramide_2
+    100026: Pyramide_3
+    100028: Pyramide_4
+    100030: Pyramide_5
+    100032: Pyramide_6
+    100034: Pyramide_7
+    100036: Pyramide_8
+    100038: Pyramide_9
+    100040: "Sph\xE8re"
+    100042: //RootNode
+    100044: Tube
+    400000: Editeur_Cinema_4D
+    400002: Neutre
+    400004: Neutre_1
+    400006: Neutre_2
+    400008: Neutre_2_2
+    400010: Neutre_3
+    400012: Neutre_4
+    400014: Neutre_5
+    400016: Pyramide
+    400018: Pyramide_10
+    400020: Pyramide_11
+    400022: Pyramide_12
+    400024: Pyramide_2
+    400026: Pyramide_3
+    400028: Pyramide_4
+    400030: Pyramide_5
+    400032: Pyramide_6
+    400034: Pyramide_7
+    400036: Pyramide_8
+    400038: Pyramide_9
+    400040: "Sph\xE8re"
+    400042: //RootNode
+    400044: Tube
+    2300000: Pyramide
+    2300002: Pyramide_10
+    2300004: Pyramide_11
+    2300006: Pyramide_12
+    2300008: Pyramide_2
+    2300010: Pyramide_3
+    2300012: Pyramide_4
+    2300014: Pyramide_5
+    2300016: Pyramide_6
+    2300018: Pyramide_7
+    2300020: Pyramide_8
+    2300022: Pyramide_9
+    2300024: "Sph\xE8re"
+    2300026: Tube
+    3300000: Pyramide
+    3300002: Pyramide_10
+    3300004: Pyramide_11
+    3300006: Pyramide_12
+    3300008: Pyramide_2
+    3300010: Pyramide_3
+    3300012: Pyramide_4
+    3300014: Pyramide_5
+    3300016: Pyramide_6
+    3300018: Pyramide_7
+    3300020: Pyramide_8
+    3300022: Pyramide_9
+    3300024: "Sph\xE8re"
+    3300026: Tube
+    4300000: Tube
+    4300002: Pyramide
+    4300004: Pyramide_2
+    4300006: Pyramide_3
+    4300008: Pyramide_4
+    4300010: Pyramide_5
+    4300012: Pyramide_6
+    4300014: Pyramide_7
+    4300016: Pyramide_8
+    4300018: Pyramide_9
+    4300020: Pyramide_10
+    4300022: Pyramide_11
+    4300024: Pyramide_12
+    4300026: "Sph\xE8re"
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
